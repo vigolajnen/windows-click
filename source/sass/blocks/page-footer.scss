@@ -1,0 +1,22 @@
+.page-footer {
+  position: relative;
+  padding: 40px 0;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.page-footer__wrapper {
+  max-width: $desktop-width;
+}
+
+.page-footer__item {
+  text-align: center;
+}
+
+.page-footer__btn {
+  padding: 15px 25px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+}

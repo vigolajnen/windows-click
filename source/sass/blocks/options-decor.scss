@@ -1,0 +1,131 @@
+.options-decor {
+  padding: 30px 0 0;
+}
+
+.options-decor__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 945px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.options-decor__title {
+  position: relative;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-color;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: $text-color;
+  }
+}
+
+.options-decor__caption {
+  max-width: 1005px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.options-decor__caption p {
+  margin: 0 0 35px 0;
+}
+
+.options-decor__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.options-decor__item {
+  position: relative;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.decor-option__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #333333;
+}
+
+.decor-option__link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  padding-top: 50px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  box-shadow: inset 0 -50px 50px -10px #000000;
+}
+
+.decor-option__name {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 35px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 18px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .options-decor {
+    padding: 90px 0;
+  }
+
+  .options-decor__title {
+    margin-bottom: 85px;
+    font-size: 36px;
+  }
+
+  .options-decor__wrapper {
+    padding: 0;
+  }
+
+  .options-decor__caption {
+    padding: 0;
+  }
+
+  .options-decor__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .options-decor__item {
+    width: 30%;
+  }
+}

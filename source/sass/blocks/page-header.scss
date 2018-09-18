@@ -1,0 +1,27 @@
+.page-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-header__logo {
+  flex-grow: 1;
+}
+
+.page-header__nav {
+  flex-grow: 1;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0;
+  }
+}

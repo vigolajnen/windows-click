@@ -1,0 +1,222 @@
+.working-stages {
+  width: 100%;
+
+  &--bg {
+    background: url("../../img/work-item/work-item-bg.jpg") no-repeat;
+    background-size: cover;
+    background-color: #333333;
+  }
+}
+
+.working-stages__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.working-stages__title {
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 36px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #ffffff;
+  }
+}
+
+.working-stages__wrapper {
+  max-width: $desktop-width;
+  padding: 0 15px;
+}
+
+.working-stages__caption {
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.working-stages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  list-type: none;
+}
+
+.working-stages__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+}
+
+.working-stages__name {
+  margin: 0;
+  padding-top: 130px;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  &--phone {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 110px;
+      height: 116px;
+      background-position: -5px -455px;
+      background-image: url("../../img/sprite.png");
+      background-repeat: no-repeat;
+      display: block;
+    }
+  }
+
+  &--auto {
+    position: relative;
+  }
+
+  &--auto::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 116px;
+    background-position: -5px -203px;
+    background-image: url("../../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &--sketch {
+    position: relative;
+  }
+
+  &--sketch::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 116px;
+    background-position: -5px -707px;
+    background-image: url("../../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &--treaty {
+    position: relative;
+  }
+
+  &--treaty::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 116px;
+    background-position: -5px -833px;
+    background-image: url("../../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &--sewing {
+    position: relative;
+  }
+
+  &--sewing::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 116px;
+    background-position: -5px -581px;
+    background-image: url("../../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &--hanging {
+    position: relative;
+  }
+
+  &--hanging::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 116px;
+    background-position: -5px -329px;
+    background-image: url("../../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+  }
+}
+
+.working-stages__text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .working-stages__inner {
+    padding: 90px 0;
+  }
+
+  .working-stages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .working-stages__item {
+    width: 50%;
+  }
+
+  .working-stages__title {
+    margin-bottom: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .working-stages__wrapper {
+    padding: 0;
+  }
+
+  .working-stages__item {
+    width: 30%;
+  }
+}

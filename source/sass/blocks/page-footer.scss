@@ -6,8 +6,12 @@
 }
 
 .page-footer__wrapper {
-  max-width: $desktop-width;
+  max-width: $desktop-width-big;
   margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .page-footer__list {
@@ -16,10 +20,24 @@
   list-style: none;
 }
 
+.page-footer__item {
+  color: $text-color;
+}
+
 .page-footer__link {
   display: block;
   font-size: 14px;
   font-weight: 300;
   color: $text-color;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &--caption {
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
 }

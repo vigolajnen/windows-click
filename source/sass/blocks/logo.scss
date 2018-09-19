@@ -1,7 +1,7 @@
 .logo {
   height: auto;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 0;
 }
 
 .logo__link {
@@ -19,12 +19,12 @@
   }
 
   .logo__pic {
-    width: 200px;
+    width: 100px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__pic {
-    width: 220px;
+    width:100%;
   }
 }

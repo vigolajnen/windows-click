@@ -1,53 +1,41 @@
-.page-header {
-  position: relative;
-  overflow: hidden;
-}
-
-.page-header__wrapper {
+.feedback {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  max-width: $desktop-width-big;
-  margin: 0 auto;
-  padding: 15px;
-}
+  max-width: $desktop-width;
+  margin: 0 auto 40px;
 
-.page-header__logo {
-  flex-grow: 1;
-}
-
-.page-header__nav {
-  flex-grow: 1;
-}
-
-.page-header__phone {
-  position: relative;
-  padding: 0 20px 0 40px;
-  font-size: 16px;
-  font-weight: 500;
-  color: $text-color;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 20px;
-    display: block;
-    width: 13px;
-    height: 18px;
-    background-image: url("../../img/sprite.png");
+  &--bg {
+    background-image: url("../../img/feedback/feedback--bg.jpg");
     background-repeat: no-repeat;
-    background-position: -5px -365px;
+    background-position: right;
+    background-size: 50%;
   }
 }
 
-.page-header__button {
+.feedback__wrapper {
+
+}
+
+.feedback__title {
+  max-width: 450px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.feedback__form {
+
+}
+
+.feedback__item {
+
+}
+
+.feedback__button {
   color: #ffffff;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)"; /* IE 8-9 */
   background: -webkit-linear-gradient(left,  #f4bf5c, #fb494f); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
@@ -69,8 +57,13 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    padding: 0;
+@media (min-width: $tablet-width) {
+  .feedback {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+}
+
+@media (min-width: $desktop-width) {
+
 }

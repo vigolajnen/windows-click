@@ -1,0 +1,18 @@
+.ready-projects {
+
+}
+
+.ready-projects__wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.ready-projects__title {
+  max-width: 450px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}

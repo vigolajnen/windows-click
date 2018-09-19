@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.49 121.49">
+  <defs>
+    <style>
+      .cls-2{fill:none;stroke:#ce1348;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.76px}
+    </style>
+  </defs>
+  <g id="Icons">
+    <path d="M44.51 47.68c-.9 5.32.42 13 4.75 22.27s9.29 15.27 13.93 18 8.61.85 11.51-.49l2.1-1a3.22 3.22 0 0 0 1.56-4.26l-3-6.35a3 3 0 0 0-4-1.45l-2.21 1.1a4 4 0 0 0-1.49 1.21s-2.31 3-5.22 1.79c-3.13-1.31-6.08-6.54-8.1-10.9s-4.11-10-3.08-13.23c1-3 4.74-2.82 4.74-2.82a4 4 0 0 0 1.89-.37l2.31-1.07a3 3 0 0 0 1.44-4l-2.94-6.35a3.21 3.21 0 0 0-4.26-1.56l-2.1 1c-2.91 1.37-6.92 3.17-7.83 8.48z" stroke-width="2.3" fill="none" stroke="#ce1348" stroke-linecap="round" stroke-linejoin="round"/>
+    <path class="cls-2" d="M69.15 75.5l5.55 11.97M52.33 39.22l5.55 11.96"/>
+  </g>
+</svg>

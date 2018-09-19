@@ -1,0 +1,41 @@
+.certificates {
+  padding: 50px 0;
+}
+
+.certificates__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.certificates__item {
+  width: 100%;
+}
+
+.certificates__link {
+
+}
+
+.certificates__pic {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .certificates__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .certificates__item {
+    width: 33%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .certificates__item {
+      width: 33%;
+    }
+}

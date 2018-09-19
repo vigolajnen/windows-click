@@ -1,0 +1,67 @@
+.protection {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__text {
+    min-width: 90px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $text-color;
+    text-transform: uppercase;
+  }
+}
+
+.protection__item {
+  margin: 0 15px;
+  padding: 15px 15px 15px 50px;
+  background-color: #e9e7e0;
+  border-radius: 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--icon {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      display: block;
+      background-image: url("../../img/sprite.png");
+      background-repeat: no-repeat;
+    }
+
+    &:first-child::before {
+      width: 32px;
+      height: 36px;
+      background-position: -5px -727px;
+    }
+
+    &:nth-child(2)::before {
+      width: 36px;
+      height: 36px;
+      background-position: -5px -681px;
+    }
+
+    &:last-child::before {
+      width: 27px;
+      height: 36px;
+      background-position: -5px -773px;
+    }
+  }
+}

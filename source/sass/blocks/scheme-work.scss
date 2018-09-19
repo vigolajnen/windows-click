@@ -1,0 +1,112 @@
+.scheme-work {
+  position: relative;
+  padding-bottom: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 0;
+    background-image: url("../../img/scheme-work/scheme-work--left-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 0;
+    background-image: url("../../img/scheme-work/scheme-work--bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.scheme-work__wrapper {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.scheme-work__title {
+  max-width: 450px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.scheme-work__list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.scheme-work__item {
+  position: relative;
+  width: 100%;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 rgba(34, 34, 34, 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 70%;
+    background-color: $color-light-green;
+    z-index: 1;
+  }
+}
+
+.scheme-work__name {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.scheme-work__info {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .scheme-work__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .scheme-work__item {
+    width: 50%;
+    padding: 30px 40px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+.scheme-work__item {
+    width: 30%;
+  }
+}

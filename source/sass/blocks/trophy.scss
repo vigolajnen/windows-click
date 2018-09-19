@@ -1,0 +1,63 @@
+.trophy {
+  padding-top: 100px;
+}
+
+.trophy__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.trophy__item {
+  padding-left: 160px;
+  margin-bottom: 120px;
+
+  &--icon-one,
+  &--icon-two,
+  &--icon-three {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: block;
+      background-image: url("../../img/sprite.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--icon-one::before {
+    width: 155px;
+    height: 123px;
+    background-position: -5px -899px;
+  }
+
+  &--icon-two::before {
+    width: 139px;
+    height: 119px;
+    background-position: -5px -1162px;
+  }
+
+  &--icon-three::before {
+    width: 140px;
+    height: 120px;
+    background-position: -5px -1032px;
+  }
+}
+
+.trophy__title {
+  font-weight: 18;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.trophy__info {
+  font-weight: 18;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+

@@ -1,53 +1,8 @@
-.page-header {
-  position: relative;
-  overflow: hidden;
+.form-call {
+
 }
 
-.page-header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: $desktop-width-big;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.page-header__logo {
-  flex-grow: 1;
-}
-
-.page-header__nav {
-  flex-grow: 1;
-}
-
-.page-header__phone {
-  position: relative;
-  padding: 0 20px 0 40px;
-  font-size: 16px;
-  font-weight: 500;
-  color: $text-color;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 20px;
-    display: block;
-    width: 13px;
-    height: 18px;
-    background-image: url("../../img/sprite.png");
-    background-repeat: no-repeat;
-    background-position: -5px -365px;
-  }
-}
-
-.page-header__button {
+.form-call__button {
   color: #ffffff;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)"; /* IE 8-9 */
   background: -webkit-linear-gradient(left,  #f4bf5c, #fb494f); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
@@ -67,10 +22,8 @@
     background: -o-linear-gradient(left,  #fb494f, #fb494f); /* Opera 11.1-12 */
     background: linear-gradient(to right,  #fb494f, #fb494f); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    padding: 0;
+  &.button {
+    padding: 15px 40px;
   }
 }

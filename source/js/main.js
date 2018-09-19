@@ -59,19 +59,20 @@ $('#tabs4').tabulous({
 });
 
 
-var modalOpen = document.querySelector(".information__button");
-var modal = document.querySelector(".feedback");
-var modalBtn = document.querySelector(".feedback__close");
+// var modalOpen = document.querySelector(".information__button");
+// var modal = document.querySelector(".feedback");
+// var modalBtn = document.querySelector(".feedback__close");
 
-modalOpen.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.add("feedback-show");
-});
+// modalOpen.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   modal.classList.add("feedback-show");
+// });
 
-modalBtn.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  modal.classList.remove("feedback-show");
-});
+// modalBtn.addEventListener("click", function (evt) {
+//   evt.preventDefault();
+//   modal.classList.remove("feedback-show");
+// });
+
 
 // Sticky block
 $(document).ready(function() {

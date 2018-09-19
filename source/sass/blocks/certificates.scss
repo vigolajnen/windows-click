@@ -1,5 +1,9 @@
 .certificates {
   padding: 50px 0;
+  background-image: url(../../img/progress/progress--bg.jpg);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: contain;
 }
 
 .certificates__list {
@@ -16,7 +20,8 @@
 }
 
 .certificates__link {
-
+  display: flex;
+  justify-content: center;
 }
 
 .certificates__pic {
@@ -35,6 +40,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .certificates {
+    background-image: none;
+  }
+
   .certificates__item {
       width: 33%;
     }

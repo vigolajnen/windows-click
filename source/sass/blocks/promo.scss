@@ -10,15 +10,7 @@
 
   &__item {
     position: relative;
-    max-height: 670px;
     overflow: hidden;
-  }
-
-  &__info {
-    position: absolute;
-    height: 100%;
-    width: 360px;
-    background-color: $color-green;
   }
 
   &__wrapper {
@@ -27,34 +19,23 @@
     transform: translateY(-50%);
     left: 0;
     width: 100%;
-    min-width: 555px;
-    padding-left: 100px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 15px;
-      height: 100%;
-      background-color: $color-light-green;
-      z-index: 1;
-    }
+    padding-left: 20px;
+    box-sizing: border-box;
   }
 
   &__title {
     margin-bottom: 30px;
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 900;
-    line-height: 50px;
+    line-height: 40px;
     color: #ffffff;
     text-transform: uppercase;
   }
 
   &__text {
     margin-bottom: 60px;
-    font-size: 25px;
-    line-height: 25px;
+    font-size: 20px;
+    line-height: 20px;
     font-weight: 500;
     color: #ffffff;
   }
@@ -62,6 +43,7 @@
   &__pic {
     width: 100%;
     height: 100%;
+    min-height: 500px;
     object-fit: cover;
   }
 }
@@ -83,6 +65,60 @@
 
   .promo__title {
     font-size: 42px;
+  }
+
+  .promo-slider {
+
+    &__item {
+      position: relative;
+      height: 670px;
+      overflow: hidden;
+    }
+
+    &__info {
+      position: absolute;
+      height: 100%;
+      width: 360px;
+      background-color: $color-green;
+    }
+
+    &__wrapper {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 100%;
+      min-width: 555px;
+      padding-left: 100px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15px;
+        height: 100%;
+        background-color: $color-light-green;
+        z-index: 1;
+      }
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 50px;
+      font-weight: 900;
+      line-height: 50px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+      font-size: 25px;
+      line-height: 25px;
+      font-weight: 500;
+      color: #ffffff;
+    }
   }
 }
 

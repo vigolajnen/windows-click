@@ -13,11 +13,15 @@
 }
 
 .page-header__logo {
-  flex-grow: 1;
+  display: none;
 }
 
 .page-header__nav {
   flex-grow: 1;
+}
+
+.page-header__call {
+  display: none;
 }
 
 .page-header__phone {
@@ -69,8 +73,29 @@
   }
 }
 
+@media (min-width: $mobile-width-only) {
+  .page-header__logo {
+    flex-grow: 1;
+    display: block;
+  }
+}
+
+@media (min-width: 990px) {
+  .page-header__call {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-header {
     padding: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-header__call {
+    flex-direction: row;
+    align-items: center;
   }
 }

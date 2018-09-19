@@ -4,7 +4,7 @@
 
 .factors__wrapper {
   max-width: $desktop-width;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
 .factors__title {
@@ -19,6 +19,7 @@
 
 .factors__inner {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   max-width: $desktop-width;
@@ -27,6 +28,11 @@
 
 .factors__item {
   position: relative;
+  width: 100%;
+
+  &:first-child {
+    order: 1;
+  }
 }
 
 .factors__text {
@@ -50,26 +56,39 @@
 }
 
 .factors__pic {
-
+  max-width: 100%;
 }
 
 .factors__info {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 320px;
-  margin: 0;
-  padding: 10px;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 300;
-  border-radius: 10px;
-  box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .factors__inner {
     flex-direction: row;
+  }
+
+  .factors__item {
+    width: 50%;
+
+    &:first-child {
+      order: 0;
+    }
+  }
+
+  .factors__info {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 270px;
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 300;
+    border-radius: 10px;
+    box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
   }
 }
 

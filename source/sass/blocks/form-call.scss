@@ -2,6 +2,26 @@
 
 }
 
+.form-call__item {
+  margin: 10px 0;
+}
+
+.form-call__input {
+  border: none;
+  padding: 2px 10px 2px 20px;
+  border-bottom: 1px solid #74b96f;
+  background-image: url("../../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -5px -337px;
+  outline: none;
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+}
+
+
+
 .form-call__button {
   color: #ffffff;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)"; /* IE 8-9 */

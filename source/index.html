@@ -90,7 +90,7 @@
                 <span class="offers__sale offers__sale--green">В подарок</span>
                 <span class="offers__sale offers__sale--black">Москитные сетки</span>
               </p>
-              <p class="offers__mark offers__mark--icon">Остекление балконов и лоджий</p>
+              <p class="offers__mark offers__mark--icon-one">Остекление балконов и лоджий</p>
             </div>
           </a>
         </div>
@@ -102,7 +102,7 @@
                <span class="offers__sale offers__sale--green">В подарок</span>
                <span class="offers__sale offers__sale--black">Ламинат и тумба</span>
              </p>
-             <p class="offers__mark offers__mark--icon">Отделка балконов</p>
+             <p class="offers__mark offers__mark--icon-two">Отделка балконов</p>
            </div>
           </a>
         </div>
@@ -114,7 +114,7 @@
                 <span class="offers__sale offers__sale--green">В подарок</span>
                 <span class="offers__sale offers__sale--black">Нано-покрытие с серебром</span>
               </p>
-              <p class="offers__mark offers__mark--icon">Пластиковые окна</p>
+              <p class="offers__mark offers__mark--icon-three">Пластиковые окна</p>
             </div>
           </a>
         </div>
@@ -126,7 +126,7 @@
                 <span class="offers__sale offers__sale--green">В подарок</span>
                 <span class="offers__sale offers__sale--black">Нано-покрытие с серебром</span>
               </p>
-              <p class="offers__mark offers__mark--icon">Деревянные окна</p>
+              <p class="offers__mark offers__mark--icon-four">Деревянные окна</p>
             </div>
           </a>
         </div>
@@ -138,7 +138,7 @@
                 <span class="offers__sale offers__sale--green">Скидка</span>
                 <span class="offers__sale offers__sale--black">-15% при заказе с сайта</span>
               </p>
-              <p class="offers__mark offers__mark--icon">Широкий ассортимент дверей</p>
+              <p class="offers__mark offers__mark--icon-five">Широкий ассортимент дверей</p>
             </div>
           </a>
         </div>
@@ -150,7 +150,7 @@
                 <span class="offers__sale offers__sale--green">Скидка</span>
                 <span class="offers__sale offers__sale--black">-5% при заказе с сайта</span>
               </p>
-              <p class="offers__mark offers__mark--icon">Услуги</p>
+              <p class="offers__mark offers__mark--icon-six">Услуги</p>
             </div>
           </a>
         </div>
@@ -236,8 +236,8 @@
             <div class="scheme-work__info">Укажите Ваш номер телефона</div>
             <form class="form-call" action="" method="post">
               <p class="form-call__item">
-                <label class="visually-hidden" for="phone-call">Ваш номер телефона</label>
-                <input id="phone-call" type="text" placeholder="Ваш номер телефона">
+                <label class="form-call__label visually-hidden" for="phone-call">Ваш номер телефона</label>
+                <input id="phone-call" class="form-call__input" type="tel" placeholder="Ваш номер телефона">
               </p>
               <button class="button form-call__button" type="submit">Заказать замер</button>
             </form>
@@ -268,13 +268,27 @@
     <section class="ready-projects">
       <div class="ready-projects__wrapper">
         <div class="ready-projects__title">Выполненные работы</div>
-        <p>отделка/ Остекление</p>
-        <div class="slider-projects">
+        <div class="ready-projects__tabs tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">Отделка</li>
+            <li class="tabs__item tabs__item--active">Остекление</li>
+          </ul>
+        </div>
+        <div class="slider-projects fade">
           <div class="slider-projects__item">
             <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-1">
             <div class="slider-projects__info">
               <div class="slider-projects__inner">
                 <p class="slider-projects__text">Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
+                <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
+              </div>
+            </div>
+          </div>
+          <div class="slider-projects__item">
+            <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-1">
+            <div class="slider-projects__info">
+              <div class="slider-projects__inner">
+                <p class="slider-projects__text">12Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
                 <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
               </div>
             </div>

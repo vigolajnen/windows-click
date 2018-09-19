@@ -20,8 +20,8 @@ navToggle.addEventListener("click", function() {
 
 $(document).ready(function(){
   $(".fade").slick({
-    arrows: false,
-    dots: true,
+    arrows: true,
+    dots: false,
     infinite: true,
     speed: 500,
     fade: true,

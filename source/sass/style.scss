@@ -1,4 +1,8 @@
 @import "normalize.scss";
+@import "animate.scss";
+@import "slick.scss";
+@import "slick-theme.scss";
+@import "fancybox.scss";
 @import "variables.scss";
 @import "base.scss";
 @import "utils.scss";
@@ -14,6 +18,8 @@
 @import "blocks/scheme-work.scss";
 @import "blocks/form-call.scss";
 @import "blocks/ready-projects.scss";
+@import "blocks/slider-projects.scss";
+@import "blocks/tabs.scss";
 @import "blocks/progress.scss";
 @import "blocks/certificates.scss";
 @import "blocks/trophy.scss";

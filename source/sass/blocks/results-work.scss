@@ -44,15 +44,15 @@
 }
 
 .results-work__number {
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 50px;
+  line-height: 50px;
   font-weight: 900;
   text-align: center;
 }
 
 .results-work__text {
-  font-size: 25px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 30px;
   font-weight: 900;
 }
 
@@ -63,5 +63,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .results-work__number {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 900;
+    text-align: center;
+  }
 
+  .results-work__text {
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 900;
+  }
 }

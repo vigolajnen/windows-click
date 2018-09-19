@@ -16,6 +16,20 @@ navToggle.addEventListener("click", function() {
     }
 });
 
+var modalOpen = document.querySelector(".page-header__button");
+var modal = document.querySelector(".modal-form");
+var modalBtn = document.querySelector(".modal-form__close");
+
+modalOpen.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.add("modal-form-show");
+});
+
+modalBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.classList.remove("modal-form-show");
+});
+
 // слайдер slick
 
 $(document).ready(function(){
@@ -25,7 +39,9 @@ $(document).ready(function(){
     infinite: true,
     speed: 500,
     fade: true,
-    cssEase: "linear"
+    cssEase: "linear",               
+    prevArrow: "Предыдущий",
+    nextArrow: "Следующий"
   });
 });
 
@@ -37,6 +53,10 @@ $(document).ready(function(){
     fade: true,
     cssEase: "linear"
   });
+});
+
+$(document).ready(function() {
+  $(".gallery a").fancybox(); // выбор всех ссылок с классом gallery
 });
 
 
@@ -59,25 +79,10 @@ $('#tabs4').tabulous({
 });
 
 
-// var modalOpen = document.querySelector(".information__button");
-// var modal = document.querySelector(".feedback");
-// var modalBtn = document.querySelector(".feedback__close");
-
-// modalOpen.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   modal.classList.add("feedback-show");
-// });
-
-// modalBtn.addEventListener("click", function (evt) {
-//   evt.preventDefault();
-//   modal.classList.remove("feedback-show");
-// });
-
-
 // Sticky block
 $(document).ready(function() {
   // grab the initial top offset of the navigation 
-  var stickyNavTop = $('.line-block').offset().top;
+  var stickyNavTop = $('.page-header').offset().top;
     
   // our function that decides weather the navigation bar should have "fixed" css position or not.
   var stickyNav = function(){
@@ -86,9 +91,9 @@ $(document).ready(function() {
     // if we've scrolled more than the navigation, change its position to fixed to stick to top,
     // otherwise change it back to relative
     if (scrollTop > stickyNavTop) { 
-      $('.line-block').addClass('sticky');
+      $('.page-header').addClass('sticky');
     } else {
-      $('.line-block').removeClass('sticky'); 
+      $('.page-header').removeClass('sticky'); 
     }
   };
 
@@ -99,24 +104,4 @@ $(document).ready(function() {
   });
 });
 
-//spincrement - перебор цифр
-jQuery(document).ready(function(){
-  var show = true;
-  var countbox = ".guarantees";
-  jQuery(window).on("scroll load resize", function(){
-    if(!show) return false;                   // Отменяем показ анимации, если она уже была выполнена
-    var w_top = jQuery(window).scrollTop();        // Количество пикселей на которое была прокручена страница
-    var e_top = jQuery(countbox).offset().top;     // Расстояние от блока со счетчиками до верха всего документа
-    var w_height = jQuery(window).height();        // Высота окна браузера
-    var d_height = jQuery(document).height();      // Высота всего документа
-    var e_height = jQuery(countbox).outerHeight(); // Полная высота блока со счетчиками
-    if(w_top + 200 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
-      jQuery(".spincrement").spincrement({
-        from: 0,
-        thousandSeparator: " ",
-        duration: 2500
-      });
-      show = false;
-    }
-  });
-});
+

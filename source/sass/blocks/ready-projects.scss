@@ -57,7 +57,12 @@
     border: 0;
     outline: 0;
     background: #6db468;
+  }               
+
+  .slick-next:before, [dir=rtl] .slick-prev:before {
+    content: "Следующий"
   }
+
 }
 
 @media (min-width: $desktop-width) {

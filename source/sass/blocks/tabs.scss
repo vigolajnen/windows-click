@@ -12,20 +12,23 @@
 
 .tabs__item {
   flex-grow: 1;
+}
+
+.tabs__item a {
+  display: flex;
   padding: 10px 10px 10px 30px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 300;
   color: $text-color;
   background-color: #d8d8d8;
+  text-decoration: none;
   border-radius: 20px 0 0 20px;
-
-  &--active {
-    color: #ffffff;
-    background-color: $color-green;
-    box-shadow: 0 0 10px #123610;
-    border-radius: 0 20px 20px 0;
-  }
 }
 
-
+.tabs__item--active a {
+  color: #ffffff;
+  background-color: $color-green;
+  box-shadow: 0 0 10px #123610;
+  border-radius: 0 20px 20px 0;
+}

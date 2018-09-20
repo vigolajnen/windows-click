@@ -163,15 +163,15 @@
       <div class="results-work__line results-work__line--bg">
         <div class="results-work__inner">
           <div class="results-work__item">
-            <div class="results-work__number">19</div>
+            <div class="results-work__number spincrement" data-to="19">19</div>
             <div class="results-work__text">лет успешной работы</div>
           </div>
           <div class="results-work__item">
-            <div class="results-work__number">500 000</div>
+            <div class="results-work__number spincrement" data-to="500000">500 000</div>
             <div class="results-work__text">установленных окон</div>
           </div>
           <div class="results-work__item">
-            <div class="results-work__number">110 000</div>
+            <div class="results-work__number spincrement" data-to="110000">110 000</div>
             <div class="results-work__text">довольных клиентов</div>
           </div>
         </div>
@@ -287,11 +287,19 @@
     <section class="ready-projects">
       <div class="ready-projects__wrapper">
         <div class="ready-projects__title">Выполненные работы</div>
-        <div class="ready-projects__tabs tabs">
+        <div id="tabs" class="ready-projects__tabs tabs">
           <ul class="tabs__list">
-            <li class="tabs__item">Отделка</li>
-            <li class="tabs__item tabs__item--active">Остекление</li>
+            <li class="tabs__item"><a href="#tabs-1">Отделка</a></li>
+            <li class="tabs__item tabs__item--active"><a href="#tabs-2">Остекление</a></li>
           </ul>
+          <div id="tabs_container">
+            <div id="tabs-1">
+              
+            </div>
+            <div id="tabs-2">
+              
+            </div>
+          </div>
         </div>
         <div class="slider-projects fade">
           <div class="slider-projects__item">
@@ -312,6 +320,14 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="slider-projects__paginator">
+          <ul>
+            <li class="slider-projects__prev">
+              <span>Предыдущий</span></li>
+            <li class="slider-projects__next">
+              <span>Следующий</span></li>
+          </ul>
         </div>
       </div>
     </section>

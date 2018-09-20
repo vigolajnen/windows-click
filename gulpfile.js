@@ -78,6 +78,7 @@ gulp.task("vendor", function () {
       "source/js/picturefill.min.js",
       "source/js/svg4everybody.min.js",
       "source/js/jquery-1.11.1.min.js",
+      "source/js/jquery.spincrement.js",
       "source/js/tabulous.min.js",
       "source/js/slick.min.js",
       "source/js/wow.min.js",

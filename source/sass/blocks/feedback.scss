@@ -98,7 +98,7 @@
   .feedback {
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 550px;
+    min-height: 400px;
     margin: 0 auto 40px;
 
     &--bg {
@@ -115,5 +115,7 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .feedback {
+    min-height: 550px;
+  }
 }

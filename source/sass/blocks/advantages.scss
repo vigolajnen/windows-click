@@ -12,7 +12,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 0;
+  padding: 0 15px;
   margin: 0;
   list-style: none;
 }
@@ -79,8 +79,6 @@
   }
 }
 
-
-
 .advantages__name {
   margin-bottom: 10px;
   font-size: 18px;
@@ -98,14 +96,11 @@
   .advantages__list {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .advantages__item {
     width: 50%;
     margin-bottom: 40px;
   }
-}
-
-@media (min-width: $desktop-width) {
-
 }

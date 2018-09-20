@@ -46,8 +46,22 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+  $(".fade3").slick({
+    arrows: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    prevArrow: $(".slider-projects__prev-1"),
+    nextArrow: $(".slider-projects__next-1"),
+  });
+});
+
+$(document).ready(function(){
   $(".fade2").slick({
     dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     fade: true,
@@ -77,6 +91,43 @@ $('#tabs').tabulous({
 $('#tabs4').tabulous({
   effect: 'flip'
 });
+
+
+$(document).ready(function() {
+    //Действия по умолчанию
+    $(".tabs__item:last").addClass("tabs__item--active").show(); //Активировать первую вкладку
+    $("fade").slick("slickGoTo", 2);
+    
+    //Событие по клику
+    $(".tabs__item").click(function() {
+        $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
+        $(".tabs__item").removeClass("tabs__item--right");
+        $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
+        $(this).addClass("tabs__item--right");
+        $("fade").slick("slickGoTo", 1);
+        var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
+        $(activeTab).fadeIn(); //Исчезновение активного контента
+        return false;
+    });
+});
+
+
+// $(document).ready(function() {
+//     //Действия по умолчанию
+//     $(".tab__content").hide(); //скрыть весь контент
+//     $(".tabs__item:last").addClass("tabs__item--active").show(); //Активировать первую вкладку
+//     $(".tab__content:last").show(); //Показать контент первой вкладки
+    
+//     //Событие по клику
+//     $(".tabs__item").click(function() {
+//         $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
+//         $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
+//         $(".tab__content").hide(); //Скрыть контент вкладки
+//         var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
+//         $(activeTab).fadeIn(); //Исчезновение активного контента
+//         return false;
+//     });
+// });
 
 
 // Sticky block

@@ -1,16 +1,16 @@
-.trophy {
-  padding-top: 100px;
-}
-
 .trophy__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 .trophy__item {
-  padding-left: 160px;
-  margin-bottom: 120px;
+  padding-top: 160px;
+  margin-bottom: 50px;
+  text-align: center;
 
   &--icon-one,
   &--icon-two,
@@ -20,9 +20,9 @@
     &::before {
       content: "";
       position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
       display: block;
       background-image: url("../../img/sprite.png");
       background-repeat: no-repeat;
@@ -60,4 +60,31 @@
   font-weight: 300;
 }
 
+@media (min-width: $tablet-width) {
+  .trophy__list {
+    flex-direction: row;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .trophy {
+    padding-top: 100px;
+  }
+
+  .trophy__list {
+    flex-direction: column;
+  }
+
+  .trophy__item {
+    padding-left: 160px;
+    padding-top: 0;
+    margin-bottom: 120px;
+    text-align: left;
+
+    &::before {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

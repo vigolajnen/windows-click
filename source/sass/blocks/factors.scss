@@ -43,7 +43,7 @@
   font-weight: 300;
   box-shadow: 0 0 57px 0 rgba(34, 34, 34, 0.3);
 
-    &::before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -61,6 +61,7 @@
 
 .factors__info {
   display: none;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -75,23 +76,89 @@
       order: 0;
     }
   }
-
-  .factors__info {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    max-width: 270px;
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 300;
-    border-radius: 10px;
-    box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
-  }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1023px) {
+  .factors__mark {
+    display: block;
 
+    &--one,
+    &--two,
+    &--three,
+    &--four,
+    &--five {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: block;
+      width: 64px;
+      height: 64px;
+      background-image: url("../../img/icon/normal4.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &--one {
+      top: 55px;
+      left: 240px;
+    }
+
+    &--two {
+      top: 150px;
+      left: 45px;
+    }
+
+    &--three {
+      top: auto;
+      left: auto;
+      bottom: 265px;
+      right: 185px;
+    }
+
+    &--four {
+      top: auto;
+      bottom: 243px;
+      left: 110px;
+    }
+
+    &--five {
+      top: auto;
+      bottom: 128px;
+      left: 140px;
+    }
+
+    &--one:hover,
+    &--two:hover,
+    &--three:hover,
+    &--four:hover,
+    &--five:hover {
+      background-image: url("../../img/icon/hover.png");
+    }
+
+    &--one:hover .factors__info,
+    &--two:hover .factors__info,
+    &--three:hover .factors__info,
+    &--four:hover .factors__info,
+    &--five:hover .factors__info {
+      display: block;
+      position: absolute;
+      left: 55px;
+      top: -85px;
+      width: 240px;
+      margin: 0;
+      padding: 10px;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 300;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
+    }
+
+    &--three:hover .factors__info {
+      top: 60px;
+      left: -95px;
+    }
+  }
 }

@@ -96,7 +96,6 @@
   .advantages__list {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
   }
 
   .advantages__item {
@@ -104,3 +103,10 @@
     margin-bottom: 40px;
   }
 }
+
+@media (min-width: $desktop-width-big) {
+  .advantages__list {
+    padding: 0;
+  }
+}
+

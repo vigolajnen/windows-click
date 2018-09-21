@@ -4,27 +4,36 @@
   padding: 0;
 }
 
-.logo__link {
+.logo__link.js-logo {
   display: block;
+  padding: 5px 5px 5px 10px;
 }
 
 .logo__pic {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
 @media (min-width: $tablet-width) {
+  .logo__link.js-logo {
+    display: none;
+  }
+
   .logo {
     margin: 0;
   }
 
+  .logo__link {
+    display: block;
+  }
+
   .logo__pic {
-    width: 100px;
+    width: 80%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo__pic {
-    width:100%;
+    width: 100%;
   }
 }

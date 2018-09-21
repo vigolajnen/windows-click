@@ -23,6 +23,7 @@
 
 .progress__title {
   margin-bottom: 40px;
+  padding: 0 15px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
@@ -56,3 +57,10 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .progress__title {
+    padding: 0;
+  }
+}
+

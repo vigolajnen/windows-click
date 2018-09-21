@@ -1,7 +1,7 @@
 .button {
   display: inline-block;
   vertical-align: middle;
-  padding: 15px 20px;
+  padding: 10px 20px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -12,4 +12,10 @@
   user-select: none;
   cursor: pointer;
   transition: 1s;
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding: 15px 20px;
+  }
 }

@@ -42,6 +42,7 @@
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
+  padding: 0 15px;
 }
 
 .scheme-work__list {
@@ -107,7 +108,7 @@
   .scheme-work__list {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
+    padding-right: 5px;
   }
 
   .scheme-work__item {
@@ -132,5 +133,15 @@
 
   .scheme-work__item {
     width: 30%;
+  }
+}
+
+@media (min-width: $desktop-width-big) {
+  .scheme-work__title {
+    padding: 0;
+  }
+
+  .scheme-work__list {
+    padding: 0;
   }
 }

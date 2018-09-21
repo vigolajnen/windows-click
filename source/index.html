@@ -23,6 +23,9 @@
           </a>
         </div>
         <nav class="page-header__nav navigation navigation--closed navigation--nojs">
+          <a class="logo__link js-logo" href="#">
+            <img class="logo__pic" src="img/header/logo.png" width="150" height="60" alt="логотип компании">
+          </a>
           <button class="navigation__toggle" type="button" aria-label="Открыть меню"></button>
             <div class="navigation__wrapper">
               <ul class="navigation__list">
@@ -245,7 +248,7 @@
           <div class="factors__item">
             <picture>
               <source media="(min-width: 1023px)" srcset="img/factors/window.png">
-              <img class="factors__pic" src="img/factors/window-2.png" alt="разрез окна">
+              <img class="factors__pic" src="img/factors/window-3.png" alt="разрез окна">
             </picture>
             <div class="factors__marks">
               <div class="factors__mark factors__mark--one">
@@ -311,25 +314,52 @@
         <div class="ready-projects__title">Выполненные работы</div>
         <div class="tabs">
           <ul class="tabs__list">
-            <li class="tabs__item tabs__item--left"><a href="#tab1">Отделка</a></li>
-            <li class="tabs__item tabs__item--right"><a href="#tab2">Остекление</a></li>
+            <li class="tabs__item tabs__item--left"><a href="#tab1" id="js-filter-finish" class="filterer">Отделка</a></li>
+            <li class="tabs__item tabs__item--right"><a href="#tab2" id="js-filter-glazing" class="filterer">Остекление</a></li>
           </ul>
           <div class="tab__slider">
             <div class="slider-projects fade">
-              <div class="slider-projects__item">
+              <div class="slider-projects__item slider-finish">
                 <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-1">
                 <div class="slider-projects__info">
                   <div class="slider-projects__inner">
-                    <p class="slider-projects__text">22Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
+                    <p class="slider-projects__text">Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
                     <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
                   </div>
                 </div>
               </div>
-              <div class="slider-projects__item">
+              <div class="slider-projects__item slider-finish">
                 <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-2">
                 <div class="slider-projects__info">
                   <div class="slider-projects__inner">
-                    <p class="slider-projects__text">233аказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
+                    <p class="slider-projects__text">22 Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
+                    <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-projects__item filter-glazing">
+                <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-2">
+                <div class="slider-projects__info">
+                  <div class="slider-projects__inner">
+                    <p class="slider-projects__text">Остекление 22 Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
+                    <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-projects__item filter-glazing">
+                <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-2">
+                <div class="slider-projects__info">
+                  <div class="slider-projects__inner">
+                    <p class="slider-projects__text">Остекление 333 Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
+                    <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slider-projects__item filter-glazing">
+                <img class="slider-projects__pic" src="img/ready-projects/ready-projects.jpg" alt="slide-2">
+                <div class="slider-projects__info">
+                  <div class="slider-projects__inner">
+                    <p class="slider-projects__text">Остекление 4444 Заказали лоджию в "ОКНА-СИТИ" очень довольны. Работу выполнили во время, монтажники сработали очень чисто, весь мусор сложили в мешки и подмели. Качеством изделий и исполнением остались очень довольны! Все официально, договор, чеки. В день обращения в фирму, приехал замерщик и тут же озвучил сумму заказа, на дому заключили договор. В общем, имели опыт и с другими фирмами, эта фирма очень квалифицирована, всем будем вас советовать.</p>
                     <p class="slider-projects__author">Вишневский Дмитрий, Москва</p>
                   </div>
                 </div>

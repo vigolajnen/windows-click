@@ -5,7 +5,8 @@
 .tabs__list {
   position: absolute;
   top: 63px;
-  right: 15px;
+  right: 50%;
+  transform: translateX(50%);
   display: flex;
   justify-content: space-between;
   max-width: 300px;
@@ -54,6 +55,13 @@
   border-radius: 20px 0 0 20px;
 }
 
+.tabs__item.tabs__item--left.tabs__item--active {
+  position: relative;
+  z-index: 1;
+}
+
+
+
 @media (min-width: 425px) {
   .tabs__list {
     top: 40px;
@@ -63,5 +71,12 @@
 @media (min-width: 700px) {
   .tabs__list {
     top: 0;
+  }
+}
+
+@media (min-width: $mobile-width-only) {
+  .tabs__list {
+    right: 20px;
+    transform: none;
   }
 }

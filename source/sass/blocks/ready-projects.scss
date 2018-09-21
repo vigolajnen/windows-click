@@ -1,7 +1,3 @@
-.ready-projects {
-
-}
-
 .ready-projects__wrapper {
   position: relative;
   max-width: $desktop-width;
@@ -11,6 +7,7 @@
 .ready-projects__title {
   max-width: 450px;
   margin-bottom: 40px;
+  padding: 0 15px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
@@ -25,6 +22,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .ready-projects__tabs {
     top: 0;
   }
@@ -57,14 +55,11 @@
     border: 0;
     outline: 0;
     background: #6db468;
-  }               
-
-  .slick-next:before, [dir=rtl] .slick-prev:before {
-    content: "Следующий"
   }
-
 }
 
-@media (min-width: $desktop-width) {
-
+@media (min-width: $desktop-width-big) {
+  .ready-projects__title {
+    padding: 0;
+  }
 }

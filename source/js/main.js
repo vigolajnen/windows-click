@@ -2,7 +2,6 @@
 
 var navMain = document.querySelector(".navigation");
 var navToggle = document.querySelector(".navigation__toggle");
-var logo = document.querySelector(".js-logo");
 
 navMain.classList.remove("navigation--nojs");
 
@@ -16,6 +15,7 @@ navToggle.addEventListener("click", function() {
     }
 });
 
+// модальное окно
 var modalOpen = document.querySelector(".page-header__button");
 var modal = document.querySelector(".modal-form");
 var modalBtn = document.querySelector(".modal-form__close");
@@ -31,7 +31,6 @@ modalBtn.addEventListener("click", function (evt) {
 });
 
 // слайдер slick
-
 $(document).ready(function(){
   $(".fade").slick({
     arrows: true,
@@ -46,19 +45,6 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $(".fade3").slick({
-    arrows: true,
-    dots: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: "linear",
-    prevArrow: $(".slider-projects__prev-1"),
-    nextArrow: $(".slider-projects__next-1"),
-  });
-});
-
-$(document).ready(function(){
   $(".fade2").slick({
     dots: false,
     arrows: false,
@@ -69,34 +55,34 @@ $(document).ready(function(){
   });
 });
 
+
+// fancybox
 $(document).ready(function() {
   $(".gallery a").fancybox(); // выбор всех ссылок с классом gallery
 });
 
 
 // табы для формы обратной связи
+// $('#tabs').tabulous({
+//   effect: 'scale'
+// });
 
-$('#tabs').tabulous({
-  effect: 'scale'
-});
+//  $('#tabs2').tabulous({
+//   effect: 'slideLeft'
+// });
 
- $('#tabs2').tabulous({
-  effect: 'slideLeft'
-});
+//  $('#tabs3').tabulous({
+//   effect: 'scaleUp'
+// });
 
- $('#tabs3').tabulous({
-  effect: 'scaleUp'
-});
-
-$('#tabs4').tabulous({
-  effect: 'flip'
-});
+// $('#tabs4').tabulous({
+//   effect: 'flip'
+// });
 
 
 $(document).ready(function() {
     //Действия по умолчанию
-    $(".tabs__item:last").addClass("tabs__item--active").show(); //Активировать первую вкладку
-    $("fade").slick("slickGoTo", 2);
+    $(".tabs__item:first").addClass("tabs__item--active").show(); //Активировать первую вкладку
     
     //Событие по клику
     $(".tabs__item").click(function() {
@@ -104,31 +90,11 @@ $(document).ready(function() {
         $(".tabs__item").removeClass("tabs__item--right");
         $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
         $(this).addClass("tabs__item--right");
-        $("fade").slick("slickGoTo", 1);
         var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
         $(activeTab).fadeIn(); //Исчезновение активного контента
         return false;
     });
 });
-
-
-// $(document).ready(function() {
-//     //Действия по умолчанию
-//     $(".tab__content").hide(); //скрыть весь контент
-//     $(".tabs__item:last").addClass("tabs__item--active").show(); //Активировать первую вкладку
-//     $(".tab__content:last").show(); //Показать контент первой вкладки
-    
-//     //Событие по клику
-//     $(".tabs__item").click(function() {
-//         $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
-//         $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
-//         $(".tab__content").hide(); //Скрыть контент вкладки
-//         var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
-//         $(activeTab).fadeIn(); //Исчезновение активного контента
-//         return false;
-//     });
-// });
-
 
 // Sticky block
 $(document).ready(function() {
@@ -176,4 +142,39 @@ jQuery(document).ready(function(){
       show = false;
     }
   });
+});
+
+// фильтр для блока "выполненные работы" на главной
+
+var filtered = false;
+$('.filterer').on('click', function(){
+  var whichID = $(this).attr('id');
+  console.log(whichID);
+  if (whichID != 'js-filter-finish') {
+    if ( $('.fade').hasClass('filtered') ) {
+      $('.fade').slick('slickFilter','.filter-finish');
+      $('.fade').slick('slickGoTo',0);
+      filtered = false;
+    } else {
+      $('.fade').addClass('filtered');
+    }
+  } else {
+    $('.fade').removeClass('filtered');
+    $('.fade').slick('slickUnfilter');
+    $('.fade').slick('slickGoTo',0);
+  }
+
+  if (whichID != 'js-filter-glazing') {
+    if ( $('.fade').hasClass('filtered') ) {
+      $('.fade').slick('slickFilter','.filter-glazing');
+      $('.fade').slick('slickGoTo',0);
+      filtered = false;
+    } else {
+      $('.fade').addClass('filtered');
+    }
+  } else {
+    $('.fade').removeClass('filtered');
+    $('.fade').slick('slickUnfilter');
+    $('.fade').slick('slickGoTo',0);
+  }
 });

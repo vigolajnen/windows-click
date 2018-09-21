@@ -24,7 +24,6 @@
   align-items: center;
   max-width: $desktop-width-big;
   margin: 0 auto;
-  padding: 15px;
 }
 
 .page-header__logo {
@@ -89,6 +88,10 @@
 }
 
 @media (min-width: $mobile-width-only) {
+  .page-header__wrapper {
+    padding: 15px;
+  }
+
   .page-header__logo {
     flex-grow: 1;
     display: block;

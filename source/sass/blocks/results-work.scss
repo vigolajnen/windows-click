@@ -13,6 +13,7 @@
 .results-work__title {
   max-width: 450px;
   margin-bottom: 40px;
+  padding: 0 15px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
@@ -21,7 +22,6 @@
 }
 
 .results-work__line {
-
   &--bg {
     background-image: url("../../img/results-work/results-work--bg.jpg");
     background-repeat: no-repeat;
@@ -59,10 +59,15 @@
 @media (min-width: $tablet-width) {
   .results-work__inner {
     flex-direction: row;
+    padding: 0 15px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .results-work__title {
+    padding: 0;
+  }
+
   .results-work__number {
     font-size: 70px;
     line-height: 70px;
@@ -74,5 +79,11 @@
     font-size: 25px;
     line-height: 40px;
     font-weight: 900;
+  }
+}
+
+@media (min-width: $desktop-width-big) {
+  .results-work__inner {
+    padding: 0;
   }
 }

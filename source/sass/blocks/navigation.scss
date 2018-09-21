@@ -11,7 +11,7 @@
 .navigation--closed .navigation__toggle {
   position: absolute;
   top: 24px;
-  right: 26px;
+  right: 15px;
   z-index: 2;
   width: 30px;
   height: 30px;
@@ -27,7 +27,7 @@
 .navigation--opened .navigation__toggle {
   position: absolute;
   top: 24px;
-  right: 26px;
+  right: 15px;
   z-index: 2;
   width: 30px;
   height: 30px;
@@ -92,8 +92,9 @@
   .navigation--closed .js-logo {
     display: block;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     visibility: visible;
   }
 
@@ -119,6 +120,7 @@
   .navigation--nojs .js-logo {
     position: relative;
   }
+
 }
 
 @media (min-width: $tablet-width) {

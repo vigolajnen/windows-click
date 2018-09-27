@@ -1,0 +1,52 @@
+.promo-glazing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $desktop-width-big;
+  min-height: 555px;
+  margin: 0 auto 50px;
+  background-color: #ffffff;
+
+  &--bg {
+    background-image: url("../../img/page-glazing/promo/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 75%;
+    background-position: right center;
+  }
+}
+
+.promo-glazing__title {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 40px;
+  color: $color-green;
+  text-transform: uppercase;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 10px;
+    background-color: #abcb56;
+    z-index: 1;
+  }
+}
+
+.promo-glazing__item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 43%;
+  min-height: 380px;
+  background-size: 100% 70%;
+  background-image: url("../../img/page-glazing/promo/promo-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}

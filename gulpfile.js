@@ -88,6 +88,13 @@ gulp.task("vendor", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("jsmin-inner", function () {
+  gulp.src(["source/js/inner.js"])
+    .pipe(concat("inner.min.js"))
+    .pipe(uglify({mangle: false}))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("jsmin", function () {
   gulp.src(["source/js/main.js"])
     .pipe(concat("main.min.js"))
@@ -105,7 +112,7 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("source/js/**/*.js", ["jsmin"]);
+  gulp.watch("source/js/**/*.js", ["jsmin"], ["jsmin-inner"]);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
@@ -119,6 +126,7 @@ gulp.task("build", function (done) {
     "html",
     "vendor",
     "jsmin",
+    "jsmin-inner",
     done
   );
 });

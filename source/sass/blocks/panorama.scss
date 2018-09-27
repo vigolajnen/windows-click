@@ -1,0 +1,73 @@
+.panorama {
+  &--bg {
+    background-image: url("../../img/page-glazing/options/options-2--bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.panorama__wrapper {
+  position: relative;
+  max-width: $desktop-width;
+  min-height: 535px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panorama__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.panorama__title {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: rgba(107, 170, 101, 0.9);
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color: #abcb56;
+    z-index: 1;
+  }
+}
+
+.panorama__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 190px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.panorama__text {
+  max-width: 300px;
+  margin: 0;
+  color: #262726;
+  font-weight: 500;
+}
+
+.panorama__link {
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  color: #fa655b;
+  text-align: center;
+}

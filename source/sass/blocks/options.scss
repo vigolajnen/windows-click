@@ -1,0 +1,31 @@
+.options {
+
+}
+
+.options__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $desktop-width-big;
+  margin: 0 auto;
+}
+
+.options__title {
+  max-width: 650px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.options__item {
+  margin-bottom: 60px;
+}
+
+.options__item .ready-projects__wrapper {
+  padding-top: 100px;
+}
+

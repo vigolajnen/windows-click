@@ -6,8 +6,7 @@
 
 .ready-projects__title {
   max-width: 450px;
-  margin-bottom: 40px;
-  padding: 0 15px;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
@@ -19,6 +18,24 @@
   position: absolute;
   right: 0;
   top: 70px;
+}
+
+.ready-projects__link {
+  text-decoration: none;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  color: #fa655b;
+  text-align: center;
+}
+
+.ready-projects__header {
+  padding-left: 40px;
+  margin: 0 0 40px;
+}
+
+.ready-projects__caption {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {

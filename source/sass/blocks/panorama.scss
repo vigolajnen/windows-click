@@ -64,10 +64,28 @@
 }
 
 .panorama__link {
-  text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   margin: 20px auto;
   padding: 10px;
   color: #fa655b;
   text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+}
+
+.panorama__link:hover .panorama__svg {
+  fill: $color-green;
+}
+
+.panorama__svg {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  fill: #fa655b;
 }

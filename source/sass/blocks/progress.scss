@@ -24,8 +24,8 @@
 .progress__title {
   margin-bottom: 40px;
   padding: 0 15px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 35px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
@@ -33,7 +33,6 @@
 
 @media (min-width: $tablet-width) {
   .progress {
-
     &--bg {
       background-size: 50%;
     }
@@ -42,6 +41,11 @@
   .progress__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .progress__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 

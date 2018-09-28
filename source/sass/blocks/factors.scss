@@ -1,7 +1,3 @@
-.factors {
-
-}
-
 .factors__wrapper {
   max-width: $desktop-width;
   margin: 0 auto 40px;
@@ -11,8 +7,8 @@
   max-width: 450px;
   margin-bottom: 40px;
   padding: 0 15px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 35px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
@@ -72,6 +68,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .factors__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
   .factors__inner {
     flex-direction: row;
   }

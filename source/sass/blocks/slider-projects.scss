@@ -21,7 +21,7 @@
 
 .slider-projects__inner {
   position: relative;
-  padding: 40px;
+  padding: 20px;
   box-shadow: 0 0 30px 0 rgba(34, 34, 34, 0.3);
 
   &::before {
@@ -58,7 +58,7 @@
     display: block;
     position: absolute;
     right: 100px;
-    bottom: 20px;
+    bottom: -20px;
   }
 
   .slider-projects__paginator ul {
@@ -135,11 +135,12 @@
       transform: rotate(0deg);
     }
   }
-
+  .slider-projects__inner {
+    padding: 40px;
+  }
 }
 
 @media (min-width: 769px) {
-
   .slider-projects {
     margin-top: 0;
   }
@@ -158,5 +159,7 @@
 }
 
 @media (min-width: $desktop-width) {
-
+  .slider-projects__paginator {
+    bottom: 20px;
+  }
 }

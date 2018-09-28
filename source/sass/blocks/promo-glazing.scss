@@ -4,15 +4,18 @@
   flex-direction: column;
   justify-content: center;
   max-width: $desktop-width-big;
-  min-height: 555px;
   margin: 0 auto 50px;
   background-color: #ffffff;
+}
+
+.promo-glazing__wrapper {
+  min-height: calc(100vh - 95px);
 
   &--bg {
     background-image: url("../../img/page-glazing/promo/promo-bg.jpg");
     background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: right center;
+    background-size: 75% 100%;
+    background-position: right 100%;
   }
 }
 
@@ -24,7 +27,7 @@
   line-height: 40px;
   color: $color-green;
   text-transform: uppercase;
-  
+
   &::before {
     content: "";
     position: absolute;
@@ -49,4 +52,11 @@
   background-image: url("../../img/page-glazing/promo/promo-1.jpg");
   background-repeat: no-repeat;
   background-position: 0 bottom;
+}
+
+@media (min-width: $desktop-width) {
+  .promo-glazing__wrapper {
+    position: relative;
+    margin: 0 15px;
+  }
 }

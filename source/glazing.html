@@ -23,7 +23,7 @@
           </a>
         </div>
         <nav class="page-header__nav navigation navigation--closed navigation--nojs">
-          <a class="logo__link js-logo" href="#">
+          <a class="logo__link js-logo" href="index.html">
             <img class="logo__pic" src="img/header/logo.png" width="150" height="60" alt="логотип компании">
           </a>
           <button class="navigation__toggle" type="button" aria-label="Открыть меню"></button>
@@ -56,32 +56,34 @@
         </div>
       </div>
     </header>
-    <section class="promo-glazing promo-glazing--bg">
-      <div class="promo-glazing__item">
-        <div class="promo-glazing__title">Отделка лоджий и балконов</div>
+    <section class="promo-glazing">
+      <div class="promo-glazing__wrapper  promo-glazing__wrapper--bg">
+        <div class="promo-glazing__item">
+          <div class="promo-glazing__title">Отделка лоджий и балконов</div>
+        </div>
+        <nav class="menu-inner">
+          <ul class="menu-inner__list">                                        
+            <li class="menu-inner__item">
+              <a class="menu-inner__link" href="#">Холодное остекление </a>
+            </li>
+            <li class="menu-inner__item">
+              <a class="menu-inner__link" href="#">Теплое остекление</a>
+            </li>
+            <li class="menu-inner__item">
+              <a class="menu-inner__link" href="#">Выносное остекление</a>
+            </li>
+            <li class="menu-inner__item">
+              <a class="menu-inner__link" href="#">Панорамное остекление</a>
+            </li>
+            <li class="menu-inner__item">
+              <a class="menu-inner__link" href="#">Цены</a>
+            </li>
+            <li class="menu-inner__item">
+              <a class="menu-inner__link" href="#">Комплектующие</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-       <nav class="menu-inner">
-        <ul class="menu-inner__list">                                        
-          <li class="menu-inner__item">
-            <a class="menu-inner__link" href="#">Холодное остекление </a>
-          </li>
-          <li class="menu-inner__item">
-            <a class="menu-inner__link" href="#">Теплое остекление</a>
-          </li>
-          <li class="menu-inner__item">
-            <a class="menu-inner__link" href="#">Выносное остекление</a>
-          </li>
-          <li class="menu-inner__item">
-            <a class="menu-inner__link" href="#">Панорамное остекление</a>
-          </li>
-          <li class="menu-inner__item">
-            <a class="menu-inner__link" href="#">Цены</a>
-          </li>
-          <li class="menu-inner__item">
-            <a class="menu-inner__link" href="#">Комплектующие</a>
-          </li>
-        </ul>
-      </nav>
     </section>
    
     <section class="options">
@@ -125,7 +127,12 @@
                          </li>
                        </ul>
                       </div>
-                      <a class="ready-projects__link" href="#">Подробнее</a>
+                      <a class="ready-projects__link" href="#">
+                        <span>Подробнее</span>
+                        <svg class="ready-projects__svg" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-arrow-pointing-to-right"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                   <div class="slider-projects__item filter-glazing">
@@ -155,7 +162,12 @@
                          </li>
                        </ul>
                       </div>
-                      <a class="ready-projects__link" href="#">Подробнее</a>
+                      <a class="ready-projects__link" href="#">
+                        <span>Подробнее</span>
+                        <svg class="ready-projects__svg" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-arrow-pointing-to-right"></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -171,7 +183,12 @@
               <div class="panorama__title">Панорамное остекление</div>
               <div class="panorama__info">
                 <p class="panorama__text">Прекрасный обзорный вид с Вашего остекленного балкона или лоджии</p>
-                <a class="panorama__link" href="#">Подробнее</a>
+                <a class="panorama__link" href="#">
+                        <span>Подробнее</span>
+                        <svg class="ready-projects__svg panorama__svg" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-arrow-pointing-to-right"></use>
+                        </svg>
+                      </a>
               </div>
             </div>
           </div>
@@ -179,28 +196,40 @@
       </div>
       <div class="options__item">
         <div class="ready-projects__wrapper">
-          <div class="slider-projects__item filter-glazing">
-            
+          <div class="slider-projects__item">
             <div class="slider-projects__info">
               <div class="ready-projects__header">
                 <div class="ready-projects__title">Выносное остекление</div>
                 <p class="ready-projects__caption">Отличный вариант для увеличения площади балкона. Конструкция остекления выносится за парапет.</p>
               </div>
-              <div class="slider-projects__inner slider-projects__inner--left">
-                
-               <ul class="slider-projects__list">
-                <li class="slider-projects__icon">
-                  <div class="slider-projects__text">Возможность “приобрести” 30-50 см пространства</div>
+              <div class="slider-projects__inner slider-projects__inner--left remote-glazing">
+               <ul class="slider-projects__list remote-glazing__list">
+                <li class="remote-glazing__item">
+                  <svg class="remote-glazing__svg" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-glazing-ruler"></use>
+                  </svg>
+                  <div class="remote-glazing__text">Возможность “приобрести” 30-50 см пространства</div>
                 </li>
-                <li class="slider-projects__icon">
-                  <div class="slider-projects__text">Индивидуальный подбор, исходя из размеров помещения, состояния парапета, а также доступных архитектурных возможностей.</div>
+                <li class="remote-glazing__item">
+                  <svg class="remote-glazing__svg" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-glazing-windows"></use>
+                  </svg>
+                  <div class="remote-glazing__text">Индивидуальный подбор, исходя из размеров помещения, состояния парапета, а также доступных архитектурных возможностей.</div>
                 </li>
-                <li class="slider-projects__icon">
-                  <div class="slider-projects__text">Широкий подоконник, который Вы сможете использовать на свое усмотрение</div>
+                <li class="remote-glazing__item">
+                  <svg class="remote-glazing__svg" width="50" height="50">
+                    <use xlink:href="img/sprite.svg#icon-glazing-glass"></use>
+                  </svg>
+                  <div class="remote-glazing__text">Широкий подоконник, который Вы сможете использовать на свое усмотрение</div>
                 </li>
               </ul>
               </div>
-              <a class="ready-projects__link" href="#" tabindex="0">Подробнее</a>
+               <a class="ready-projects__link" href="#" tabindex="0">
+                <span>Подробнее</span>
+                <svg class="ready-projects__svg" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-arrow-pointing-to-right"></use>
+                </svg>
+              </a>
             </div>
             <img class="slider-projects__pic" src="img/page-glazing/options/options-3.jpg" alt="slide-2">
           </div>

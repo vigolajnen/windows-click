@@ -2,16 +2,18 @@
   height: auto;
   margin: 0 auto;
   padding: 0;
+  max-width: 200px;
 }
 
 .logo__link.js-logo {
   display: block;
-  padding: 5px 5px 5px 10px;
+  padding-left: 15px;
 }
 
 .logo__pic {
-  width: 200px;
+  width: 150px;
   height: auto;
+  margin-top: 23px;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,6 +31,7 @@
 
   .logo__pic {
     width: 80%;
+    margin-top: 0;
   }
 }
 

@@ -63,7 +63,6 @@
 @media (min-width: $tablet-width) {
   .trophy__list {
     flex-direction: row;
-    padding: 0;
   }
 }
 
@@ -87,5 +86,11 @@
       left: 0;
       transform: translateY(-50%);
     }
+  }
+}
+
+@media (min-width: $desktop-width-big) {
+  .trophy__list {
+    padding: 0;
   }
 }

@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
 }
 
 .advantages__wrapper {
@@ -93,6 +93,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 70px;
+  }
+
   .advantages__list {
     flex-direction: row;
     flex-wrap: wrap;

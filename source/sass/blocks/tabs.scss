@@ -67,15 +67,13 @@
   z-index: 1;
 }
 
-
-
-@media (min-width: 425px) {
+@media (max-width: 767px) {
   .tabs__list {
     top: 40px;
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: $tablet-width) {
   .tabs__list {
     top: 0;
   }

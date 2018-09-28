@@ -11,11 +11,11 @@
 }
 
 .results-work__title {
-  max-width: 450px;
+  max-width: 500px;
   margin-bottom: 40px;
   padding: 0 15px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 35px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
@@ -57,6 +57,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .results-work__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
   .results-work__inner {
     flex-direction: row;
     padding: 0 15px;

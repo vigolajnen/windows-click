@@ -96,6 +96,7 @@
     top: 50%;
     transform: translateY(-50%);
     visibility: visible;
+    z-index: 1;
   }
 
   .navigation--closed .navigation__wrapper {

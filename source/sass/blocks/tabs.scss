@@ -16,6 +16,7 @@
 
   &--options {
     top: -85px;
+    width: 100%;
     max-width: 500px;
     left: 50%;
     transform: translateX(-50%);
@@ -87,6 +88,7 @@
     &--options {
       left: 50%;
       transform: translateX(-50%);
+      width: 100%;
     }
   }
 }

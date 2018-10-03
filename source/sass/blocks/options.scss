@@ -12,10 +12,10 @@
 
 .options__title {
   max-width: 650px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0 15px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 24px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
@@ -26,6 +26,51 @@
 }
 
 .options__item .ready-projects__wrapper {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 
+.options .tabs__item a {
+  display: flex;
+  padding: 10px 15px 10px 30px;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@media (max-width: 767px) {
+  .options .tabs__list {
+    top: 0;
+    width: 75%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .options__title {
+    margin-bottom: 40px;
+    padding: 0 15px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .slider-projects__pic--options {
+    margin-bottom: 20px;
+  }
+
+  .options .tabs__item a {
+    display: flex;
+    padding: 10px 30px 10px 35px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 800px) {
+  .options__item .ready-projects__wrapper {
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options__item .ready-projects__wrapper {
+    padding-top: 100px;
+  }
+}

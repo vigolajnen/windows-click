@@ -36,26 +36,26 @@
       left: 10px;
       transform: translateY(-50%);
       display: block;
-      background-image: url("../../img/sprite.png");
+      background-image: url("../../img/sprite-2.png");
       background-repeat: no-repeat;
     }
 
     &:first-child::before {
       width: 32px;
       height: 36px;
-      background-position: -5px -727px;
+      background-position: -5px -1178px;
     }
 
     &:nth-child(2)::before {
       width: 36px;
       height: 36px;
-      background-position: -5px -681px;
+      background-position: -5px -1132px;
     }
 
     &:last-child::before {
       width: 27px;
       height: 36px;
-      background-position: -5px -773px;
+      background-position: -5px -1224px;
     }
   }
 }

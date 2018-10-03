@@ -1,0 +1,60 @@
+.glazing-type {
+
+}
+
+.glazing-type__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.glazing-type__item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 15px;
+
+  &--icon-thermometer::before,
+  &--icon-2::before,
+  &--icon-3::before,
+  &--icon-4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/sprite-2.png");
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &--icon-thermometer::before {
+    width: 23px;
+    height: 33px;
+    background-position: -5px -1089px;
+  }
+
+  &--icon-2::before {
+    width: 26px;
+    height: 26px;
+    background-position: -5px -854px;
+  }
+
+  &--icon-3::before {
+    width: 24px;
+    height: 30px;
+    background-position: -5px -1049px;
+  }
+
+  &--icon-4::before {
+    width: 23px;
+    height: 31px;
+    background-position: -5px -1008px;
+  }
+}
+
+.glazing-type__name {
+  font-weight: 700;
+}
+
+.glazing-type__text {
+
+}

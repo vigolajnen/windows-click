@@ -90,7 +90,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../../img/sprite.png");
+    background-image: url("../../img/sprite-2.png");
     background-repeat: no-repeat;
     display: block;
   }
@@ -98,37 +98,37 @@
   &--icon-one::before {
     width: 43px;
     height: 31px;
-    background-position: -5px -440px;
+    background-position: -5px -578px;
   }
 
   &--icon-two::before {
     width: 37px;
     height: 37px;
-    background-position: -5px -393px;
+    background-position: -5px -531px;
   }
 
   &--icon-three::before {
     width: 37px;
     height: 39px;
-    background-position: -5px -632px;
+    background-position: -5px -770px;
   }
 
   &--icon-four::before {
     width: 29px;
-    height: 39px;
-    background-position: -5px -583px;
+  height: 39px;
+  background-position: -5px -721px;
   }
 
   &--icon-five::before {
     width: 25px;
     height: 41px;
-    background-position: -5px -481px;
+    background-position: -5px -619px;
   }
 
   &--icon-six::before {
     width: 39px;
     height: 41px;
-    background-position: -5px -532px;
+    background-position: -5px -670px;
   }
 }
 

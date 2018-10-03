@@ -101,15 +101,15 @@
       display: block;
       width: 24px;
       height: 16px;
-      background-position: -5px -819px;
-      background-image: url("../../img/sprite.png");
+      background-position: -5px -1270px;
+      background-image: url("../../img/sprite-2.png");
       background-repeat: no-repeat;
     }
 
     &:hover::before {
       width: 24px;
       height: 16px;
-      background-position: -5px -845px;
+      background-position: -5px -1296px;
       transform: rotate(180deg);
     }
 
@@ -131,7 +131,7 @@
     &:hover::before {
       width: 24px;
       height: 16px;
-      background-position: -5px -845px;
+      background-position: -5px -1296px;
       transform: rotate(0deg);
     }
   }

@@ -9,22 +9,18 @@
 }
 
 .promo-glazing__wrapper {
-  min-height: calc(100vh - 95px);
-
-  &--bg {
-    background-image: url("../../img/page-glazing/promo/promo-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 75% 100%;
-    background-position: right 100%;
-  }
+  display: flex;
+  flex-direction: column;
 }
 
 .promo-glazing__title {
   position: relative;
+  max-width: 700px;
   margin-bottom: 30px;
-  font-size: 40px;
+  padding: 0 15px;
+  font-size: 24px;
   font-weight: 900;
-  line-height: 40px;
+  line-height: 26px;
   color: $color-green;
   text-transform: uppercase;
 
@@ -32,7 +28,7 @@
     content: "";
     position: absolute;
     top: auto;
-    bottom: -40px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     width: 50%;
@@ -43,20 +39,85 @@
 }
 
 .promo-glazing__item {
-  position: absolute;
+  display: flex;
+  flex-grow: 1;
+
+  &--bg {
+    width: 30%;
+    background-image: url("../../img/page-glazing/promo/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 100%;
+  }
+}
+
+.promo-glazing__info {
+  position: relative;
   bottom: 0;
   left: 0;
-  width: 43%;
-  min-height: 380px;
+  min-height: 220px;
   background-size: 100% 70%;
   background-image: url("../../img/page-glazing/promo/promo-1.jpg");
   background-repeat: no-repeat;
   background-position: 0 bottom;
 }
 
+@media (min-width: 425px) {
+  .promo-glazing__title {
+    font-size: 30px;
+    line-height: 30px;
+
+    &::before {
+      bottom: -10px;
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .promo-glazing__title {
+    font-size: 35px;
+    line-height: 35px;
+
+    &::before {
+      bottom: -10px;
+    }
+  }
+
+  .promo-glazing__info {
+    background-size: 100% 65%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo-glazing__wrapper {
+    min-height: 500px;
+    flex-direction: row;
+  }
+
+  .promo-glazing__info {
+    position: absolute;
+    min-height: 380px;
+    background-size: 100% 70%;
+
+  }
+
+  .promo-glazing__title {
+    font-size: 40px;
+    line-height: 40px;
+
+    &::before {
+      bottom: -40px;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
   .promo-glazing__wrapper {
     position: relative;
     margin: 0 15px;
+  }
+
+  .promo-glazing__title {
+    padding: 0;
   }
 }

@@ -1,9 +1,10 @@
 .certificates {
   padding: 50px 0;
-  background-image: url(../../img/progress/progress--bg.jpg);
+  background-image: url("../../img/progress/progress--bg.jpg");
   background-repeat: repeat;
   background-position: 0 0;
   background-size: contain;
+  background-color: #dddddd;
 }
 
 .certificates__list {

@@ -1,10 +1,11 @@
 .panorama {
   margin-bottom: 20px;
-  
+
   &--bg {
     background-image: url("../../img/page-glazing/options/options-2--bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #dddddd;
   }
 }
 

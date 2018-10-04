@@ -1,4 +1,6 @@
 .panorama {
+  margin-bottom: 20px;
+  
   &--bg {
     background-image: url("../../img/page-glazing/options/options-2--bg.jpg");
     background-size: cover;
@@ -9,7 +11,7 @@
 .panorama__wrapper {
   position: relative;
   max-width: $desktop-width;
-  min-height: 535px;
+  min-height: 310px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -59,8 +61,10 @@
 .panorama__text {
   max-width: 300px;
   margin: 0;
+  padding: 15px;
   color: #262726;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
 .panorama__link {
@@ -88,4 +92,10 @@
   width: 40px;
   height: 40px;
   fill: #fa655b;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama__wrapper {
+    min-height: 535px;
+  }
 }

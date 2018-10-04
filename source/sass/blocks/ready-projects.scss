@@ -49,15 +49,19 @@
 }
 
 .ready-projects__header {
-  padding-left: 40px;
   margin: 0 0 40px;
 }
 
 .ready-projects__caption {
+  padding: 0 15px;
   margin: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .ready-projects__header {
+    padding: 0 0 0 40px;
+  }
+
   .ready-projects__title {
     font-size: 30px;
     line-height: 30px;

@@ -53,6 +53,10 @@
   display: none;
 }
 
+.slider-projects__pic--options {
+    margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .slider-projects__paginator {
     display: block;
@@ -135,8 +139,13 @@
       transform: rotate(0deg);
     }
   }
+
   .slider-projects__inner {
     padding: 40px;
+  }
+
+  .slider-projects__pic--options {
+    margin-bottom: 0;
   }
 }
 

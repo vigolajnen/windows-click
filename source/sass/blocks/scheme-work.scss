@@ -27,6 +27,23 @@
     background-repeat: no-repeat;
     background-position: 0 250px;
   }
+
+  &--glazing {
+    padding-bottom: 20px;
+  }
+
+  &--glazing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    z-index: 0;
+    background-image: url("../../img/scheme-work/scheme-work--left-bg.png");
+    background-repeat: no-repeat;
+    background-position: 0 135px;
+  }
 }
 
 .scheme-work__wrapper {
@@ -35,7 +52,7 @@
 }
 
 .scheme-work__title {
-  max-width: 450px;
+  max-width: 480px;
   margin-bottom: 40px;
   font-size: 22px;
   line-height: 35px;

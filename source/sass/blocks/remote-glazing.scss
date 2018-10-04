@@ -1,6 +1,91 @@
 .remote-glazing {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1140px;
+  margin: 0 auto 40px;
 }
+
+.remote-glazing__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.remote-glazing__inner {
+  position: relative;
+  padding: 20px 15px 20px 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 300;
+  box-shadow: 0 0 57px 0 rgba(34, 34, 34, 0.3);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 80%;
+    background-color: $color-light-green;
+    z-index: 1;
+  }
+}
+
+.remote-glazing__text {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.remote-glazing__header {
+  padding: 0 15px;
+}
+
+.remote-glazing__title {
+ max-width: 450px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.remote-glazing__caption {
+  margin: 0 0 40px 0;
+}
+
+.remote-glazing__link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 10px;
+  color: #fa655b;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+}
+
+.remote-glazing__link:hover .remote-glazing__svg-icon {
+  fill: $color-green;
+}
+
+.remote-glazing__svg-icon {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  fill: #fa655b;
+}
+
 
 .remote-glazing__list {
   display: flex;
@@ -25,16 +110,151 @@
 }
 
 .remote-glazing__text {
-  margin-left: 30px;
-  width: 90%;
-  text-align: justify;
+  width: 100%;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
   box-sizing: border-box;
 }
 
+.remote-glazing__pic {
+  max-width: 100%;
+}
 
-@media (min-width: $tablet-width) {
+.remote-glazing__name {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 500px) {
   .remote-glazing__item {
     flex-direction: row;
     justify-content: flex-start;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .remote-glazing__inner {
+    padding: 50px 40px 50px 50px;
+  }
+
+  .remote-glazing__header {
+    padding-left: 40px;
+    margin: 0 0 40px 0;
+  }
+
+  .remote-glazing__item {
+    padding-left: 0;
+  }
+
+  .remote-glazing__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .remote-glazing {
+    flex-direction: row;
+  }
+
+  .remote-glazing__info {
+    flex-grow: 1;
+    width: 50%;
+  }
+
+  .remote-glazing__pic {
+    width: 100%;
+    min-height: 550px;
+  }
+
+  .remote-glazing__mark {
+    display: block;
+
+    &--one,
+    &--two,
+    &--three,
+    &--four,
+    &--five {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      display: block;
+      width: 64px;
+      height: 64px;
+      background-image: url("../../img/icon/normal4.png");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    &--one {
+      top: 160px;
+      left: auto;
+      right: 26px;
+    }
+
+    &--two {
+      top: auto;
+      left: auto;
+      right: 40px;
+      bottom: 160px;
+    }
+
+    &--three {
+      top: auto;
+      left: auto;
+      bottom: 105px;
+      right: 0;
+    }
+
+    &--four {
+      top: auto;
+      bottom: 65px;
+      left: auto;
+      right: 55px;
+    }
+
+    &--five {
+      top: auto;
+      left: auto;
+      bottom: 10px;
+      right: 20px;
+    }
+
+    &--one:hover,
+    &--two:hover,
+    &--three:hover,
+    &--four:hover,
+    &--five:hover {
+      background-image: url("../../img/icon/hover.png");
+    }
+
+    &--one:hover .remote-glazing__name,
+    &--two:hover .remote-glazing__name,
+    &--three:hover .remote-glazing__name,
+    &--four:hover .remote-glazing__name,
+    &--five:hover .remote-glazing__name {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: -50px;
+      width: 240px;
+      margin: 0;
+      padding: 10px;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 300;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .remote-glazing__pic {
+    min-height: 510px;
   }
 }

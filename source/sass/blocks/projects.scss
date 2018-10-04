@@ -15,8 +15,8 @@
   max-width: 450px;
   margin-bottom: 40px;
   padding: 0 15px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 22px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
@@ -64,7 +64,8 @@
 
 @media (min-width: $tablet-width) {
   .projects__title {
-
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .projects__list {

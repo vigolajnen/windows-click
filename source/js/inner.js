@@ -55,6 +55,21 @@ $(document).ready(function(){
   });
 });
 
+// block calculator
+$(document).ready(function(){
+  $(".fade-calculator").slick({
+    arrows: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    prevArrow: $(".slider-balcony__prev"),
+    nextArrow: $(".slider-balcony__next"),
+  });
+});
+
+
 
 // fancybox
 $(document).ready(function() {

@@ -117,7 +117,7 @@ jQuery(document).ready(function(){
     var e_height = jQuery(countbox).outerHeight(); // Полная высота блока со счетчиками
     if(w_top + 200 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height){
       jQuery(".spincrement").spincrement({
-        from: 0,
+        from: 1,
         thousandSeparator: " ",
         duration: 2500
       });

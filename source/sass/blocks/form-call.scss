@@ -1,7 +1,3 @@
-.form-call {
-
-}
-
 .form-call__item {
   margin: 10px 0;
 }
@@ -14,13 +10,12 @@
   background-repeat: no-repeat;
   background-position: -5px -337px;
   outline: none;
+  box-sizing: border-box;
 
   &:focus::-webkit-input-placeholder {
     color: transparent;
   }
 }
-
-
 
 .form-call__button {
   color: #ffffff;

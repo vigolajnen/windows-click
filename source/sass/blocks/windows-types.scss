@@ -1,3 +1,152 @@
 .windows-types {
   
 }
+
+.windows-types__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $desktop-width-big;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.windows-types__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
+.windows-types__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.windows-types__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.windows-types__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: url("../../img/plastic-windows/circle-grey-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  &:hover,
+  &:focus {
+    color: $color-pink;
+    background-image: url("../../img/plastic-windows/circle-hover-bg.png");
+  }
+}
+
+.windows-types__pic {
+  margin-bottom: auto;
+  height: 335px;
+}
+
+.windows-types__name {
+  margin: 15px auto 30px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.windows-types__text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  color: $text-color;
+}
+
+.windows-types__text ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.windows-types__text li {
+  position: relative;
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}
+
+.windows-types__btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 10px;
+  color: $text-color;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: $color-pink;
+  }
+}
+
+.windows-types__btn:hover .windows-types__svg {
+  fill: $color-pink;
+}
+
+.windows-types__svg {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  fill: $text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .windows-types__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .windows-types__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .windows-types__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .windows-types__item {
+    width: 23%;
+    margin: 0 10px;
+  }
+
+  .windows-types__link {
+    background-size: contain;
+  }
+}

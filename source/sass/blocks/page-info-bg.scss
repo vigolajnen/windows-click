@@ -1,0 +1,112 @@
+.page-info-bg {
+  margin-bottom: 20px;
+
+  &--bg {
+    background-image: url("../../img/wooden-windows/wooden-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #dddddd;
+  }
+
+  &--pl-bg {
+    background-image: url("../../img/plastic-windows/plastic-bg-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #dddddd;
+  }
+}
+
+.page-info-bg__wrapper {
+  position: relative;
+  max-width: $desktop-width;
+  min-height: 310px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-info-bg__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.page-info-bg__title {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: rgba(107, 170, 101, 0.9);
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color: #abcb56;
+    z-index: 1;
+  }
+}
+
+.page-info-bg__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 190px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.page-info-bg__text {
+  margin: 0;
+  padding: 15px;
+  color: #262726;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.page-info-bg__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 10px;
+  color: #fa655b;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+}
+
+.page-info-bg__link:hover .page-info-bg__svg {
+  fill: $color-green;
+}
+
+.page-info-bg__svg {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  fill: #fa655b;
+}
+
+@media (min-width: $tablet-width) {
+  .page-info-bg__wrapper {
+    min-height: 535px;
+  }
+
+  .page-info-bg__text {
+    padding: 30px;
+  }
+}

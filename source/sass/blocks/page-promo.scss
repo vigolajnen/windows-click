@@ -1,0 +1,134 @@
+.page-promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: $desktop-width-big;
+  margin: 0 auto 50px;
+  background-color: #ffffff;
+}
+
+.page-promo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-promo__title {
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 26px;
+  color: $color-green;
+  text-transform: uppercase;
+
+
+  &--width {
+    max-width: 375px;
+  }
+}
+
+.page-promo__item {
+  display: flex;
+  flex-grow: 1;
+
+  &--pl-bg {
+    width: 30%;
+    background-image: url("../../img/plastic-windows/plastic-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 100%;
+    background-color: #dddddd;
+  }
+
+  &--wood-bg {
+    width: 30%;
+    background-image: url("../../img/wooden-windows/wooden-promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 100%;
+    background-color: #dddddd;
+  }
+
+  &--gl-bg {
+    width: 30%;
+    background-image: url("../../img/page-glazing/promo/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 100%;
+    background-color: #dddddd;
+  }
+
+  &--decor-bg {
+    width: 30%;
+    background-image: url("../../img/page-decoration/promo/promo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 100%;
+    background-color: #dddddd;
+  }
+}
+
+.page-promo__info {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  min-height: 220px;
+  background-size: 100% 70%;
+  background-image: url("../../img/page-inner/promo-line.png");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+}
+
+@media (min-width: 425px) {
+  .page-promo__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 550px) {
+  .page-promo__title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .page-promo__info {
+    background-size: 100% 65%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-promo__wrapper {
+    min-height: 500px;
+    flex-direction: row;
+  }
+
+  .page-promo__info {
+    position: absolute;
+    width: 47%;
+    min-height: 420px;
+    background-size: 100% 65%;
+  }
+
+  .page-promo__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-promo__wrapper {
+    position: relative;
+    margin: 0 15px;
+  }
+
+  .page-promo__title {
+    padding: 0;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}

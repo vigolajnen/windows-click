@@ -63,8 +63,9 @@
 }
 
 .factors__info {
-  display: none;
   position: relative;
+  pointer-events: none;
+  opacity: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -88,7 +89,8 @@
 
 @media (min-width: 1023px) {
   .factors__mark {
-    display: block;
+    pointer-events: auto;
+    opacity: 1;
 
     &--one,
     &--two,
@@ -99,12 +101,14 @@
       top: 0;
       left: 0;
       z-index: 10;
-      display: block;
+      pointer-events: auto;
+      opacity: 1;
       width: 64px;
       height: 64px;
       background-image: url("../../img/icon/normal4.png");
       background-repeat: no-repeat;
       cursor: pointer;
+      transition: 0.5s;
     }
 
     &--one {
@@ -149,7 +153,8 @@
     &--three:hover .factors__info,
     &--four:hover .factors__info,
     &--five:hover .factors__info {
-      display: block;
+      pointer-events: auto;
+      opacity: 1;
       position: absolute;
       left: 55px;
       top: -85px;
@@ -162,6 +167,7 @@
       background-color: #ffffff;
       border-radius: 10px;
       box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
+      transition: 0.5s;
     }
 
     &--three:hover .factors__info {

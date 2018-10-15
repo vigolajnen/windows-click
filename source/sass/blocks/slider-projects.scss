@@ -54,7 +54,7 @@
 }
 
 .slider-projects__pic--options {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -82,10 +82,7 @@
     padding-left: 50px;
   }
 
-  .slider-projects__next,
-  .slider-projects__next-1 {
-    padding-right: 50px;
-  }
+
 
   .slider-projects__prev,
   .slider-projects__next,
@@ -126,6 +123,8 @@
 
   .slider-projects__next,
   .slider-projects__next-1 {
+    padding-right: 50px;
+
     &::before {
       left: auto;
       right: 0;

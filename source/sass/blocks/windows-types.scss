@@ -1,7 +1,3 @@
-.windows-types {
-  
-}
-
 .windows-types__wrapper {
   display: flex;
   flex-direction: column;
@@ -48,6 +44,7 @@
   background-image: url("../../img/plastic-windows/circle-grey-bg.png");
   background-repeat: no-repeat;
   background-position: center top;
+  transition: 0.5s;
 
   &:hover,
   &:focus {
@@ -106,6 +103,7 @@
   padding: 10px;
   color: $text-color;
   text-align: center;
+  transition: 0.5s;
 
   &:hover,
   &:focus {

@@ -79,11 +79,13 @@
     right: 25px;
     left: auto;
   }
+
   .slick-next {
     right: 0;
   }
 
-  .slick-next, .slick-prev {
+  .slick-next,
+  .slick-prev {
     position: absolute;
     display: block;
     height: 20px;
@@ -91,14 +93,14 @@
     line-height: 0;
     font-size: 0;
     cursor: pointer;
-    background: 0 0;
+    background-position: 0 0;
     color: transparent;
     bottom: 0;
     top: auto;
     padding: 0;
     border: 0;
     outline: 0;
-    background: #6db468;
+    background-color: #6db468;
   }
 }
 

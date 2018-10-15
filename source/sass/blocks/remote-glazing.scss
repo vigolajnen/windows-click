@@ -39,6 +39,11 @@
 .remote-glazing__text {
   flex-grow: 1;
   width: 100%;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .remote-glazing__header {
@@ -46,7 +51,7 @@
 }
 
 .remote-glazing__title {
- max-width: 450px;
+  max-width: 450px;
   margin-bottom: 20px;
   font-size: 22px;
   line-height: 35px;
@@ -86,7 +91,6 @@
   fill: #fa655b;
 }
 
-
 .remote-glazing__list {
   display: flex;
   flex-direction: column;
@@ -109,22 +113,14 @@
   fill: $color-green;
 }
 
-.remote-glazing__text {
-  width: 100%;
-  padding-left: 30px;
-  font-size: 18px;
-  line-height: 18px;
-  text-align: left;
-  box-sizing: border-box;
-}
-
 .remote-glazing__pic {
   max-width: 100%;
 }
 
 .remote-glazing__name {
-  display: none;
   position: relative;
+  pointer-events: none;
+  opacity: 0;
 }
 
 @media (min-width: 500px) {
@@ -170,7 +166,8 @@
   }
 
   .remote-glazing__mark {
-    display: block;
+    pointer-events: auto;
+    opacity: 1;
 
     &--one,
     &--two,
@@ -181,12 +178,14 @@
       top: 0;
       left: 0;
       z-index: 10;
-      display: block;
+      pointer-events: auto;
+      opacity: 1;
       width: 64px;
       height: 64px;
       background-image: url("../../img/icon/normal4.png");
       background-repeat: no-repeat;
       cursor: pointer;
+      transition: 0.5s;
     }
 
     &--one {
@@ -236,7 +235,8 @@
     &--three:hover .remote-glazing__name,
     &--four:hover .remote-glazing__name,
     &--five:hover .remote-glazing__name {
-      display: block;
+      pointer-events: auto;
+      opacity: 1;
       position: absolute;
       right: 0;
       top: -50px;
@@ -249,6 +249,7 @@
       background-color: #ffffff;
       border-radius: 10px;
       box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
+      transition: 0.5s;
     }
   }
 }

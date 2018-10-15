@@ -76,11 +76,7 @@
   width: 100%;
   margin-top: 0;
   color: #ffffff;
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)"; /* IE 8-9 */
-  background: -webkit-linear-gradient(left,  #f4bf5c, #fb494f); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-  background: -moz-linear-gradient(left,  #f4bf5c, #fb494f); /* Firefox 3.6-15 */
-  background: -o-linear-gradient(left,  #f4bf5c, #fb494f); /* Opera 11.1-12 */
-  background: linear-gradient(to right,  #f4bf5c, #fb494f); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+  background: linear-gradient(to right, #f4bf5c, #fb494f);
   border-radius: 50px;
   box-shadow: 3px 0 9px #f87a55;
   outline: none;
@@ -88,11 +84,7 @@
   &:active,
   &:hover,
   &:focus {
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#1471da, endColorstr=#1C85FB)"; /* IE 8-9 */
-    background: -webkit-linear-gradient(left,  #fb494f, #fb494f); /* Safari 5.1, iOS 5.0-6.1, Chrome 10-25, Android 4.0-4.3 */
-    background: -moz-linear-gradient(left,  #fb494f, #fb494f); /* Firefox 3.6-15 */
-    background: -o-linear-gradient(left,  #fb494f, #fb494f); /* Opera 11.1-12 */
-    background: linear-gradient(to right,  #fb494f, #fb494f); /* Opera 15+, Chrome 25+, IE 10+, Firefox 16+, Safari 6.1+, iOS 7+, Android 4.4+ */
+    background: linear-gradient(to right, #fb494f, #fb494f);
   }
 }
 

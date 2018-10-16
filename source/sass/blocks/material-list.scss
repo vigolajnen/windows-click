@@ -1,0 +1,65 @@
+.material-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.material-list__name {
+  margin: 0;
+  text-align: center;
+}
+
+.material-list__item {
+  width: 50%;
+  padding-top: 120px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &--larch,
+  &--pine,
+  &--beech,
+  &--oak {
+    position: relative;
+  }
+
+  &--larch:before,
+  &--pine:before,
+  &--beech:before,
+  &--oak:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateX(-50%);
+  }
+
+  &--larch:before {
+    background-image: url("../../img/wooden-windows/wooden-material-1.png");
+  }
+
+  &--pine:before {
+    background-image: url("../../img/wooden-windows/wooden-material-2.png");
+  }
+
+  &--beech:before {
+    background-image: url("../../img/wooden-windows/wooden-material-3.png");
+  }
+
+  &--oak:before {
+    background-image: url("../../img/wooden-windows/wooden-material-4.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .material-list__item {
+    width: 25%;
+  }
+}

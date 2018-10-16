@@ -252,6 +252,7 @@
 @media (min-width: 900px) {
   .remote-glazing {
     flex-direction: row;
+    overflow: hidden;
   }
 
   .remote-glazing__info {

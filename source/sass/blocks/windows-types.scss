@@ -53,6 +53,10 @@
   }
 }
 
+.windows-types__link:hover .windows-types__btn {
+  color: $color-pink;
+}
+
 .windows-types__pic {
   margin-bottom: auto;
   height: 335px;

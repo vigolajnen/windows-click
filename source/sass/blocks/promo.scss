@@ -87,7 +87,6 @@
       transform: translateY(-50%);
       left: 0;
       width: 100%;
-      min-width: 555px;
       padding-left: 100px;
 
       &::before {
@@ -112,6 +111,7 @@
     }
 
     &__text {
+      max-width: 555px;
       margin-bottom: 60px;
       font-size: 25px;
       line-height: 25px;

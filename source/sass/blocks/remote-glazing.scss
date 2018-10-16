@@ -13,6 +13,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
+  &:last-child {
+    display: none;
+  }
 }
 
 .remote-glazing__inner {
@@ -151,15 +155,6 @@
     line-height: 30px;
   }
 
-  .remote-glazing {
-    flex-direction: row;
-  }
-
-  .remote-glazing__info {
-    flex-grow: 1;
-    width: 50%;
-  }
-
   .remote-glazing__pic {
     width: 100%;
     min-height: 550px;
@@ -238,7 +233,7 @@
       pointer-events: auto;
       opacity: 1;
       position: absolute;
-      right: 0;
+      right: 25px;
       top: -50px;
       width: 240px;
       margin: 0;
@@ -250,6 +245,21 @@
       border-radius: 10px;
       box-shadow: 0 1px 24px rgba(67, 67, 67, 0.45);
       transition: 0.5s;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .remote-glazing {
+    flex-direction: row;
+  }
+
+  .remote-glazing__info {
+    flex-grow: 1;
+    width: 50%;
+
+    &:last-child {
+      display: block;
     }
   }
 }

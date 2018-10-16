@@ -61,6 +61,7 @@
 
 @media (min-width: $tablet-width) {
   .protection__list {
+    min-width: 555px;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;

@@ -27,8 +27,8 @@
   position: relative;
   width: 100%;
 
-  &:first-child {
-    order: 1;
+  &:last-child {
+    display: none;
   }
 }
 
@@ -73,7 +73,9 @@
     font-size: 30px;
     line-height: 30px;
   }
+}
 
+@media (min-width: 900px) {
   .factors__inner {
     flex-direction: row;
   }
@@ -81,8 +83,8 @@
   .factors__item {
     width: 50%;
 
-    &:first-child {
-      order: 0;
+    &:last-child {
+      display: block;
     }
   }
 }

@@ -1,0 +1,60 @@
+.form-slider__customer-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #6db468;
+}
+
+.form-slider__customer-name {
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+
+.form-slider__customer-phone {
+  margin: 0 0 30px 0;
+  width: 100%;
+}
+
+.form-slider__customer {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-slider__button {
+  color: #ffffff;
+  background: linear-gradient(to right,#f4bf5c,#fb494f);
+  border-radius: 50px;
+  box-shadow: 3px 0 9px #f87a55;
+  outline: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form-slider__customer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form-slider__customer-name {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-slider__customer-phone {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-slider__list {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .form-slider__type {
+    width: 25%;
+  }
+}

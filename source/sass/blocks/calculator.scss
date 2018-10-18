@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   max-width: $desktop-width-big;
-  min-height: 560px;
+  min-height: auto;
   margin: 0 auto;
   padding: 0 15px;
   box-sizing: border-box;
@@ -59,13 +59,14 @@
 
 .calculator__title {
   max-width: 450px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   padding: 0 15px;
   font-size: 22px;
   line-height: 35px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -77,6 +78,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 560px;
   }
 
   .calculator__info {
@@ -89,8 +91,10 @@
   }
 
   .calculator__title {
+    margin-bottom: 40px;
     font-size: 30px;
     line-height: 30px;
+    text-align: left;
   }
 }
 

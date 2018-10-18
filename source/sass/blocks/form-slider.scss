@@ -1,7 +1,18 @@
 .form-slider__customer-input {
   width: 100%;
+  padding: 10px 20px 10px 40px;
   border: none;
   border-bottom: 1px solid #6db468;
+  background-position: 0 50%;
+  box-sizing: border-box;
+
+  &--icon-user {
+    background: url("../../img/icon/icon-name.svg") no-repeat;
+  }
+
+  &--icon-phone {
+    background: url("../../img/icon/icon-phone.svg") no-repeat;
+  }
 }
 
 .form-slider__customer-name {
@@ -20,6 +31,8 @@
 }
 
 .form-slider__button {
+  max-width: 200px;
+  margin: 0 auto;
   color: #ffffff;
   background: linear-gradient(to right,#f4bf5c,#fb494f);
   border-radius: 50px;

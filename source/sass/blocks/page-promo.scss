@@ -33,40 +33,37 @@
 .page-promo__item {
   display: flex;
   flex-grow: 1;
-
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 100%;
+  
   &--pl-bg {
     width: 30%;
     background-image: url("../../img/page-plastic-windows/promo/plastic-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 100%;
     background-color: #dddddd;
   }
 
   &--wood-bg {
     width: 30%;
     background-image: url("../../img/page-wooden-windows/promo/wooden-promo-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 100%;
     background-color: #dddddd;
   }
 
   &--gl-bg {
     width: 30%;
     background-image: url("../../img/page-glazing/promo/promo-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 100%;
     background-color: #dddddd;
   }
 
   &--decor-bg {
     width: 30%;
     background-image: url("../../img/page-decoration/promo/promo-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right 100%;
+    background-color: #dddddd;
+  }
+
+  &--doors-bg {
+    width: 30%;
+    background-image: url("../../img/page-doors/promo/promo-doors.jpg");
     background-color: #dddddd;
   }
 }

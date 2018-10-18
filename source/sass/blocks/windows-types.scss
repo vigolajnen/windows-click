@@ -28,6 +28,19 @@
   width: 100%;
   margin-bottom: 20px;
   box-sizing: border-box;
+
+  &:hover .windows-types__link,
+  &:hover .windows-types__btn  {
+    color: $color-pink;
+  }
+
+  &:hover .windows-types__btn .windows-types__svg {
+    fill: $color-pink;
+  }
+
+  &:hover .windows-types__link {
+    background-image: url("../../img/page-plastic-windows/windows/circle-hover-bg.png");
+  }
 }
 
 .windows-types__link {
@@ -41,20 +54,16 @@
   color: $text-color;
   text-transform: uppercase;
   text-decoration: none;
-  background-image: url("../../img/plastic-windows/circle-grey-bg.png");
+  background-image: url("../../img/page-plastic-windows/windows/circle-grey-bg.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 20%;
   transition: 0.5s;
 
   &:hover,
   &:focus {
     color: $color-pink;
-    background-image: url("../../img/plastic-windows/circle-hover-bg.png");
+    background-image: url("../../img/page-plastic-windows/windows/circle-hover-bg.png");
   }
-}
-
-.windows-types__link:hover .windows-types__btn {
-  color: $color-pink;
 }
 
 .windows-types__pic {
@@ -115,10 +124,6 @@
   }
 }
 
-.windows-types__btn:hover .windows-types__svg {
-  fill: $color-pink;
-}
-
 .windows-types__svg {
   margin-left: 10px;
   width: 40px;
@@ -144,7 +149,7 @@
 
 @media (min-width: 900px) {
   .windows-types__item {
-    width: 23%;
+    width: 22%;
     margin: 0 10px;
   }
 

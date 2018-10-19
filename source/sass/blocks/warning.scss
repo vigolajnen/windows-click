@@ -1,0 +1,12 @@
+.warning {
+  padding-left: 20px;
+  border-left: 4px solid $color-green;
+
+  &__title {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 900;
+    color: $color-green;
+    text-transform: uppercase;
+  }
+}

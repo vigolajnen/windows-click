@@ -1,0 +1,8 @@
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}

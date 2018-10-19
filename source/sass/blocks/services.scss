@@ -1,0 +1,170 @@
+.services {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    max-width: $desktop-width-big;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    margin: 25px 0;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 900;
+    color: $color-green;
+    text-transform: uppercase;
+  }
+
+  &__caption {
+    max-width: 800px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+.services__inner {
+  display: flex;
+  flex-direction: column;
+  max-width: $desktop-width-big;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.services__pic {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.services__item {
+  width: 100%;
+
+  &--small {
+    width: 100%;
+  }
+
+  &--big {
+    width: 100%;
+  }
+
+  & a {
+    color: $color-green;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-light-green;
+    }
+  }
+}
+
+.services__delivery {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 60%;
+    width: 264px;
+    z-index: -1;
+    background-image: url("../../img/page-services/delivery/delivery-bg-circle.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.services__mounting {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 50%;
+    width: 115px;
+    z-index: -1;
+    background-image: url("../../img/page-services/mounting/mounting-bg-circle.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+.services__svg {
+  fill: $color-pink;
+}
+
+.services__btn {
+  color: $color-pink;
+
+  &:hover,
+  &:focus {
+    color: $color-dark-pink;
+  }
+
+  &:hover .page-info__svg,
+  &:focus .page-info__svg {
+    fill: $color-dark-pink;
+  }
+}
+
+@media (min-width: 425px) {
+  .services__pic {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    &__title {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .services__inner {
+    flex-direction: row;
+  }
+
+  .services__item {
+    padding: 30px;
+    box-sizing: border-box;
+
+    &--small {
+      width: 40%;
+    }
+
+    &--big {
+      flex-grow: 1;
+      width: 60%;
+    }
+  }
+
+  .services__pic {
+    display: block;
+  }
+}
+
+@media (min-width: 1500px) {
+  .services__delivery {
+    position: relative;
+
+    &::after {
+      right: 10%;
+    }
+  }
+
+  .services__mounting {
+    position: relative;
+
+    &::after {
+      right: 10%;
+    }
+  }
+
+}

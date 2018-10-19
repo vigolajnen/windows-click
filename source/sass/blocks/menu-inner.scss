@@ -1,6 +1,7 @@
 .menu-inner {
   position: relative;
   bottom: 0;
+  width: 100%;
 }
 
 .menu-inner__list {
@@ -32,6 +33,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
   }
 
   .menu-inner__list {
@@ -42,6 +44,7 @@
   }
 
   .menu-inner__item {
+    flex-grow: 1;
     width: 25%;
     margin-bottom: 10px;
   }
@@ -65,5 +68,9 @@
   .menu-inner__item {
     width: auto;
     margin-bottom: auto;
+  }
+
+  .menu-inner {
+    width: auto;
   }
 }

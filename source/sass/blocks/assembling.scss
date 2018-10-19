@@ -1,0 +1,132 @@
+.assembling {
+  margin-bottom: 20px;
+
+  &--bg {
+    background-image: url("../../img/page-services/assembling/assembling-windows.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #dddddd;
+  }
+}
+
+.assembling__wrapper {
+  position: relative;
+  max-width: $desktop-width-big;
+  min-height: 310px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.assembling__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.assembling__title {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #ffffff;
+  background-color: rgba(107, 170, 101, 0.9);
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 10px;
+    background-color: $color-light-green;
+    z-index: 1;
+  }
+}
+
+.assembling__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 190px;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.assembling__list {
+  padding: 40px;
+  margin: 0;
+  list-style: none;
+}
+
+.assembling__list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}
+
+.assembling__text {
+  max-width: 300px;
+  margin: 0;
+  padding: 15px;
+  color: #262726;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.assembling__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  padding: 10px;
+  color: #fa655b;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+}
+
+.assembling__link:hover .assembling__svg {
+  fill: $color-green;
+}
+
+.assembling__svg {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  fill: #fa655b;
+}
+
+@media (min-width: $tablet-width) {
+  .assembling__wrapper {
+    min-height: 535px;
+  }
+
+  .assembling__item {
+    padding: 0 50px;
+  }
+}

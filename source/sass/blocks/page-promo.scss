@@ -36,7 +36,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 100%;
-  
+
   &--pl-bg {
     width: 30%;
     background-image: url("../../img/page-plastic-windows/promo/plastic-bg.jpg");
@@ -66,6 +66,12 @@
     background-image: url("../../img/page-doors/promo/promo-doors.jpg");
     background-color: #dddddd;
   }
+
+  &--services-bg {
+    width: 30%;
+    background-image: url("../../img/page-services/promo/promo-services.jpg");
+    background-color: #dddddd;
+  }
 }
 
 .page-promo__info {
@@ -78,6 +84,13 @@
   background-image: url("../../img/page-inner/promo-line.png");
   background-repeat: no-repeat;
   background-position: 0 bottom;
+}
+
+.page-promo__caption {
+  display: none;
+  max-width: 500px;
+  padding-left: 15px;
+  margin-top: 0;
 }
 
 @media (min-width: 425px) {
@@ -117,6 +130,12 @@
   }
 }
 
+@media (min-width: 800px) {
+  .page-promo__caption {
+    display: block;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-promo__wrapper {
     position: relative;
@@ -127,5 +146,9 @@
     padding: 0;
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .page-promo__caption {
+    padding-left: 0;
   }
 }

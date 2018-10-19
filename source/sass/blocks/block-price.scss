@@ -31,23 +31,6 @@ ul.block-price__list {
   .block-price {
     font-size: 16px;
 
-    &--bg-price {
-      position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: -155px;
-        height: 80%;
-        width: 300px;
-        z-index: -1;
-        background-image: url("../../img/page-services/price/price-bg-circle.png");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-      }
-    }
-
     .block-price__name {
       width: 80%;
       margin-right: 10px;

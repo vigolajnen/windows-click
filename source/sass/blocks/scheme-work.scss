@@ -1,6 +1,5 @@
 .scheme-work {
   position: relative;
-  padding-bottom: 50px;
 
   &::before {
     content: "";
@@ -49,6 +48,7 @@
 .scheme-work__wrapper {
   max-width: $desktop-width;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 .scheme-work__title {
@@ -141,8 +141,6 @@
 
 @media (min-width: $desktop-width) {
   .scheme-work {
-    padding: 40px 0 80px;
-
     &::before {
       background-position: 0 60px;
     }
@@ -150,6 +148,10 @@
     &::after {
       background-position: 0 -50px;
     }
+  }
+
+  .scheme-work__wrapper {
+    padding: 40px 0 80px;
   }
 
   .scheme-work__item {

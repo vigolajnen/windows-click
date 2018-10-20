@@ -75,6 +75,9 @@
 }
 
 .page-info__svg {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
   fill: $color-green;
 }
 
@@ -121,13 +124,6 @@
   &:focus .page-info__svg {
     fill: $color-pink;
   }
-}
-
-.page-info__svg {
-  margin-left: 10px;
-  width: 40px;
-  height: 40px;
-  fill: $color-green;
 }
 
 @media (min-width: 425px) {

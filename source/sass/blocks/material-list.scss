@@ -26,10 +26,10 @@
     position: relative;
   }
 
-  &--larch:before,
-  &--pine:before,
-  &--beech:before,
-  &--oak:before {
+  &--larch::before,
+  &--pine::before,
+  &--beech::before,
+  &--oak::before {
     content: "";
     position: absolute;
     top: 0;
@@ -41,19 +41,19 @@
     transform: translateX(-50%);
   }
 
-  &--larch:before {
+  &--larch::before {
     background-image: url("../../img/page-wooden-windows/material/wooden-material-1.png");
   }
 
-  &--pine:before {
+  &--pine::before {
     background-image: url("../../img/page-wooden-windows/material/wooden-material-2.png");
   }
 
-  &--beech:before {
+  &--beech::before {
     background-image: url("../../img/page-wooden-windows/material/wooden-material-3.png");
   }
 
-  &--oak:before {
+  &--oak::before {
     background-image: url("../../img/page-wooden-windows/material/wooden-material-4.png");
   }
 }

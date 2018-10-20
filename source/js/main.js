@@ -65,7 +65,7 @@ $(document).ready(function() {
 $(document).ready(function() {
     //Действия по умолчанию
     $(".tabs__item:first").addClass("tabs__item--active").show(); //Активировать первую вкладку
-    
+
     //Событие по клику
     $(".tabs__item").click(function() {
         $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
@@ -80,19 +80,19 @@ $(document).ready(function() {
 
 // Sticky block
 $(document).ready(function() {
-  // grab the initial top offset of the navigation 
+  // grab the initial top offset of the navigation
   var stickyNavTop = $('.page-header').offset().top;
-    
+
   // our function that decides weather the navigation bar should have "fixed" css position or not.
   var stickyNav = function(){
     var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-         
+
     // if we've scrolled more than the navigation, change its position to fixed to stick to top,
     // otherwise change it back to relative
-    if (scrollTop > stickyNavTop) { 
+    if (scrollTop > stickyNavTop) {
       $('.page-header').addClass('sticky');
     } else {
-      $('.page-header').removeClass('sticky'); 
+      $('.page-header').removeClass('sticky');
     }
   };
 

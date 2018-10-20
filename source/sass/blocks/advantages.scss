@@ -1,10 +1,6 @@
-.advantages {
-  margin-bottom: 20px;
-}
-
 .advantages__wrapper {
   max-width: $desktop-width;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .advantages__list {
@@ -93,7 +89,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages {
+  .advantages__wrapper {
     margin-bottom: 70px;
   }
 
@@ -113,4 +109,3 @@
     padding: 0;
   }
 }
-

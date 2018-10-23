@@ -5,9 +5,11 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    max-width: $desktop-width;
-    margin: 0 auto;
+    max-width: $desktop-width-big;
+    width: 100%;
+    margin: 0 auto 20px;
     padding: 0 15px;
+    box-sizing: border-box;
   }
 }
 
@@ -21,7 +23,7 @@
 .content-block__inner {
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +33,17 @@
     flex-direction: row;
   }
 
+  .content-block__inner {
+    padding: 15px;
+  }
+
   .content-block__item {
     width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-block__wrapper {
+    padding: 0;
   }
 }

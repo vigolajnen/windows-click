@@ -153,3 +153,33 @@ $('.filterer').on('click', function(){
     $('.fade').slick('slickGoTo',0);
   }
 });
+
+
+/*----------  Filter  ----------*/
+$('.calc-tabs__button--active').click();
+
+$('#slick-buttons button').bind('click', function(e){
+  var filter = $(this).val();
+  var key = "."+filter;
+  
+  $('#slick-calc').slick('slickUnfilter');
+  $('#slick-calc').slick('slickFilter',key).slick('refresh');
+  $('#slick-calc').slick('slickGoTo', 0);
+
+
+  });
+
+  /*----------  Carousel Slick ----------*/
+  $('#slick-calc').slick({
+    infinite: false,
+    dots: false,
+    arrows: false,
+    fade: true,
+    autoplay: false,
+    swipe: false,
+    touchMove: false,
+    centerMode: true,
+    variableWidth: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });

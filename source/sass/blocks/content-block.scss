@@ -1,0 +1,37 @@
+.content-block {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+.content-block__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.content-block__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .content-block__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .content-block__item {
+    width: 50%;
+  }
+}

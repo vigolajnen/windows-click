@@ -105,6 +105,12 @@
   }
 }
 
+.page-info__item iframe {
+  width: 640px;
+  max-width: 100%;
+  height: 100%;
+}
+
 .page-info__btn {
   text-decoration: none;
   display: flex;

@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 325px;
 }
 
 .modal-form__title {
@@ -80,6 +81,7 @@
 }
 
 .modal-form__button {
+  width: 100%;
   color: #ffffff;
   background: linear-gradient(to right, #f4bf5c, #fb494f);
   border-radius: 50px;
@@ -95,4 +97,5 @@
 
 .modal-form__text {
   max-width: 300px;
+  margin: 15px auto;
 }

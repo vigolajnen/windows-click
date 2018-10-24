@@ -183,3 +183,23 @@ $('#slick-buttons button').bind('click', function(e){
     slidesToShow: 1,
     slidesToScroll: 1
   });
+
+
+
+  // табы для формы обратной связи
+
+  $('#calc-tabs').tabulous({
+    effect: 'scale'
+  });
+
+  $('#calc-tabs2').tabulous({
+    effect: 'slideLeft'
+  });
+
+  $('#calc-tabs3').tabulous({
+    effect: 'scaleUp'
+  });
+
+  $('#calc-tabs4').tabulous({
+    effect: 'flip'
+  });

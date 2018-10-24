@@ -1,6 +1,5 @@
 .calc1 {
   /*margin-bottom:600px;*/
-  float: left;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -11,7 +10,7 @@
 }
 
 .calc1 a {
-  color: $color-green;
+  color: $color-green !important;
 }
 
 .ui-widget-content {
@@ -25,12 +24,15 @@
 }
 
 .calc1-type-selector {
-  float: left;
-  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.calc1-type-selector__title {
+  width: 100%;
 }
 
 .calc1-type-selector>div {
-  float: left;
   margin-right: 10px;
   padding: 10px 10px;
   font-size: 16px;
@@ -85,25 +87,51 @@ div.calc1-type-selector-one-selected:after {
 
 
 .calc1-main-window {
-  float: left;
   width: 70%;
   margin-top: 30px;
 }
 
 .calc1-price {
-  float: right;
   clear: right;
   width: 30%;
 }
 
 .calc1-options {
-  float: left;
-  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 15px;
+}
+
+.calc1-options__title {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.calc1-wish {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 15px;
+}
+
+.calc1-wish__title {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.calc1-wish .calc1-wish__label {
+  width: 50%;
 }
 
 .calc1-vertical-slider {
-  float: left;
-  position: relative;
+  position: absolute;
 }
 
 .calc1-vertical-slider-ui {
@@ -187,7 +215,7 @@ div.calc1-type-selector-one-selected:after {
   width: 50px;
   border-radius: 5px;
   height: 30px;
-  background: $color-green;
+  background: $color-green !important;
   color: white;
   padding: 5px;
   text-align: center;
@@ -209,7 +237,7 @@ div.calc1-type-selector-one-selected:after {
   position: absolute;
   width: 10px;
   height: 10px;
-  background: $color-green;
+  background: $color-green !important;
   right: -5px;
   top: 50%;
   margin-top: -5px;
@@ -227,42 +255,52 @@ div.calc1-type-selector-one-selected:after {
 }
 
 .calc1-constuction {
+  position: relative;
   height: 300px;
 }
 
-.calc1-options>input {
+.calc1-options>input,
+.calc1-wish>input {
   display: none;
 }
 
-.calc1-options>label {
+.calc1-options>label,
+.calc1-wish>label {
   display: block;
-  float: left;
   width: 25%;
   font-size: 16px;
   padding: 6px;
   padding-left: 35px;
-  background: url("../../img/icon/radio-off.png") no-repeat 0px 3px;
+  background: url("../../img/icon/radio-off.png") no-repeat 0px 3px !important;
   cursor: pointer;
 }
 
-.calc1-options>input:checked+label {
-  background-image: url("../../img/icon/radio-on.png")
+.calc1-options>input:checked+label,
+.calc1-wish>input:checked+label {
+  background-image: url("../../img/icon/radio-on.png") !important;
 }
 
 .calc1-type2-selector {
-  float: right;
-  width: 30%;
+  display: flex;
+  margin: 20px 0;
+  flex-wrap: wrap;
   font-weight: bold;
   font-size: 16px;
   padding-right: 20px;
-  margin-bottom: 20px;
+}
+.calc1-type2-selector .calc1-type2-selector__title {
+  width: 100%;
+  font-weight: 700;
+}
+
+.calc1-type2-selector__item {
+  width: 50%;
 }
 
 .calc1-type2-selector>div {
-  margin-top: 20px;
   font-weight: normal;
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .calc1-type2-selector>div>input {
@@ -271,19 +309,19 @@ div.calc1-type-selector-one-selected:after {
 
 .calc1-type2-selector>div>label {
   display: block;
-  float: left;
-  font-size: 16px;
-  padding: 6px;
-  padding-left: 35px;
-  background: url("../../img/icon/radio-off.png") no-repeat 0px 3px;
-  cursor: pointer;
-  font-weight: bold;
+  width: 100%;
   margin-bottom: 10px;
   margin-right: 100px;
+  padding: 0 0 0 25px;
+  background: url("../../img/icon/radio-off.png") no-repeat 0px 3px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  
 }
 
 .calc1-type2-selector>div>input:checked+label {
-  background-image: url("../../img/icon/radio-on.png");
+  background-image: url("../../img/icon/radio-on.png") !important;
 }
 
 .calc1-type2-selector>div>div {
@@ -293,7 +331,6 @@ div.calc1-type-selector-one-selected:after {
 
 .calc1-bar-wrapper {
   width: 70%;
-  float: right;
   border-radius: 5px;
   background: #ddd;
   height: 10px;
@@ -301,7 +338,7 @@ div.calc1-type-selector-one-selected:after {
 }
 
 .calc1-bar-bar {
-  background: $color-green;
+  background: $color-green !important;
   height: 100%;
   border-radius: 5px 0px 0px 5px;
 }
@@ -314,7 +351,7 @@ div.calc1-type-selector-one-selected:after {
 .calc1-price-value {
   font-size: 50px;
   font-weight: bold;
-  color: $color-green;
+  color: $color-green !important;
   display: inline-block;
   margin-top: 5px;
 }
@@ -383,7 +420,7 @@ div.calc1-type-selector-one-selected:after {
 .calc1-button {
   display: block;
   margin-top: 10px;
-  background: $color-green;
+  background: $color-green !important;
   border-radius: 40px;
 }
 

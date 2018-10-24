@@ -1,0 +1,30 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.block__item {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .block {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .block__item {
+    width: 50%;
+
+    &--right {
+      order: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

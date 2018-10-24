@@ -1,0 +1,139 @@
+.calc-install {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: $desktop-width;
+  margin: 0 auto 40px;
+}
+
+.calc-install__caption {
+  font-weight: 700;
+}
+
+.calc-install__title {
+  width: 100%;
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.calc-install__group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.calc-install__item {
+  margin: 0 0 20px 0;
+  width: 50%;
+}
+
+.calc-install__pic {
+  max-width: 100%;
+  height: 150px;
+}
+
+.calc-install__label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $text-color;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../../img/icon/radio-off.png");
+    background-repeat: no-repeat;
+
+    opacity: 0.8;
+  }
+}
+
+.calc-install__radio:checked + .calc-install__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../../img/icon/radio-on.png");
+  background-repeat: no-repeat;
+}
+
+.calc-install__item .calc-install__label:hover::before {
+  opacity: 1;
+}
+
+.calc-install__item .calc-install__label:disabled::before {
+  opacity: 0.4;
+}
+
+.calc-install__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.calc-install__phone {
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 40px;
+  background: url(../../img/icon/icon-phone.svg) no-repeat;
+  background-position: 0 50%;
+  border-radius: 20px;
+  border: 1px solid rgba(109,180,104,.53);
+  cursor: pointer;
+  outline: 0;
+}
+
+.calc-install__button {
+  padding: 10px 30px;
+  color: #fff;
+  background: -webkit-gradient(linear,left top,right top,from(#f4bf5c),to(#fb494f));
+  background: linear-gradient(to right,#f4bf5c,#fb494f);
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 0 9px #f87a55;
+  box-shadow: 3px 0 9px #f87a55;
+  outline: 0;
+}
+
+.calc-install__price {
+  font-weight: 700;
+
+  &--big {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .calc-install__inner {
+    position: relative;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .calc-install__button {
+    position: absolute;
+    top: 0;
+    left: 200px;
+  }
+
+  .calc-install__item {
+    &--width {
+      width: 30%;
+    }
+  }
+}

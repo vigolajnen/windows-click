@@ -68,103 +68,98 @@
       </div>
     </section>
     <div class="page-calc__tabs">
-      <div id="wrapper" class="page-calc__wrapper">
-        <div id="calc-tabs" class="calc-tabs">
-          <ul class="calc-tabs__list">
-            <li class="calc-tabs__item"><a class="calc-tabs__button button" href="#calc-tabs-1">Остекление балконов</a></li>
-            <li class="calc-tabs__item"><a class="calc-tabs__button button" href="#calc-tabs-2">Отделка балконов</a></li>
-            <li class="calc-tabs__item"><a class="calc-tabs__button button" href="#calc-tabs-3">Установка окон</a></li>
-            <li class="calc-tabs__item"><a class="calc-tabs__button button" href="#calc-tabs-4">Установка дверей</a></li>
-          </ul>
-          <div id="calc-tabs_container" class="page-calc__form-block">
-              <div id="calc-tabs-1">1
-                <div class="calc-bl-glazing">
-                  <div class="calc1">
-                    <div class="calc1-type-selector">
-                      <div>Конструкция<br>балкона</div>
-                      <div class="calc1-type-selector-one calc1-type-selector-one-selected" data-btype="loggia">
-                        <img src="https://kupibalkon.online/calc1/images/loggia-icon-active.png" alt="Лоджия" data-value="Лоджия"><br>Лоджия</div>
-                      <div class="calc1-type-selector-one" data-btype="ugol">
-                        <img src="https://kupibalkon.online/calc1/images/ugol-icon.png" alt="Угловой балкон" data-value="Угловой"><br>Угловой</div>
-                      <div class="calc1-type-selector-one" data-btype="p-loggia">
-                        <img src="https://kupibalkon.online/calc1/images/p-loggia-icon.png" alt="П-образный балкон" data-value="П-образный"><br>П-образный</div>
-                      <div class="calc1-type-selector-one" data-btype="kabluk">
-                        <img src="https://kupibalkon.online/calc1/images/kabluk-icon.png" alt="Каблук" data-value="Каблук"><br>Каблук</div>
-                    </div>
-                    <div class="calc1-type2-selector">
-                      Тип остекления
-                      <div>
-                        <input type="radio" name="calc1-type2-selector" data-btype2="h" checked="checked" id="calc1-type2-selector-1"
-                          value="Холодное остекление"><label for="calc1-type2-selector-1">Холодное остекление</label>
-                        Остекление алюминиевым<br>раздвижным профилем
-                        <div>Тепло <div class="calc1-bar-wrapper">
-                            <div style="width:40%" class="calc1-bar-bar"></div>
-                          </div>
-                        </div>
-                        <div>Тишина <div class="calc1-bar-wrapper">
-                            <div style="width:30%" class="calc1-bar-bar"></div>
-                          </div>
-                        </div>
-                        <div>Свет <div class="calc1-bar-wrapper">
-                            <div style="width:80%" class="calc1-bar-bar"></div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div>
-                        <input type="radio" name="calc1-type2-selector" data-btype2="t" id="calc1-type2-selector-2" value="Теплое остекление"><label
-                          for="calc1-type2-selector-2">Теплое остекление</label>
-                        Остекление пластиковыми<br>распашными окнами
-                        <div>Тепло <div class="calc1-bar-wrapper">
-                            <div style="width:70%" class="calc1-bar-bar"></div>
-                          </div>
-                        </div>
-                        <div>Тишина <div class="calc1-bar-wrapper">
-                            <div style="width:50%" class="calc1-bar-bar"></div>
-                          </div>
-                        </div>
-                        <div>Свет <div class="calc1-bar-wrapper">
-                            <div style="width:60%" class="calc1-bar-bar"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="calc1-main-window">
-                      <div class="calc1-vertical-slider">
-                        <div class="calc1-vertical-slider-counter" style="top: 50%;">1400</div>
-                        <div class="calc1-vertical-slider-ui ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all"
-                          aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="bottom: 50%;"></a></div>
-                      </div>
-
-                      <div class="calc1-constuction">
-                        <img src="https://kupibalkon.online/calc1/images/loggia-h.jpg">
-                      </div>
-
-                      <div class="calc1-horisontal-slider">
-                        <div class="calc1-horisontal-slider-counter" style="left: 23.0769%;">3000</div>
-                        <div class="calc1-horisontal-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
-                          aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 23.0769%;"></a></div>
-                      </div>
-                    </div>
-                    <div class="calc1-price">
-                      Стоимость:
-                      <br><span class="calc1-price-value">18 000</span> <span class="rub">руб</span>
-                      <div class="calc1-button">Заказать</div>
-                    </div>
-                    <div class="calc1-options">
-                      <input type="checkbox" name="calc1-options-1" id="calc1-options-1" value="Монтаж"><label for="calc1-options-1">Монтаж</label>
-                      <input type="checkbox" name="calc1-options-2" id="calc1-options-2" value="Подоконник"><label for="calc1-options-2">Подоконник</label>
-                      <input type="checkbox" name="calc1-options-3" id="calc1-options-3" value="Отлив"><label for="calc1-options-3">Отлив</label>
-                      <input type="checkbox" name="calc1-options-4" id="calc1-options-4" value="Козырек"><label for="calc1-options-4">Козырек</label>
-                    </div>
-                  </div>
+      <div class="page-calc__wrapper">
+        <div class="calc-tabs">
+            <ul id="slick-buttons" class="calc-tabs__list slick-buttons">
+              <li class="calc-tabs__item">
+                  <button class="calc-tabs__button calc-tabs__button--active button" value="calc-bl-glazing">Остекление балконов</button>
+              </li>
+              <li class="calc-tabs__item">
+                  <button class="calc-tabs__button button" value="calc-bl-finishes">Отделка балконов </button>
+              </li>
+              <li class="calc-tabs__item">
+                  <button class="calc-tabs__button button" value="calc-install--window">Установка окон</button>
+              </li>
+              <li class="calc-tabs__item">
+                  <button class="calc-tabs__button button" value="calc-install--doors">Установка дверей</button>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="page-calc__form-block slick-wrapper">
+      <div id="slick-calc" class="page-calc__wrapper">
+        <div class="calc-bl-glazing">
+          <div class="calc-bl-glazing__wrapper calc1">
+            <div class="calc-bl-glazing__item">
+                <div class="calc1-type-selector">
+                    <div class="calc1-type-selector__title">Конструкция балкона</div>
+                    <div class="calc1-type-selector-one calc1-type-selector-one-selected" data-btype="loggia"><img src="https://kupibalkon.online/calc1/images/loggia-icon-active.png" alt="Лоджия" data-value="Лоджия"><br>Лоджия</div>
+                    <div class="calc1-type-selector-one" data-btype="ugol"><img src="https://kupibalkon.online/calc1/images/ugol-icon.png" alt="Угловой балкон" data-value="Угловой"><br>Угловой</div>
+                    <div class="calc1-type-selector-one" data-btype="p-loggia"><img src="https://kupibalkon.online/calc1/images/p-loggia-icon.png" alt="П-образный балкон" data-value="П-образный"><br>П-образный</div>
+                    <div class="calc1-type-selector-one" data-btype="kabluk"><img src="https://kupibalkon.online/calc1/images/kabluk-icon.png" alt="Каблук" data-value="Каблук"><br>Каблук</div>
                 </div>
-              </div>
-              <div id="calc-tabs-2">2
-                <div class="calc-bl-finishes">
-                  <div class="calc2">
-                    <div class="calc2_balconi boxed">
-                      <div class="calc2__img">
+                <div class="calc1-type2-selector">
+                    <div class="calc1-type2-selector__title">Тип остекления</div>
+                    <div class="calc1-type2-selector__item">
+                        <input type="radio" name="calc1-type2-selector" data-btype2="h" checked="checked" id="calc1-type2-selector-1" value="Холодное остекление"><label for="calc1-type2-selector-1">Холодное остекление</label>
+                        Остекление алюминиевым<br>раздвижным профилем
+                        <div>Тепло <div class="calc1-bar-wrapper"><div style="width:40%" class="calc1-bar-bar"></div></div></div>
+                        <div>Тишина <div class="calc1-bar-wrapper"><div style="width:30%" class="calc1-bar-bar"></div></div></div>
+                        <div>Свет <div class="calc1-bar-wrapper"><div style="width:80%" class="calc1-bar-bar"></div></div></div>
+                    </div>
+            
+                    <div class="calc1-type2-selector__item">
+                        <input type="radio" name="calc1-type2-selector" data-btype2="t" id="calc1-type2-selector-2" value="Теплое остекление"><label for="calc1-type2-selector-2">Теплое остекление</label>
+                        Остекление пластиковыми<br>распашными окнами
+                        <div>Тепло <div class="calc1-bar-wrapper"><div style="width:70%" class="calc1-bar-bar"></div></div></div>
+                        <div>Тишина <div class="calc1-bar-wrapper"><div style="width:50%" class="calc1-bar-bar"></div></div></div>
+                        <div>Свет <div class="calc1-bar-wrapper"><div style="width:60%" class="calc1-bar-bar"></div></div></div>
+                    </div>
+                </div>
+                <div class="calc1-options">
+                  <div class="calc1-options__title">Включить в стоимость</div>
+                    <input type="radio" name="calc1-options-1" id="calc1-options-1" value="Монтаж"><label for="calc1-options-1">Монтаж</label>
+                    <input type="radio" name="calc1-options-2" id="calc1-options-2" value="Подоконник"><label for="calc1-options-2">Подоконник</label>
+                    <input type="radio" name="calc1-options-3" id="calc1-options-3" value="Отлив"><label for="calc1-options-3">Отлив</label>
+                    <input type="radio" name="calc1-options-4" id="calc1-options-4" value="Козырек"><label for="calc1-options-4">Козырек</label>
+                </div>
+                <div class="calc1-wish">
+                  <div class="calc1-wish__title">Я хочу</div>
+                  <input type="radio" name="calc1-wish" id="calc1-wish-1" value="Выносное остекление">
+                  <label class="calc1-wish__label" for="calc1-wish-1">Выносное остекление</label>
+                  <input type="radio" name="calc1-wish" id="calc1-wish-2" value="Панорамное остекление">
+                  <label class="calc1-wish__label" for="calc1-wish-2">Панорамное остекление</label>
+                </div>
+                <div class="calc1-price">
+                    Стоимость:
+                    <br><span class="calc1-price-value">18 000</span> <span class="rub">руб</span>
+                    <div class="calc1-button">Заказать</div>
+                </div>
+            </div>
+            <div class="calc-bl-glazing__item">
+                <div class="calc1-main-window">
+                    <div class="calc1-vertical-slider">
+                        <div class="calc1-vertical-slider-counter" style="top: 50%;">1400</div>
+                        <div class="calc1-vertical-slider-ui ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="bottom: 50%;"></a></div>
+                    </div>
+            
+                    <div class="calc1-constuction">
+                        <img src="https://kupibalkon.online/calc1/images/loggia-h.jpg">
+                    </div>
+            
+                    <div class="calc1-horisontal-slider">
+                        <div class="calc1-horisontal-slider-counter" style="left: 23.0769%;">3000</div>
+                        <div class="calc1-horisontal-slider-ui ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false"><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 23.0769%;"></a></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="calc-bl-finishes">
+            <div class="calc2">
+                <div class="calc2_balconi boxed">
+                    <div class="calc2__img">
                         <img src="https://kupibalkon.online/calc2/images/fon.png" alt="1">
                         <img src="https://kupibalkon.online/calc2/images/otliv.png" alt="1">
                         <img id="sl" src="https://kupibalkon.online/calc2/images/slyding1.png" alt="1">
@@ -172,227 +167,319 @@
                         <img id="ceil" src="https://kupibalkon.online/calc2/images/beton.png" alt="1">
                         <img src="https://kupibalkon.online/calc2/images/dobor.png" alt="1">
                         <img id="type_balcon" src="https://kupibalkon.online/calc2/images/defualt.png" alt="1">
-
+            
                         <img id="brusya" src="https://kupibalkon.online/calc2/images/brusya.png" alt="1">
-
-
+            
+            
                         <img id="type_sten" src="https://kupibalkon.online/calc2/images/vagonka.png" alt="1">
-                        <img id="type_pol" src="https://kupibalkon.online/calc2/images/pol_doska.png" alt="1">
+                             <img id="type_pol" src="https://kupibalkon.online/calc2/images/pol_doska.png" alt="1">
                         <img id="type_sten1" src="https://kupibalkon.online/calc2/images/vagonka1.png" alt="1">
-
+            
                         <img id="type_sten_dop" src="https://kupibalkon.online/calc2/images/vagonka_fr.png" alt="1">
-
-
-
+            
+            
+            
                         <img src="https://kupibalkon.online/calc2/images/porog.png" alt="1">
                         <img id="small_podokon" src="https://kupibalkon.online/calc2/images/pod2.png" alt="1">
                         <img id="p" src="https://kupibalkon.online/calc2/images/p.png" alt="1">
-
+            
                         <img id="d4" class="block_none" src="https://kupibalkon.online/calc2/images/galuzi.png" alt="1">
                         <img id="d5" class="block_none" src="https://kupibalkon.online/calc2/images/lampa.png" alt="1">
                         <img id="d1" class="block_none" src="https://kupibalkon.online/calc2/images/shkaf.png" alt="1">
                         <img id="d6" class="block_none" src="https://kupibalkon.online/calc2/images/stolik.png" alt="1">
                         <img id="d2" class="block_none" src="https://kupibalkon.online/calc2/images/suhilka.png" alt="1">
-                      </div>
-
-                      <div class="calc2__parametrs">
+                    </div>
+            
+                    <div class="calc2__parametrs">
                         <div class="row">
-                          <div class="col-xs-12 type_potolok_">
-                            <h3>Тип балкона</h3>
-                            <div class="input_styled radiolist push-up-10">
-                              <input type="radio" name="typew" checked="" id="type__defualt" value="1"><label class="type_balcon type_balcon_active"
-                                for="type__defualt">Обычный</label>
-
-                              <input type="radio" name="typew" id="type__french" value="2"><label class="type_balcon" for="type__french">Французский</label>
+                             <div class="col-xs-12 type_potolok_">
+                                <h3>Тип балкона</h3>
+                                <div class="input_styled radiolist push-up-10">
+                                    <input type="radio" name="typew" checked="" id="type__defualt" value="1"><label class="type_balcon type_balcon_active" for="type__defualt">Обычный</label> 
+            
+                                    <input type="radio" name="typew" id="type__french" value="2"><label class="type_balcon" for="type__french">Французский</label>
+                                </div>
                             </div>
-                          </div>
-
-                          <div class="col-xs-12">
-                            <h3>Крыша</h3>
-                          </div>
-                          <div class="col-xs-12 text-center">
-                            <div class="row check_link">
-                              <div class="col-xs-4 ceil_a" data-type="1"><a class="active btn-gray" href="#">Без крыши</a></div>
-                              <div class="col-xs-4 ceil_a" data-type="2"><a href="#">Ондулин</a></div>
-                              <div class="col-xs-4 ceil_a" data-type="3"><a href="#">Металлопрофиль</a></div>
+            
+                            <div class="col-xs-12">
+                                <h3>Крыша</h3>
                             </div>
-                          </div>
-
-                          <div class="col-xs-12">
-                            <h3>Отделка стен и парапета</h3>
-                          </div>
-                          <div class="col-xs-12 text-center">
-                            <div class="row check_link">
-                              <div class="col-xs-4 otdelka_sten" data-type="1"><a class="active" href="#">Вагонка</a></div>
-                              <div class="col-xs-4 otdelka_sten" data-type="2"><a href="#">ПВХ панели</a></div>
-                              <div class="col-xs-4 otdelka_sten" data-type="3"><a href="#">Без отделки</a></div>
+                            <div class="col-xs-12 text-center">
+                                <div class="row check_link">
+                                    <div class="col-xs-4 ceil_a" data-type="1"><a class="active btn-gray" href="#">Без крыши</a></div>
+                                    <div class="col-xs-4 ceil_a" data-type="2"><a href="#">Ондулин</a></div>
+                                    <div class="col-xs-4 ceil_a" data-type="3"><a href="#">Металлопрофиль</a></div>
+                                </div>
                             </div>
-                          </div>
-
-                          <div class="col-xs-12">
-                            <h3>Отделка пола</h3>
-                          </div>
-                          <div class="col-xs-12 text-center">
-                            <div class="row check_link">
-                              <div class="col-xs-3 otdelka_pola" data-type="1"><a class="active" href="#">Доска</a></div>
-                              <div class="col-xs-3 otdelka_pola" data-type="2"><a href="#">Ламинат</a></div>
-                              <div class="col-xs-3 otdelka_pola" data-type="3"><a href="#">Линолиум</a></div>
-                              <div class="col-xs-3 otdelka_pola" data-type="4"><a href="#">Ковролин</a></div>
-                              <br><br>
-                              <div class="col-xs-5 col-xs-offset-4 otdelka_pola" data-type="0"><a href="#">Без отделки</a></div>
+            
+                            <div class="col-xs-12">
+                                <h3>Отделка стен и парапета</h3>
                             </div>
-                          </div>
-
-                          <div class="col-xs-12">
-                            <h3>Парапет</h3>
-                          </div>
-                          <div class="col-xs-12 text-center">
-                            <div class="row check_link">
-                              <div class="col-xs-4 sl_a" data-type="0"><a href="#">Без отделки</a></div>
-                              <div class="col-xs-4 sl_a" data-type="1"><a class="active" href="#">Сайдинг без выноса</a></div>
-                              <div class="col-xs-4 sl_a" data-type="2"><a href="#">Сайдинг с выносом</a></div>
+                            <div class="col-xs-12 text-center">
+                                <div class="row check_link">
+                                    <div class="col-xs-4 otdelka_sten" data-type="1"><a class="active" href="#">Вагонка</a></div>
+                                    <div class="col-xs-4 otdelka_sten" data-type="2"><a href="#">ПВХ панели</a></div>
+                                    <div class="col-xs-4 otdelka_sten" data-type="3"><a href="#">Без отделки</a></div>
+                                </div>
                             </div>
-                          </div>
-
-                          <div class="col-xs-12">
-                            <h3>Дополнительные элементы</h3>
-                          </div>
-
-                          <div class="col-xs-12 dop_parametrs">
-                            <div class="box checkbox-inline">
-                              <div class="input_styled checklist inline">
-                                <div class="rowCheckbox"><input name="dop1" type="checkbox" id="dop1" value="option1"><label for="dop1">Шкаф</label></div>
-                              </div>
-                              <div class="input_styled checklist inline">
-                                <div class="rowCheckbox"><input name="dop2" type="checkbox" id="dop2" value="option2"><label for="dop2">Итальянская
-                                    сушилка</label></div>
-                              </div>
-                              <div class="input_styled checklist inline">
-                                <div class="rowCheckbox"><input name="dop3" type="checkbox" id="dop3" value="option3"><label for="dop3">Карниз</label></div>
-                              </div>
+            
+                            <div class="col-xs-12">
+                                <h3>Отделка пола</h3>
                             </div>
-                            <div class="box checkbox-inline">
-                              <div class="input_styled checklist inline">
-                                <div class="rowCheckbox"><input name="dop4" type="checkbox" id="dop4" value="option3"><label for="dop4">Жалюзи</label></div>
-                              </div>
-                              <div class="input_styled checklist inline">
-                                <div class="rowCheckbox"><input name="dop5" type="checkbox" id="dop5" value="option3"><label for="dop5">Освещение</label></div>
-                              </div>
-                              <div class="input_styled checklist inline">
-                                <div class="rowCheckbox"><input name="dop6" type="checkbox" id="dop6" value="option3"><label for="dop6">Стол
-                                    складной</label></div>
-                              </div>
+                            <div class="col-xs-12 text-center">
+                                <div class="row check_link">
+                                    <div class="col-xs-3 otdelka_pola" data-type="1"><a class="active" href="#">Доска</a></div>
+                                    <div class="col-xs-3 otdelka_pola" data-type="2"><a href="#">Ламинат</a></div>
+                                    <div class="col-xs-3 otdelka_pola" data-type="3"><a href="#">Линолиум</a></div>
+                                    <div class="col-xs-3 otdelka_pola" data-type="4"><a href="#">Ковролин</a></div>
+                                    <br><br>
+                                    <div class="col-xs-5 col-xs-offset-4 otdelka_pola" data-type="0"><a href="#">Без отделки</a></div>
+                                </div>
                             </div>
-                          </div>
-
-                          <form class="text-center">
-                            <div class="control-group">
-                              <div class="controls">
-                                <input type="text" id="names" name="name" placeholder="Ваше имя" required="">
-                              </div>
+            
+                            <div class="col-xs-12">
+                                <h3>Парапет</h3>
                             </div>
-                            <div class="control-group">
-                              <div class="controls">
-                                <input type="text" id="phone" name="phone" placeholder="Ваш телефон" required="">
-                              </div>
+                            <div class="col-xs-12 text-center">
+                                <div class="row check_link">
+                                    <div class="col-xs-4 sl_a" data-type="0"><a href="#">Без отделки</a></div>
+                                    <div class="col-xs-4 sl_a" data-type="1"><a class="active" href="#">Сайдинг без выноса</a></div>
+                                    <div class="col-xs-4 sl_a" data-type="2"><a href="#">Сайдинг с выносом</a></div>
+                                </div>
                             </div>
-                            <input type="submit" value="Узнать стоимость">
-                          </form>
-
+            
+                            <div class="col-xs-12">
+                                <h3>Дополнительные элементы</h3>
+                            </div>
+            
+                            <div class="col-xs-12 dop_parametrs">
+                                <div class="box checkbox-inline">
+                                    <div class="input_styled checklist inline">
+                                        <div class="rowCheckbox"><input name="dop1" type="checkbox" id="dop1" value="option1"><label for="dop1">Шкаф</label></div>
+                                    </div>
+                                    <div class="input_styled checklist inline">
+                                        <div class="rowCheckbox"><input name="dop2" type="checkbox" id="dop2" value="option2"><label for="dop2">Итальянская сушилка</label></div>
+                                    </div>
+                                    <div class="input_styled checklist inline">
+                                        <div class="rowCheckbox"><input name="dop3" type="checkbox" id="dop3" value="option3"><label for="dop3">Карниз</label></div>
+                                    </div>
+                                </div>
+                                <div class="box checkbox-inline">
+                                    <div class="input_styled checklist inline">
+                                        <div class="rowCheckbox"><input name="dop4" type="checkbox" id="dop4" value="option3"><label for="dop4">Жалюзи</label></div>
+                                    </div>
+                                    <div class="input_styled checklist inline">
+                                        <div class="rowCheckbox"><input name="dop5" type="checkbox" id="dop5" value="option3"><label for="dop5">Освещение</label></div>
+                                    </div>
+                                    <div class="input_styled checklist inline">
+                                        <div class="rowCheckbox"><input name="dop6" type="checkbox" id="dop6" value="option3"><label for="dop6">Стол складной</label></div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <form class="text-center">
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="text" id="names" name="name" placeholder="Ваше имя" required="">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="controls">
+                                        <input type="text" id="phone" name="phone" placeholder="Ваш телефон" required="">
+                                    </div>
+                                </div>
+                                <input type="submit" value="Узнать стоимость">
+                            </form>
+            
                         </div>
-                      </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="calc-install calc-install--window">
+          <p class="calc-install__caption">Выберите необходимые параметры:</p>
+          <form class="calc-install__form" method="post" autocomplete="on" action="">
+            <div class="block">
+              <div class="block__item block__item--right">
+                <div class="calc-install__group">
+                  <div class="calc-install__title">Вид окна</div>
+                  <p class="calc-install__item">
+                    <input id="option-one" class="calc-install__radio visually-hidden" name="option" type="radio">
+                    <label for="option-one" class="calc-install__label">
+                      <span>Двустворчатое</span>
+                      <img class="calc-install__pic" src="img/page-calc/calc-win/inst-win-1.png" alt="Двустворчатое">
+                    </label>
+                  </p>
+                  <p class="calc-install__item">
+                    <input id="option-two" class="calc-install__radio visually-hidden" name="option" type="radio">
+                    <label for="option-two" class="calc-install__label">
+                      <span>Трехстворчатое</span>
+                      <img class="calc-install__pic" src="img/page-calc/calc-win/inst-win-2.png" alt="Трехстворчатое">
+                    </label>
+                  </p>
+                  <p class="calc-install__item">
+                    <input id="option-three" class="calc-install__radio visually-hidden" name="option" type="radio">
+                    <label for="option-three" class="calc-install__label">
+                      <span>Балконный блок</span>
+                      <img class="calc-install__pic" src="img/page-calc/calc-win/inst-win-3.png" alt="Балконный блок">
+                    </label>
+                  </p>
+                  <p class="calc-install__item">
+                      <input id="option-four" class="calc-install__radio visually-hidden" name="option" type="radio">
+                    <label for="option-four" class="calc-install__label">
+                      <span>Балконная дверь</span>
+                      <img class="calc-install__pic" src="img/page-calc/calc-win/inst-win-4.png" alt="Балконная дверь">
+                    </label>
+                  </p>
+                </div>
+              </div>
+              <div class="block__item">
+                <div class="calc-install__group">
+                  <div class="calc-install__title">Материал окна</div>
+                  <p class="calc-install__item">
+                    <input id="plastic" class="calc-install__radio visually-hidden" name="material-window" type="radio">
+                    <label for="plastic" class="calc-install__label">Пластиковые</label>
+                  </p>
+                  <p class="calc-install__item">
+                    <input id="wooden" class="calc-install__radio visually-hidden" name="material-window" type="radio">
+                    <label for="wooden" class="calc-install__label">Деревянные</label>
+                  </p>
+                </div>
+                <div class="calc-install__group">
+                  <div class="calc-install__title">Тип окна</div>
+                  <p class="calc-install__item">
+                    <input id="euro" class="calc-install__radio visually-hidden" name="type-window" type="radio">
+                    <label for="euro" class="calc-install__label">Евро окна</label>
+                  </p>
+                  <p class="calc-install__item">
+                    <input id="economy" class="calc-install__radio visually-hidden" name="type-window" type="radio">
+                    <label for="economy" class="calc-install__label">Эконом окна</label>
+                  </p>
+                </div>
+                <div class="calc-install__group">
+                  <div class="calc-install__title">Материал</div>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="pine" class="calc-install__radio visually-hidden" name="material" type="radio">
+                    <label for="pine" class="calc-install__label">Сосна</label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="larch" class="calc-install__radio visually-hidden" name="material" type="radio">
+                    <label for="larch" class="calc-install__label">Лиственница</label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="oak" class="calc-install__radio visually-hidden" name="material" type="radio">
+                    <label for="oak" class="calc-install__label">Дуб</label>
+                  </p>
+                </div>
+                <div class="warning">
+                    <p>Итоговая цена окон зависит от типа профиля, технических особенностей и комплектации заказа</p>
                   </div>
-                </div>
-              </div>
-              <div id="calc-tabs-3">
-                <div class="calc-install-win">
-                  <p class="calc-install-win__caption">Выберите необходимые параметры:</p>
-                  <form class="calc-install-win__form" method="post" autocomplete="on" action="">
-                    <fieldset class="calc-install-win__group">
-                      <legend class="calc-install-win__title">Вид окна</legend>
-                      <p class="calc-install-win__item">
-                        <input id="option-one" class="calc-install-win__radio visually-hidden" name="option" type="radio">
-                        <label for="option-one" class="calc-install-win__label">Двустворчатое</label>
-                        <svg class="finishes-types__svg" width="300" height="300">
-                          <use xlink:href="img/sprite.svg#icon-calc-montag-6"></use>
-                        </svg>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="option-two" class="calc-install-win__radio visually-hidden" name="option" type="radio">
-                        <label for="option-two" class="calc-install-win__label">Трехстворчатое</label>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="option-three" class="calc-install-win__radio visually-hidden" name="option" type="radio">
-                        <label for="option-three" class="calc-install-win__label">Балконный блок</label>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="option-four" class="calc-install-win__radio visually-hidden" name="option" type="radio">
-                        <label for="option-four" class="calc-install-win__label">Балконная дверь</label>
-                      </p>
-                    </fieldset>
-                    <fieldset class="calc-install-win__group">
-                      <legend class="calc-install-win__title">Материал окна</legend>
-                      <p class="calc-install-win__item">
-                        <input id="plastic" class="calc-install-win__radio visually-hidden" name="material-window" type="radio">
-                        <label for="plastic" class="calc-install-win__label">Пластиковые</label>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="wooden" class="calc-install-win__radio visually-hidden" name="material-window" type="radio">
-                        <label for="wooden" class="calc-install-win__label">Деревянные</label>
-                      </p>
-                    </fieldset>
-                    <fieldset class="calc-install-win__group">
-                      <legend class="calc-install-win__title">Тип окна</legend>
-                      <p class="calc-install-win__item">
-                        <input id="euro" class="calc-install-win__radio visually-hidden" name="type-window" type="radio">
-                        <label for="euro" class="calc-install-win__label">Евро окна</label>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="economy" class="calc-install-win__radio visually-hidden" name="type-window" type="radio">
-                        <label for="economy" class="calc-install-win__label">Эконом окна</label>
-                      </p>
-                    </fieldset>
-                    <fieldset class="calc-install-win__group">
-                      <legend class="calc-install-win__title">Материал</legend>
-                      <p class="calc-install-win__item">
-                        <input id="pine" class="calc-install-win__radio visually-hidden" name="material" type="radio">
-                        <label for="pine" class="calc-install-win__label">Сосна</label>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="larch" class="calc-install-win__radio visually-hidden" name="material" type="radio">
-                        <label for="larch" class="calc-install-win__label">Лиственница</label>
-                      </p>
-                      <p class="calc-install-win__item">
-                        <input id="oak" class="calc-install-win__radio visually-hidden" name="material" type="radio">
-                        <label for="oak" class="calc-install-win__label">Дуб</label>
-                      </p>
-                    </fieldset>
-                    <div class="warning">
-                      <p>Итоговая цена окон зависит от типа профиля, технических особенностей и комплектации заказа</p>
-                    </div>
-                    <p><b>Стоимость: от 5480 рублей</b></p>
-                    <p>Для точного расчёта оставьте свой номер телефона.<br>
-                      Наш менеджер перезвонит вам и сообщит стоимость<br>
-                      по заданным параметрам.</p>
-                    <div>
-                      <label for="calc-win-phone" class="visually-hidden">Ваш телефон</label>
-                      <input id="calc-win-phone" class="calc-win-phone" type="text" placeholder="Ваш телефон">
-                    </div>
-                    <button class="button" type="button">Получить расчёт</button>
-                  </form>
-                </div>
-              </div>
-              <div id="calc-tabs-4">
-                <div class="calc-install-doors">4</div>
+                  <p class="calc-install__price">Стоимость: от <span class="calc-install__price--big">5 480 рублей</span></p>
+                  <p>Для точного расчёта оставьте свой номер телефона.<br>
+                  Наш менеджер перезвонит вам и сообщит стоимость<br>
+                  по заданным параметрам.</p>
+                  <div class="calc-install__inner">
+                    <label for="calc-win-phone" class="visually-hidden">Ваш телефон</label>
+                    <input id="calc-win-phone" class="calc-install__phone" type="tel" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+                    <button class="calc-install__button button" type="button">Получить расчёт</button>
+                  </div>
               </div>
             </div>
-          <!--End tabs container-->
+          </form>
         </div>
-        <!--End tabs-->
+        <div class="calc-install calc-install--doors">
+          <p class="calc-install__caption">Выберите необходимые параметры:</p>
+          <form class="calc-install__form" method="post" autocomplete="on" action="">
+            <div class="block">
+              <div class="block__item block__item--right">
+                <div class="calc-install__group">
+                  <div class="calc-install__title">Размер двери</div>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-one" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-one" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-1.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-two" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-two" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-2.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-three" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-three" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-3.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-four" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-four" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-4.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-five" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-five" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-5.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-six" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-six" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-6.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-seven" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-seven" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-7.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-eight" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-eight" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-8.png" alt="">
+                    </label>
+                  </p>
+                  <p class="calc-install__item calc-install__item--width">
+                    <input id="doors-nine" class="calc-install__radio visually-hidden" name="door-size" type="radio">
+                    <label for="doors-nine" class="calc-install__label">
+                      <img class="calc-install__pic" src="img/page-calc/calc-doors/inst-doors-9.png" alt="">
+                    </label>
+                  </p>
+                </div>
+              </div>
+              <div class="block__item">
+                <div class="calc-install__group">
+                  <div class="calc-install__title">Тип двери</div>
+                  <p class="calc-install__item">
+                    <input id="al-doors" class="calc-install__radio visually-hidden" name="type-doors" type="radio">
+                    <label for="al-doors" class="calc-install__label">Алюминиевые двери</label>
+                  </p>
+                  <p class="calc-install__item">
+                    <input id="pl-doors" class="calc-install__radio visually-hidden" name="type-doors" type="radio">
+                    <label for="pl-doors" class="calc-install__label">Пластиковые двери</label>
+                  </p>
+                </div>
+                <div class="warning">
+                    <p>На стоимость готовых конструкций влияют: ​габариты и количество створок; наличие и площадь остекления; тип остекления;модель фурнитуры; наличие доводчика или других дополнительных функциональных элементов конструкции.</p>
+                  </div>
+                  <p class="calc-install__price">Стоимость: от <span class="calc-install__price--big">11 900 рублей</span></p>
+                  <p>Чтобы заказать установку дверей под ключ, а также узнать точную стоимость - оставьте свой номер телефона.</p>
+                  <div class="calc-install__inner">
+                    <label for="calc-win-phone" class="visually-hidden">Ваш телефон</label>
+                    <input id="calc-win-phone" class="calc-install__phone" type="tel" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+                    <button class="calc-install__button button" type="button">Получить расчёт</button>
+                  </div>
+              </div>
+            </div>
+          </form>
+          </div>
       </div>
     </div>
-
     <section class="feedback feedback--bg">
       <div class="feedback__wrapper">
         <div class="feedback__title">Оформите заявку на бесплатный замер</div>
@@ -558,7 +645,7 @@
       </form>
     </div>
   </div>
-  <!-- <div id="wind_container" class="j_alert calc2_popup" style="display:none">
+  <div id="wind_container" class="j_alert calc2_popup" style="display:block">
       <div class="wind hidden" id="btnPopupWnd">
         <div class="wind-header">
           <a class="wind-close calc2_popup_close"></a>
@@ -600,15 +687,15 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
   <script src="js/vendor.min.js"></script>
- <link href="https://kupibalkon.online/calc2/css/style.css" rel="stylesheet">
+  <link href="https://kupibalkon.online/calc2/css/style.css" rel="stylesheet">
   <script src="https://kupibalkon.online/calc2/js/script.js"></script>
   <link href="https://kupibalkon.online/calc1/css/ui.theme.css" rel="stylesheet">
 <link href="https://kupibalkon.online/calc1/css/ui.slider.css" rel="stylesheet">
 <!-- <link href="https://kupibalkon.online/calc1/css/style.css" rel="stylesheet"> -->
 <script src="https://kupibalkon.online/calc1/js/jquery-ui.js"></script>
-<script src="https://kupibalkon.online/calc1/js/script.js"></script> -->
+<script src="https://kupibalkon.online/calc1/js/script.js"></script>
   <script>
     new WOW().init();
   </script>

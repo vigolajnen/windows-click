@@ -34,7 +34,8 @@
     max-width: 375px;
   }
 
-  &--white {
+  &--company {
+    margin: 0 0 20px 0;
     color: #ffffff;
   }
 }
@@ -165,7 +166,7 @@
     background-size: 100% 65%;
 
     &--company {
-      padding-left: 50px;
+      padding-left: 30px;
     }
   }
 

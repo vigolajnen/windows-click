@@ -89,6 +89,13 @@ gulp.task("vendor", function () {
     .pipe(gulp.dest("build/js"));
 });
 
+gulp.task("jsmin-jobs", function () {
+  gulp.src(["source/js/jobs.js"])
+    .pipe(concat("jobs.min.js"))
+    .pipe(uglify({mangle: false}))
+    .pipe(gulp.dest("build/js"));
+});
+
 gulp.task("jsmin-inner", function () {
   gulp.src(["source/js/inner.js"])
     .pipe(concat("inner.min.js"))
@@ -128,6 +135,7 @@ gulp.task("build", function (done) {
     "vendor",
     "jsmin",
     "jsmin-inner",
+    "jsmin-jobs",
     done
   );
 });

@@ -10,7 +10,20 @@
     margin: 0 auto 20px;
     padding: 0 15px;
     box-sizing: border-box;
+
+    &--width {
+      max-width: $desktop-width;
+    }
   }
+}
+
+.content-block__title {
+  margin: 0 0 25px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
 }
 
 .content-block__item {
@@ -18,6 +31,13 @@
   flex-direction: column;
   width: 100%;
 
+  &--bottom {
+    align-self: flex-end;
+  }
+
+  & p {
+    margin: 0 0 10px;
+  }
 }
 
 .content-block__inner {
@@ -39,6 +59,11 @@
 
   .content-block__item {
     width: 50%;
+  }
+
+  .content-block__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 

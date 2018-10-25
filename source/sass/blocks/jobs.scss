@@ -1,0 +1,58 @@
+.jobs {
+  &__wrapper {
+    max-width: $desktop-width;
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__point {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: $color-green;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgba(34,34,34,.3);
+    outline: none;
+
+    &:hover,
+    &:focus {
+      background-color: $color-dark-green;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .jobs {
+    &__inner {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .jobs {
+    &__item {
+      width: 33%;
+    }
+  }
+}

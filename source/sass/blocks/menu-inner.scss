@@ -72,5 +72,9 @@
 
   .menu-inner {
     width: auto;
+
+    &--company {
+      padding-left: 100px;
+    }
   }
 }

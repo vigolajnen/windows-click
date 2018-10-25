@@ -1,0 +1,21 @@
+.list-marker {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-marker li {
+  position: relative;
+  padding-left: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: $color-green;
+    border-radius: 50%;
+  }
+}

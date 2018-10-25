@@ -6,6 +6,11 @@
   max-width: $desktop-width-big;
   margin: 0 auto 50px;
   background-color: #ffffff;
+
+  &--full {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .page-promo__wrapper {
@@ -27,6 +32,10 @@
 
   &--width {
     max-width: 375px;
+  }
+
+  &--white {
+    color: #ffffff;
   }
 }
 
@@ -72,6 +81,16 @@
     background-image: url("../../img/page-services/promo/promo-services.jpg");
     background-color: #dddddd;
   }
+
+  &--company-bg {
+    width: 40%;
+    background-image: url("../../img/page-company/promo/promo-bg.jpg");
+    background-color: $color-green;
+  }
+
+  &--company {
+    background-color: $color-green;
+  }
 }
 
 .page-promo__info {
@@ -84,6 +103,28 @@
   background-image: url("../../img/page-inner/promo-line.png");
   background-repeat: no-repeat;
   background-position: 0 bottom;
+
+  &--company {
+    position: relative;
+    padding-left: 20px;
+    background-image: none;
+    color: #fff;
+    min-height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 15px;
+      height: 60%;
+      background-color: #abcb56;
+      z-index: 1;
+  }
+  }
 }
 
 .page-promo__caption {
@@ -122,6 +163,10 @@
     width: 47%;
     min-height: 420px;
     background-size: 100% 65%;
+
+    &--company {
+      padding-left: 50px;
+    }
   }
 
   .page-promo__title {
@@ -140,12 +185,22 @@
   .page-promo__wrapper {
     position: relative;
     margin: 0 15px;
+
+    &--no-margin {
+      margin: 0;
+    }
   }
 
   .page-promo__title {
     padding: 0;
     font-size: 50px;
     line-height: 50px;
+  }
+
+  .page-promo__info {
+    &--company {
+      padding-left: 100px;
+    }
   }
 
   .page-promo__caption {

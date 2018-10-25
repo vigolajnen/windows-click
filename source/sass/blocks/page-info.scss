@@ -1,5 +1,9 @@
 .page-info {
   margin-bottom: 20px;
+
+  &--company {
+    padding: 30px 0;
+  }
 }
 
 .page-info__wrapper {
@@ -45,6 +49,30 @@
   line-height: 18px;
   font-weight: 300;
   color: $text-color;
+}
+
+.page-info__point-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  &--pin {
+    width: 20%;
+  }
+
+  &--address {
+    width: 80%;
+    margin: 0;
+  }
+}
+
+.page-info .page-info__point-text {
+  &--btn {
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 16px;
+    color: $color-pink;
+  }
 }
 
 .page-info__text p {

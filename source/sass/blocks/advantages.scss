@@ -3,6 +3,16 @@
   margin: 0 auto 20px;
 }
 
+.advantages__title {
+  margin: 0 0 20px 0;
+  padding: 0 15px;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 900;
+  color: $color-green;
+  text-transform: uppercase;
+}
+
 .advantages__list {
   display: flex;
   justify-content: space-between;
@@ -91,6 +101,11 @@
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     margin-bottom: 70px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
   }
 
   .advantages__list {

@@ -137,4 +137,10 @@
       width: 30%;
     }
   }
+
+  .calc-install__label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

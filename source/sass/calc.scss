@@ -52,10 +52,12 @@ div.calc1-type-selector-one {
 }
 
 div.calc1-type-selector-one:hover {
+  filter: hue-rotate(226deg);
   background: #eee;
 }
 
 div.calc1-type-selector-one-selected {
+  filter: hue-rotate(226deg);
   background: #eee;
   text-decoration: none;
 }

@@ -280,11 +280,21 @@
 	max-width: 400px;
 }
 
+@media (max-width: $mobile-width-only) {
+	.calc2 .calc2__img {
+		display: none;
+	}
+}
+
 @media (min-width: $tablet-width) {
   .calc2 .calc2_balconi {
     width: 730px;
     max-width: 100%;
-  }
+	}
+	
+	.calc2 .calc2__img {
+		display: block;
+	}
 }
 
 @media (min-width: $desktop-width) {

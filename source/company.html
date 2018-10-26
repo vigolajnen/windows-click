@@ -67,157 +67,347 @@
           </div>
           <div class="page-promo__item page-promo__item--company-bg"></div>
           <nav class="menu-inner menu-inner--company">
-            <ul class="menu-inner__list">
+            <ul id="tabs" class="menu-inner__list">
               <li class="menu-inner__item">
-                <a class="menu-inner__link" href="company.html">О нас</a>
+                <a class="menu-inner__link" href="#about">О нас</a>
               </li>
               <li class="menu-inner__item">
-                <a class="menu-inner__link" href="jobs.html">Вакансии</a>
+                <a class="menu-inner__link" href="#jobs">Вакансии</a>
               </li>
               <li class="menu-inner__item">
-                <a class="menu-inner__link" href="dealers.html">Дилерам</a>
+                <a class="menu-inner__link" href="#dealers">Дилерам</a>
               </li>
               <li class="menu-inner__item">
-                <a class="menu-inner__link" href="message.html">Написать сообщение директору</a>
+                <a class="menu-inner__link" href="#message">Написать сообщение директору</a>
               </li>
             </ul>
           </nav>
         </div>
       </section>
-      <section class="page-info page-info--order">
-        <div class="page-info__wrapper">
-          <div class="page-info__item">
-            <div class="page-info__inner page-info__inner--doors">
-              <div class="page-info__text">
-                <h2 class="page-info__title">Основные направления деятельности</h2>
-                <ul class="list-marker">
-                  <li>Остекление и отделка балконов и лоджий</li>
-                  <li>Остекление фасадов зданий</li>
-                  <li>Изготовление и монтаж пластиковых окон и дверей</li>
-                  <li>Производство и установка деревянных окон</li>
-                  <li>Дополнительные опции для окон: дистанционное открытие, противовзломная фурнитура, тонирование стекол, вентиляционные клапаны и многое другое</li>
+      <div id="tabs_container">
+          <div id="about">
+            <section class="page-info page-info--order">
+              <div class="page-info__wrapper">
+                <div class="page-info__item">
+                  <div class="page-info__inner page-info__inner--doors">
+                    <div class="page-info__text">
+                      <h2 class="page-info__title">Основные направления деятельности</h2>
+                      <ul class="list-marker">
+                        <li>Остекление и отделка балконов и лоджий</li>
+                        <li>Остекление фасадов зданий</li>
+                        <li>Изготовление и монтаж пластиковых окон и дверей</li>
+                        <li>Производство и установка деревянных окон</li>
+                        <li>Дополнительные опции для окон: дистанционное открытие, противовзломная фурнитура, тонирование стекол, вентиляционные клапаны и многое другое</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-info__item">
+                  <img class="page-info__pic page-info__pic--cover page-info__pic--visible" src="img/page-company/directions/directions-bg.jpg" alt="основные направления деятельности">
+                </div>
+              </div>
+            </section>
+            <section class="page-info page-info--company">
+              <div class="page-info__wrapper">
+                <div class="page-info__item">
+                  <div class="page-info__inner page-info__inner--doors">
+                    <div class="page-info__text">
+                      <h2 class="page-info__title">Собственное производство</h2>
+                      <p>Благодаря наличию собственного производства, продукция нашей компании – это идеальное сочетание качества и цены, что делает наши окна доступными для большинства покупателей. Покупая пластиковые окна напрямую от производителя, вы не просто получаете отличные изделия, но и значительно экономите. Нам не нужно закупать продукцию в других компаниях, а значит, мы продаем профили по самым доступным ценам.</p>
+                      <div class="page-info__point-text">
+                        <svg class="page-info__svg page-info__point-text--pin" width="18" height="18">
+                          <use xlink:href="img/sprite.svg#icon-pin"></use>
+                        </svg>
+                        <p class="page-info__point-text--address">Наш завод расположен в г. Климовск, ул. Серпуховская, д. 1. На сегодняшний день производственная мощность завода составляет 150 окон в день. Весь заводской комплекс занимает площадь порядка 1000 м².
+                          <a class="page-info__btn page-info__point-text--btn" href="contacts.html">
+                            <span>Смотреть на карте</span>
+                            <svg class="page-info__svg services__svg" width="18" height="18">
+                              <use xlink:href="img/sprite.svg#icon-arrow-pointing-to-right"></use>
+                            </svg>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="page-info__item">
+                  <img class="page-info__pic page-info__pic--cover page-info__pic--visible" src="img/page-company/production/production-bg.jpg" alt="собственное производство">
+                </div>
+              </div>
+            </section>
+            <section class="advantages">
+              <div class="advantages__wrapper">
+                <h2 class="advantages__title">Почему именно мы?</h2>
+                <ul class="advantages__list">
+                  <li class="advantages__item advantages__item--icon-one wow fadeInUp">
+                    <div class="advantages__name">Окна от производителя</div>
+                    <div class="advantages__text">Никаких посредников и дополнительных затрат</div>
+                  </li>
+                  <li class="advantages__item advantages__item--icon-two wow fadeInUp">
+                    <div class="advantages__name">Оперативность</div>
+                    <div class="advantages__text">Бесплатные замеры в день обращения. Установка окон на 3-тий день после замера</div>
+                  </li>
+                  <li class="advantages__item advantages__item--icon-three wow fadeInUp" data-wow-delay="1s">
+                    <div class="advantages__name">Индивидуальный подход</div>
+                    <div class="advantages__text">Беремся за работу любого уровня сложности</div>
+                  </li>
+                  <li class="advantages__item advantages__item--icon-four wow fadeInUp" data-wow-delay="1s">
+                    <div class="advantages__name">Надежность</div>
+                    <div class="advantages__text">Все виды работ сертифицированы</div>
+                  </li>
+                  <li class="advantages__item advantages__item--icon-five wow fadeInUp" data-wow-delay="2s">
+                    <div class="advantages__name">19 лет на рынке </div>
+                    <div class="advantages__text">Опыт – это гарантия качества и долговечности нашей продукции</div>
+                  </li>
+                  <li class="advantages__item advantages__item--icon-six wow fadeInUp" data-wow-delay="2s">
+                    <div class="advantages__name">Доверие</div>
+                    <div class="advantages__text">Мы оправдали доверие более 110 000 человек</div>
+                  </li>
                 </ul>
               </div>
-            </div>
-          </div>
-          <div class="page-info__item">
-            <img class="page-info__pic page-info__pic--cover page-info__pic--visible" src="img/page-company/directions/directions-bg.jpg" alt="основные направления деятельности">
-          </div>
-        </div>
-      </section>
-      <section class="page-info page-info--company">
-        <div class="page-info__wrapper">
-          <div class="page-info__item">
-            <div class="page-info__inner page-info__inner--doors">
-              <div class="page-info__text">
-                <h2 class="page-info__title">Собственное производство</h2>
-                <p>Благодаря наличию собственного производства, продукция нашей компании – это идеальное сочетание качества и цены, что делает наши окна доступными для большинства покупателей. Покупая пластиковые окна напрямую от производителя, вы не просто получаете отличные изделия, но и значительно экономите. Нам не нужно закупать продукцию в других компаниях, а значит, мы продаем профили по самым доступным ценам.</p>
-                <div class="page-info__point-text">
-                  <svg class="page-info__svg page-info__point-text--pin" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-pin"></use>
-                  </svg>
-                  <p class="page-info__point-text--address">Наш завод расположен в г. Климовск, ул. Серпуховская, д. 1. На сегодняшний день производственная мощность завода составляет 150 окон в день. Весь заводской комплекс занимает площадь порядка 1000 м².
-                    <a class="page-info__btn page-info__point-text--btn" href="contacts.html">
-                      <span>Смотреть на карте</span>
-                      <svg class="page-info__svg services__svg" width="18" height="18">
-                        <use xlink:href="img/sprite.svg#icon-arrow-pointing-to-right"></use>
-                      </svg>
-                    </a>
+            </section>
+            <section class="scheme-work">
+              <div class="scheme-work__wrapper">
+                <div class="scheme-work__title">Схема работы</div>
+                <ul class="scheme-work__list">
+                  <li class="scheme-work__item wow fadeInUp">
+                    <div class="scheme-work__name">1. Бесплатный замер</div>
+                    <div class="scheme-work__info">Укажите Ваш номер телефона</div>
+                    <form class="form-call" action="/" method="post">
+                      <p class="form-call__item">
+                        <label class="form-call__label visually-hidden" for="phone-call">Ваш номер телефона</label>
+                        <input id="phone-call" class="form-call__input" type="tel" placeholder="Ваш номер телефона">
+                      </p>
+                      <button class="button form-call__button" type="submit">Заказать замер</button>
+                    </form>
+                  </li>
+                  <li class="scheme-work__item wow fadeInUp">
+                    <div class="scheme-work__name">2. Консультация</div>
+                    <div class="scheme-work__info">Наш менеджер Вам перезванивает, консультирует по всем вопросам и записывает на замер</div>
+                  </li>
+                  <li class="scheme-work__item wow fadeInUp">
+                    <div class="scheme-work__name">3. Замер</div>
+                    <div class="scheme-work__info">Приезжает наш сотрудник, делает замеры, называет стоимость работ и заключает с Вами договор</div>
+                  </li>
+                  <li class="scheme-work__item wow fadeInUp" data-wow-delay="1s">
+                    <div class="scheme-work__name">4. Доставка</div>
+                    <div class="scheme-work__info">Осуществляется доставка всех конструкций, требуемых для установки на объект</div>
+                  </li>
+                  <li class="scheme-work__item wow fadeInUp" data-wow-delay="1s">
+                    <div class="scheme-work__name">5. Монтаж</div>
+                    <div class="scheme-work__info">Нашими специалистами производится монтаж по ГОСТу, при этом строго соблюдаются все нормы</div>
+                  </li>
+                  <li class="scheme-work__item wow fadeInUp" data-wow-delay="1s">
+                    <div class="scheme-work__name">6. Готово!</div>
+                    <div class="scheme-work__info">Вам остается только наслаждаться качеством, надежностью и теплом установленных окон!</div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="feedback feedback--bg">
+              <div class="feedback__wrapper">
+                <div class="feedback__title">Оформите заявку на бесплатный замер</div>
+                <form class="feedback__form" action="/" method="post">
+                  <p class="feedback__item">
+                    <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+                    <input id="feedback-name" class="feedback__name" type="text" placeholder="Ваше имя" autocomplete="on">
                   </p>
+                  <p class="feedback__item">
+                    <label class="visually-hidden" for="feedback-phone">Ваш телефон</label>
+                    <input id="feedback-phone" class="feedback__phone" type="tel" placeholder="Ваш телефон" autocomplete="on">
+                  </p>
+                  <button class="button feedback__button" type="submit">Отправить заявку</button>
+                </form>
+              </div>
+            </section>
+          </div>
+          <div id="jobs">
+            <div class="content-block jobs">
+              <div class="content-block__wrapper jobs__wrapper">
+                <h2 class="content-block__title">Наши вакансии</h2>
+                <div class="jobs__inner">
+                  <div class="jobs__item">
+                    <h3 class="jobs__title">Слесарь-сборщик окон пвх</h3>
+                    <p class="jobs__point">Условия работы:</p>
+                    <ul class="list-marker">
+                      <li>Заработная плата от 35 000 руб</li>
+                      <li>Занятость полный рабочий день</li>
+                    </ul>
+                    <p class="jobs__point">Требования:</p>
+                    <ul class="list-marker">
+                      <li>Гражданство РФ</li>
+                      <li>Опыт работы от 3-х лет</li>
+                    </ul>
+                    <p class="jobs__point">Обязаности:</p>
+                    <ul class="list-marker">
+                      <li>Работа на станках по производству пластиковых окон</li>
+                    </ul>
+                    <button class="jobs__button button" type="button" data-modal="#modal-jobs">Откликнуться</button>
+                  </div>
+                  <div class="jobs__item">
+                    <h3 class="jobs__title">Менеджер по работе с дилерами</h3>
+                    <p class="jobs__point">Условия работы:</p>
+                    <ul class="list-marker">
+                      <li>Заработная плата от 30 000 руб</li>
+                      <li>Занятость полный рабочий день</li>
+                    </ul>
+                    <p class="jobs__point">Требования:</p>
+                    <ul class="list-marker">
+                      <li> Гражданство РФ</li>
+                      <li>Опыт работы от 3-х лет</li>
+                      <li>Знание программы ОПТИМА</li>
+                    </ul>
+                    <p class="jobs__point">Обязаности:</p>
+                    <ul class="list-marker">
+                      <li>Работа с дилерами</li>
+                      <li>Поиск новых дилеров</li>
+                      <li>Консультирование заказчиков</li>
+                      <li>Расчет стоимости заказов</li>
+                      <li>Заключение договоров</li>
+                    </ul>
+                    <button class="jobs__button button" type="button" data-modal="#modal-jobs">Откликнуться</button>
+                  </div>
+                  <div class="jobs__item">
+                    <h3 class="jobs__title">Сборщик окон пвх</h3>
+                    <p class="jobs__point">Условия работы:</p>
+                    <ul class="list-marker">
+                      <li>Заработная плата от 25 000 руб</li>
+                      <li>Занятость полный рабочий день</li>
+                    </ul>
+                    <p class="jobs__point">Требования:</p>
+                    <ul class="list-marker">
+                      <li> Гражданство РФ</li>
+                      <li>Опыт работы от 3-х лет</li>
+                    </ul>
+                    <p class="jobs__point">Обязаности:</p>
+                    <ul class="list-marker">
+                      <li>Работа на станках по производству</li>
+                      <li>пластиковых окон</li>
+                      <li>Работа на сборке окон</li>
+                    </ul>
+                    <button class="jobs__button button" type="button" data-modal="#modal-jobs">Откликнуться</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="page-info__item">
-            <img class="page-info__pic page-info__pic--cover page-info__pic--visible" src="img/page-company/production/production-bg.jpg" alt="собственное производство">
+          <div id="dealers">
+            <div class="content-block dealers">
+              <div class="content-block__wrapper content-block__wrapper--width">
+                <div class="content-block__item">
+                  <h2 class="content-block__title">Приглашаем к долгосрочному сотрудничеству</h2>
+                  <ul class="list-marker">
+                    <li>пластиковые окна и двери из профиля немецкой марки Rehau;</li>
+                    <li>пластиковое и алюминиевое остекление балконов и лоджий; материалы для отделки балконов и лоджий;</li>
+                    <li>все виды комплектующих к балконам и окнам.</li>
+                  </ul>
+                  <h2 class="content-block__title">Работать с нами выгодно</h2>
+                  <p><b>Мы гарантируем:</b></p>
+                  <ul class="list-marker">
+                    <li>Собственное высокотехнологичное производство окон ПВХ;</li>
+                    <li>Идеальное сочетание качества и цены, что делает наши окна доступными для большинства покупателей.</li>
+                    <li>Соблюдение всех оговоренных сроков изготовления и отгрузка заказов строго в срок;</li>
+                    <li>Доставка в любую точку Москвы и МО;</li>
+                    <li>Гибкая индивидуальная система скидок.</li>
+                  </ul>
+                </div>
+                <div class="content-block__item content-block__item--bottom">
+                  <div class="warning">
+                    <p>СРОК ИЗГОТОВЛЕНИЯ ОКОН ПВХ — 1-3 ДНЯ, АЛЮМИНИЕВЫХ ОКОН — 1 ДЕНЬ</p>
+                  </div>
+                  <h3 class="content-block__title content-block__title--h3">Наши контакты</h3>
+                  <div class="dealers__contacts">
+                    <ul class="contacts-list">
+                      <li class="contacts-list__item">
+                        <svg class="finishes-types__svg" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-phone-call"></use>
+                        </svg>
+                        <a class="contacts-list__link" href="tel:+79005607090">+ 7 (900) 560-70-90</a></li>
+                      <li class="contacts-list__item">
+                        <svg class="finishes-types__svg" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-mail2"></use>
+                        </svg>
+                        <a class="contacts-list__link" href="mailto:info@okna-sity.ru">info@okna-sity.ru</a></li>
+                      <li class="contacts-list__item">
+                        <svg class="finishes-types__svg" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#icon-placeholder"></use>
+                        </svg>
+                        <span>Наш завод: г. Климовск, ул. Серпуховская, д. 1</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="advantages__wrapper">
-          <h2 class="advantages__title">Почему именно мы?</h2>
-          <ul class="advantages__list">
-            <li class="advantages__item advantages__item--icon-one wow fadeInUp">
-              <div class="advantages__name">Окна от производителя</div>
-              <div class="advantages__text">Никаких посредников и дополнительных затрат</div>
-            </li>
-            <li class="advantages__item advantages__item--icon-two wow fadeInUp">
-              <div class="advantages__name">Оперативность</div>
-              <div class="advantages__text">Бесплатные замеры в день обращения. Установка окон на 3-тий день после замера</div>
-            </li>
-            <li class="advantages__item advantages__item--icon-three wow fadeInUp" data-wow-delay="1s">
-              <div class="advantages__name">Индивидуальный подход</div>
-              <div class="advantages__text">Беремся за работу любого уровня сложности</div>
-            </li>
-            <li class="advantages__item advantages__item--icon-four wow fadeInUp" data-wow-delay="1s">
-              <div class="advantages__name">Надежность</div>
-              <div class="advantages__text">Все виды работ сертифицированы</div>
-            </li>
-            <li class="advantages__item advantages__item--icon-five wow fadeInUp" data-wow-delay="2s">
-              <div class="advantages__name">19 лет на рынке </div>
-              <div class="advantages__text">Опыт – это гарантия качества и долговечности нашей продукции</div>
-            </li>
-            <li class="advantages__item advantages__item--icon-six wow fadeInUp" data-wow-delay="2s">
-              <div class="advantages__name">Доверие</div>
-              <div class="advantages__text">Мы оправдали доверие более 110 000 человек</div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="scheme-work">
-        <div class="scheme-work__wrapper">
-          <div class="scheme-work__title">Схема работы</div>
-          <ul class="scheme-work__list">
-            <li class="scheme-work__item wow fadeInUp">
-              <div class="scheme-work__name">1. Бесплатный замер</div>
-              <div class="scheme-work__info">Укажите Ваш номер телефона</div>
-              <form class="form-call" action="/" method="post">
-                <p class="form-call__item">
-                  <label class="form-call__label visually-hidden" for="phone-call">Ваш номер телефона</label>
-                  <input id="phone-call" class="form-call__input" type="tel" placeholder="Ваш номер телефона">
-                </p>
-                <button class="button form-call__button" type="submit">Заказать замер</button>
-              </form>
-            </li>
-            <li class="scheme-work__item wow fadeInUp">
-              <div class="scheme-work__name">2. Консультация</div>
-              <div class="scheme-work__info">Наш менеджер Вам перезванивает, консультирует по всем вопросам и записывает на замер</div>
-            </li>
-            <li class="scheme-work__item wow fadeInUp">
-              <div class="scheme-work__name">3. Замер</div>
-              <div class="scheme-work__info">Приезжает наш сотрудник, делает замеры, называет стоимость работ и заключает с Вами договор</div>
-            </li>
-            <li class="scheme-work__item wow fadeInUp" data-wow-delay="1s">
-              <div class="scheme-work__name">4. Доставка</div>
-              <div class="scheme-work__info">Осуществляется доставка всех конструкций, требуемых для установки на объект</div>
-            </li>
-            <li class="scheme-work__item wow fadeInUp" data-wow-delay="1s">
-              <div class="scheme-work__name">5. Монтаж</div>
-              <div class="scheme-work__info">Нашими специалистами производится монтаж по ГОСТу, при этом строго соблюдаются все нормы</div>
-            </li>
-            <li class="scheme-work__item wow fadeInUp" data-wow-delay="1s">
-              <div class="scheme-work__name">6. Готово!</div>
-              <div class="scheme-work__info">Вам остается только наслаждаться качеством, надежностью и теплом установленных окон!</div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="feedback feedback--bg">
-        <div class="feedback__wrapper">
-          <div class="feedback__title">Оформите заявку на бесплатный замер</div>
-          <form class="feedback__form" action="/" method="post">
-            <p class="feedback__item">
-              <label class="visually-hidden" for="feedback-name">Ваше имя</label>
-              <input id="feedback-name" class="feedback__name" type="text" placeholder="Ваше имя" autocomplete="on">
-            </p>
-            <p class="feedback__item">
-              <label class="visually-hidden" for="feedback-phone">Ваш телефон</label>
-              <input id="feedback-phone" class="feedback__phone" type="tel" placeholder="Ваш телефон" autocomplete="on">
-            </p>
-            <button class="button feedback__button" type="submit">Отправить заявку</button>
-          </form>
-        </div>
-      </section>
+          <div id="message">
+            <div class="content-block director">
+              <div class="content-block__wrapper content-block__wrapper--width">
+                <div class="content-block__item">
+                  <h2 class="content-block__title">Написать генеральному директору</h2>
+                  <p>Мы считаем, что готовность к открытому диалогу очень важна для создания доверительных отношений между нами и
+                    нашими клиентами. Любой свой вопрос, предложение или замечание Вы можете напрямую отправить Генеральному
+                    директору компании «Окна Клик». Мы также будем признательны, если Вы отметите качественную работу наших
+                    сотрудников.</p>
+                </div>
+                <form class="director__form  form-message" action="">
+                  <div class="form-message__wrapper">
+                    <div class="form-message__group">
+                      <p class="form-message__title">Введите ваши данные</p>
+                      <p class="form-message__item">
+                        <label class="visually-hidden" for="form-message-name-call">Ваше имя</label>
+                        <input class="form-message__input form-message__input--name" id="form-message-name-call" type="text"
+                          placeholder="Ваше имя">
+                      </p>
+                      <p class="form-message__item">
+                        <label class="visually-hidden" for="form-message-phone-call">Ваш телефон</label>
+                        <input class="form-message__input form-message__input--phone" id="form-message-phone-call" type="tel"
+                          placeholder="Ваш телефон">
+                      </p>
+                      <p class="form-message__item">
+                        <label class="visually-hidden" for="form-message-mail-call">Ваш e-mail</label>
+                        <input class="form-message__input form-message__input--mail" id="form-message-mail-call" type="mail"
+                          placeholder="Ваш e-mail">
+                      </p>
+                      <p class="form-message__item">
+                        <label class="visually-hidden" for="form-message-name-call">Номер договора</label>
+                        <input class="form-message__input form-message__input--number" id="form-message-name-call" type="text"
+                          placeholder="Номер договора">
+                      </p>
+                    </div>
+                    <div class="form-message__group">
+                      <p class="form-message__title">Выберите тематику сообщения или вопроса</p>
+                      <ul class="form-massage__list">
+                        <li class="form-message__item">
+                          <input class="visually-hidden form-message__radio" id="theme-one" type="radio" name="theme">
+                          <label class="form-message__label" for="theme-one">Доставка</label>
+                        </li>
+                        <li class="form-message__item">
+                          <input class="visually-hidden form-message__radio" id="theme-two" type="radio" name="theme">
+                          <label class="form-message__label" for="theme-two">Установка</label>
+                        </li>
+                        <li class="form-message__item">
+                          <input class="visually-hidden form-message__radio" id="theme-three" type="radio" name="theme">
+                          <label class="form-message__label" for="theme-three">Сервис</label>
+                        </li>
+                        <li class="form-message__item">
+                          <input class="visually-hidden form-message__radio" id="theme-four" type="radio" name="theme">
+                          <label class="form-message__label" for="theme-four">Гарантия</label>
+                        </li>
+                        <li class="form-message__item">
+                          <input class="visually-hidden form-message__radio" id="theme-five" type="radio" name="theme">
+                          <label class="form-message__label" for="theme-five">Другое</label>
+                        </li>
+                      </ul>
+                      <p class="form-message__title">Введите текст сообщения</p>
+                      <textarea class="form-message__textarea" name="message"></textarea>
+                      <button class="button form-message__button" type="button">Отправить</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
     </main>
     <footer class="page-footer" role="contentinfo">
       <div class="page-footer__wrapper">

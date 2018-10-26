@@ -96,45 +96,47 @@
                   <p class="form-message__title">Введите ваши данные</p>
                   <p class="form-message__item">
                     <label class="visually-hidden" for="form-message-name-call">Ваше имя</label>
-                    <input class="form-message__input" id="form-message-name-call" type="text" placeholder="Ваше имя">
+                    <input class="form-message__input form-message__input--name" id="form-message-name-call" type="text" placeholder="Ваше имя">
                   </p>
                   <p class="form-message__item">
                     <label class="visually-hidden" for="form-message-phone-call">Ваш телефон</label>
-                    <input class="form-message__input" id="form-message-phone-call" type="tel" placeholder="Ваш телефон">
+                    <input class="form-message__input form-message__input--phone" id="form-message-phone-call" type="tel" placeholder="Ваш телефон">
                   </p>
                   <p class="form-message__item">
                     <label class="visually-hidden" for="form-message-mail-call">Ваш e-mail</label>
-                    <input class="form-message__input" id="form-message-mail-call" type="mail" placeholder="Ваш e-mail">
+                    <input class="form-message__input form-message__input--mail" id="form-message-mail-call" type="mail" placeholder="Ваш e-mail">
                   </p>
                   <p class="form-message__item">
                     <label class="visually-hidden" for="form-message-name-call">Номер договора</label>
-                    <input class="form-message__input" id="form-message-name-call" type="text" placeholder="Номер договора">
+                    <input class="form-message__input form-message__input--number" id="form-message-name-call" type="text" placeholder="Номер договора">
                   </p>
               </div>
               <div class="form-message__group">
                   <p class="form-message__title">Выберите тематику сообщения или вопроса</p>
-                  <p class="form-message__item">
-                    <input class="visually-hidden" id="theme-one" type="radio" name="theme">
-                    <label class="form-message__label" for="theme-one">Доставка</label>
-                  </p>
-                  <p class="form-message__item">
-                    <input class="visually-hidden" id="theme-two" type="radio" name="theme">
-                    <label class="form-message__label" for="theme-two">Установка</label>
-                  </p>
-                  <p class="form-message__item">
-                    <input class="visually-hidden" id="theme-three" type="radio" name="theme">
-                    <label class="form-message__label" for="theme-three">Сервис</label>
-                  </p>
-                  <p class="form-message__item">
-                    <input class="visually-hidden" id="theme-four" type="radio" name="theme">
-                    <label class="form-message__label" for="theme-four">Гарантия</label>
-                  </p>
-                  <p class="form-message__item">
-                    <input class="visually-hidden" id="theme-five" type="radio" name="theme">
-                    <label class="form-message__label" for="theme-five">Другое</label>
-                  </p>
+                  <ul class="form-massage__list">
+                    <li class="form-message__item">
+                      <input class="visually-hidden form-message__radio" id="theme-one" type="radio" name="theme">
+                      <label class="form-message__label" for="theme-one">Доставка</label>
+                    </li>
+                    <li class="form-message__item">
+                      <input class="visually-hidden form-message__radio" id="theme-two" type="radio" name="theme">
+                      <label class="form-message__label" for="theme-two">Установка</label>
+                    </li>
+                    <li class="form-message__item">
+                      <input class="visually-hidden form-message__radio" id="theme-three" type="radio" name="theme">
+                      <label class="form-message__label" for="theme-three">Сервис</label>
+                    </li>
+                    <li class="form-message__item">
+                      <input class="visually-hidden form-message__radio" id="theme-four" type="radio" name="theme">
+                      <label class="form-message__label" for="theme-four">Гарантия</label>
+                    </li>
+                    <li class="form-message__item">
+                      <input class="visually-hidden form-message__radio" id="theme-five" type="radio" name="theme">
+                      <label class="form-message__label" for="theme-five">Другое</label>
+                    </li>
+                  </ul>
                   <p class="form-message__title">Введите текст сообщения</p>
-                  <textarea class="form-message__textarea" name="message" id="" cols="30" rows="10"></textarea>
+                  <textarea class="form-message__textarea" name="message"></textarea>
                   <button class="button form-message__button" type="button">Отправить</button>
               </div>
             </div>

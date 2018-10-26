@@ -1,0 +1,192 @@
+.form-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-message__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: $desktop-width-big;
+  width: 100%;
+  margin: 0 auto 40px;
+  box-sizing: border-box;
+}
+
+.form-message__group {
+  width: 100%;
+}
+
+.form-message__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $text-color;
+}
+
+.form-message__item {
+  display: flex;
+  margin: 10px 0 0 0;
+}
+
+.form-message__input {
+  max-width: 100%;
+  padding: 10px 20px 10px 40px;
+  margin-bottom: 20px;
+  background-position: 0 50%;
+  border-radius: 20px;
+  border: 1px solid rgba(109, 180, 104, 0.53);
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+
+  &:focus::-webkit-input-placeholder {
+    color: transparent;
+  }
+
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: 1px 0 2px rgb(49, 86, 47);
+  }
+
+  &--name {
+    background: url("../../img/icon/icon-name.svg") no-repeat;
+  }
+
+  &--phone {
+    background: url("../../img/icon/icon-phone.svg") no-repeat;
+  }
+
+  &--mail {
+    background: url("../../img/icon/icon-mail2.svg") no-repeat;
+    background-size: 21px;
+    background-position: 10px center;
+  }
+}
+
+.form-message__textarea {
+  width: 100%;
+  min-height: 160px;
+  padding: 15px 20px 15px 20px;
+  background-position: 0 50%;
+  border-radius: 20px;
+  border: 1px solid rgba(109, 180, 104, 0.53);
+  cursor: pointer;
+  outline: none;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.form-message__label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $text-color;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 25px;
+
+    background-image: url("../../img/icon/radio-off.png");
+    background-repeat: no-repeat;
+
+    opacity: 0.8;
+  }
+}
+
+.form-message__radio:checked+.form-message__label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../../img/icon/radio-on.png");
+  background-repeat: no-repeat;
+}
+
+.form-message__item .form-message__label:hover::before {
+  opacity: 1;
+}
+
+.form-message__item .form-message__label:disabled::before {
+  opacity: 0.4;
+}
+
+.form-massage__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form-message__button {
+  max-width: 100%;
+  width: 200px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  color: #ffffff;
+  background: linear-gradient(to right, #f4bf5c, #fb494f);
+  border-radius: 50px;
+  box-shadow: 3px 0 9px #f87a55;
+  outline: none;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background: linear-gradient(to right, #fb494f, #fb494f);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-message {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto 40px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    &__wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__group {
+      width: 50%;
+    }
+
+    &__input {
+      width: 80%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-message {
+    min-height: 550px;
+  }
+}

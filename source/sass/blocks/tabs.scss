@@ -2,6 +2,27 @@
   width: 100%;
 }
 
+
+a:focus {
+  outline: expression(hideFocus='true');
+}
+
+#tabs_container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+// #tabs,
+// #about,
+// #jobs,
+// #dealers,
+// #message {
+//   width: 100%;
+//   margin: 0 auto;
+//   margin-bottom: 40px;
+// }
+
+
 .tabs__list {
   position: absolute;
   top: 63px;

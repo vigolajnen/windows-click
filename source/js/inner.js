@@ -203,3 +203,21 @@ $('#slick-buttons button').bind('click', function(e){
   $('#calc-tabs4').tabulous({
     effect: 'flip'
   });
+
+// табы о компании
+
+$('#about').tabulous({
+  effect: 'scale'
+});
+
+$('#jobs').tabulous({
+  effect: 'slideLeft'
+});
+
+$('#dealers').tabulous({
+  effect: 'scaleUp'
+});
+
+$('#message').tabulous({
+  effect: 'flip'
+});

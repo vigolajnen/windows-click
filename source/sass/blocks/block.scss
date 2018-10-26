@@ -22,9 +22,25 @@
     &--right {
       order: 1;
     }
+
+    &--big {
+      width: 50%;
+    }
+
+    &--small {
+      width: 50%;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .block__item {
+    &--big {
+      width: 60%;
+    }
 
+    &--small {
+      width: 40%;
+    }
+  }
 }

@@ -95,8 +95,11 @@
       }
 
       &--sale {
+        position: relative;
         background-color: transparent;
+        background-repeat: no-repeat;
         margin: 0;
+        padding: 40px 0;
         padding-left: 60px;
         text-align: center;
       }
@@ -130,11 +133,40 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url(../../img/page-sale/promo/promo-bg-left.png);
+      background-image: url("../../img/page-sale/promo/leaf-1.png");
       background-repeat: no-repeat;
-      background-size: contain;
-      background-position: 0 70px;
+      background-size: 30%;
+      background-position: -20px 154px;
       width: 45%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: auto;
+        bottom: -90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 200px;
+        background-image: url("../../img/page-sale/promo/leaf-2.png");
+        background-size: 110%;
+        background-position: 0 0;
+        z-index: 11;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: 0;
+        width: 150px;
+        height: 200px;
+        background-size: contain;
+        background-image: url("../../img/page-sale/promo/leaf-3.png");
+        background-repeat: no-repeat;
+        z-index: 11;
+      }
     }
   }
 
@@ -147,3 +179,59 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo-slider__info {
+    &--sale-bg {
+      top: 0;
+      left: 0;
+      background-size: 30%;
+      background-position: -45px 154px;
+      width: 45%;
+
+      &::before {
+        top: auto;
+        bottom: -60px;
+        width: 185px;
+        height: 200px;
+        background-size: 110%;
+        background-position: 0 0;
+      }
+
+      &::after {
+        left: auto;
+        right: 25px;
+        top: 25px;
+        width: 185px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  .promo-slider__info {
+    &--sale-bg {
+      background-size: 25%;
+      background-position: -80px 80px;
+
+      &::before {
+        top: auto;
+        bottom: -60px;
+        width: 185px;
+        height: 200px;
+        background-size: 110%;
+        background-position: 0 0;
+      }
+
+      &::after {
+        left: auto;
+        right: 25px;
+        top: 25px;
+        width: 185px;
+        height: 200px;
+      }
+    }
+  }
+}
+

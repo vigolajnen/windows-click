@@ -184,40 +184,26 @@ $('#slick-buttons button').bind('click', function(e){
     slidesToScroll: 1
   });
 
+// табы - страница калькулятор
 
-
-  // табы для формы обратной связи
-
-  $('#calc-tabs').tabulous({
-    effect: 'scale'
+(function () {
+  $("#calc-tabs>li>a").click( function () {
+    $("#tabs_container>div").hide();
+    var t_content=$(this).attr("href");
+    $(t_content).show();
+    return false;
   });
-
-  $('#calc-tabs2').tabulous({
-    effect: 'slideLeft'
-  });
-
-  $('#calc-tabs3').tabulous({
-    effect: 'scaleUp'
-  });
-
-  $('#calc-tabs4').tabulous({
-    effect: 'flip'
-  });
+  $("#calc-tabs>li>a:first").trigger("click");
+})();
 
 // табы о компании
 
-$('#about').tabulous({
-  effect: 'scale'
-});
-
-$('#jobs').tabulous({
-  effect: 'slideLeft'
-});
-
-$('#dealers').tabulous({
-  effect: 'scaleUp'
-});
-
-$('#message').tabulous({
-  effect: 'flip'
-});
+(function () {
+  $("#tabs-menu>li>a").click( function () {
+    $("#tabs_container>div").hide();
+    var t_content=$(this).attr("href");
+    $(t_content).show();
+    return false;
+  });
+  $("#tabs-menu>li>a:first").trigger("click");
+})();

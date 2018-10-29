@@ -78,6 +78,18 @@ $(document).ready(function() {
     });
 });
 
+// табы выполненые работы
+
+(function () {
+  $(".tabs__item").click(function () {
+    $("#tabs_container>div").hide();
+    var t_content = $(this).attr("href");
+    $(t_content).show();
+    return false;
+  });
+  $(".tabs__item:first").trigger("click");
+})();
+
 // Sticky block
 $(document).ready(function() {
   // grab the initial top offset of the navigation

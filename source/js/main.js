@@ -55,6 +55,19 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+  $(".fade3").slick({
+    arrows: true,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    prevArrow: $(".slider-projects__prev--js"),
+    nextArrow: $(".slider-projects__next--js"),
+  });
+});
+
 
 // fancybox
 $(document).ready(function() {
@@ -81,13 +94,13 @@ $(document).ready(function() {
 // табы выполненые работы
 
 (function () {
-  $(".tabs__item").click(function () {
+  $(".tabs__list>li>a").click(function () {
     $("#tabs_container>div").hide();
     var t_content = $(this).attr("href");
     $(t_content).show();
     return false;
   });
-  $(".tabs__item:first").trigger("click");
+  $(".tabs__list>li>a:first").trigger("click");
 })();
 
 // Sticky block
@@ -140,35 +153,35 @@ jQuery(document).ready(function(){
 
 // фильтр для блока "выполненные работы" на главной
 
-var filtered = false;
-$('.filterer').on('click', function(){
-  var whichID = $(this).attr('id');
-  console.log(whichID);
-  if (whichID != 'js-filter-finish') {
-    if ( $('.fade').hasClass('filtered') ) {
-      $('.fade').slick('slickFilter','.filter-finish');
-      $('.fade').slick('slickGoTo',0);
-      filtered = false;
-    } else {
-      $('.fade').addClass('filtered');
-    }
-  } else {
-    $('.fade').removeClass('filtered');
-    $('.fade').slick('slickUnfilter');
-    $('.fade').slick('slickGoTo',0);
-  }
+// var filtered = false;
+// $('.filterer').on('click', function(){
+//   var whichID = $(this).attr('id');
+//   console.log(whichID);
+//   if (whichID != 'js-filter-finish') {
+//     if ( $('.fade').hasClass('filtered') ) {
+//       $('.fade').slick('slickFilter','.filter-finish');
+//       $('.fade').slick('slickGoTo',0);
+//       filtered = false;
+//     } else {
+//       $('.fade').addClass('filtered');
+//     }
+//   } else {
+//     $('.fade').removeClass('filtered');
+//     $('.fade').slick('slickUnfilter');
+//     $('.fade').slick('slickGoTo',0);
+//   }
 
-  if (whichID != 'js-filter-glazing') {
-    if ( $('.fade').hasClass('filtered') ) {
-      $('.fade').slick('slickFilter','.filter-glazing');
-      $('.fade').slick('slickGoTo',0);
-      filtered = false;
-    } else {
-      $('.fade').addClass('filtered');
-    }
-  } else {
-    $('.fade').removeClass('filtered');
-    $('.fade').slick('slickUnfilter');
-    $('.fade').slick('slickGoTo',0);
-  }
-});
+//   if (whichID != 'js-filter-glazing') {
+//     if ( $('.fade').hasClass('filtered') ) {
+//       $('.fade').slick('slickFilter','.filter-glazing');
+//       $('.fade').slick('slickGoTo',0);
+//       filtered = false;
+//     } else {
+//       $('.fade').addClass('filtered');
+//     }
+//   } else {
+//     $('.fade').removeClass('filtered');
+//     $('.fade').slick('slickUnfilter');
+//     $('.fade').slick('slickGoTo',0);
+//   }
+// });

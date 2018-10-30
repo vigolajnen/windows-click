@@ -131,6 +131,21 @@
       background-color: $color-green;
     }
   }
+
+  &--line-left {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -4px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 70%;
+      background-color: $color-light-green;
+    }
+  }
 }
 
 .page-info__item iframe {

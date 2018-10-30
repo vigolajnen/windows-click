@@ -556,17 +556,14 @@ div.calc1-type-selector-one-selected:after {
 	}
 	
 	.calc1-type2-selector > div:first-child {
-		margin-top:35px;
+    margin: 0;
+    font-size: 16px;
 	}
 	
 	.calc1-button {
 		margin-right:0px;
 	}
-	
-	.calc1-options {
-		margin-top:-150px;
-	}
-	
+
 	.calc1-options > label {
 		width:50%;
 	}

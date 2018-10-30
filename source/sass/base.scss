@@ -54,3 +54,12 @@ body {
   line-height: 24px;
   color: $text-color;
 }
+
+a {
+  color: $color-green;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+}

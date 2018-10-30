@@ -61,9 +61,13 @@
   }
 
   &--mail {
-    background: url("../../img/icon/icon-mail2.svg") no-repeat;
+    background: url("../../img/icon/icon-mail2.svg") no-repeat 10px center;
     background-size: 21px;
-    background-position: 10px center;
+  }
+
+  &--number {
+    background: url("../../img/page-company/directions/icon-number.png") no-repeat 10px center;
+    filter: hue-rotate(-25deg);
   }
 }
 

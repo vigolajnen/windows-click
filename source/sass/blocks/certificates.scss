@@ -26,6 +26,9 @@
 
 .certificates__pic {
   margin-bottom: 20px;
+  width: 168px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (min-width: $tablet-width) {

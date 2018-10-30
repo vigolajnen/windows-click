@@ -242,40 +242,7 @@
 	font-size: 16px;
 	margin-left: 36px;
 }
-.calc2 input[type="submit"] {
-	font-family: arial,helvetica neue,helvetica,sans-serif;
-	font-size: 21px;
-	color: #FFFFFF;
-	padding: 11px 50px;
-	background: -moz-linear-gradient(top,#9CE1FC 0%,#0299D4 100%);
-	background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#9CE1FC), color-stop(100%,#0299D4));
-	background: -webkit-linear-gradient(top,#9CE1FC 0%,#0299D4 100%);
-	background: -o-linear-gradient(top,#9CE1FC 0%,#0299D4 100%);
-	background: -ms-linear-gradient(top,#9CE1FC 0%,#0299D4 100%);
-	background: linear-gradient(to bottom,#9CE1FC 0%,#0299D4 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9CE1FC',endColorstr='#0299D4',GradientType=0);
-	border: 1px solid #036EF0;
-	-moz-border-radius: 0;
-	-webkit-border-radius: 0;
-	border-radius: 0;
-	font-weight: 300;
-	font-style: normal;
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	white-space: nowrap;
-	text-decoration: none!important;
-	box-sizing: border-box;
-	transform: scale(1);
-	transition: transform .1s ease;
-	line-height: 1;
-	text-align: center;
-	cursor: pointer;
-	width: calc(100% - 36px);
-	margin-left: 36px;
-}
+
 .calc2_popup_window {
 	width: 100%;
 	max-width: 400px;

@@ -8,13 +8,13 @@
   flex-direction: column;
   justify-content: center;
   max-width: $desktop-width;
-  padding: 40 0;
+  padding: 40px 0;
   margin: 0 auto;
   list-style: none;
 }
 
 .calc-tabs__item {
-  margin-bottom: 10;
+  margin-bottom: 10px;
   padding: 5px 15px;
   box-sizing: border-box;
 }
@@ -22,9 +22,9 @@
 .calc-tabs__button {
   display: block;
   width: 100%;
-  padding: 10 20;
+  padding: 10px 20px;
   background-color: $color-light-grey-4;
-  border-radius: 20;
+  border-radius: 20px;
   box-sizing: border-box;
   outline: none;
   color: $text-color;
@@ -35,7 +35,7 @@
   &:active {
     color: #ffffff;
     background-color: $color-green;
-    box-shadow: 0 0 60 0 rgba(34, 34, 34, 0.3);
+    box-shadow: 0 0 60px 0 rgba(34, 34, 34, 0.3);
   }
 }
 
@@ -74,14 +74,14 @@ a:focus {
 }
 
 #calc-tabs_container {
-  min-height: 600;
-  padding: 20 40;
+  min-height: 600px;
+  padding: 20px 40px;
   overflow: hidden;
   position: relative;
 }
 
 #calc-tabs_container div {
-  margin-right: 40;
+  margin-right: 40px;
   left: 50%;
   transform: translateX(-50%);
 }

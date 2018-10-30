@@ -87,8 +87,6 @@ div.calc1-type-selector-one-selected:after {
   margin-bottom: 17px;
 }
 
-
-
 .calc1-main-window {
   width: 70%;
   margin-top: 30px;
@@ -208,7 +206,7 @@ div.calc1-type-selector-one-selected:after {
 
 .calc1-horisontal-slider-ui>.ui-slider-handle {
   background: url(images/horisontal-scroll-marker.png);
-  margin-left: 0x;
+  margin-left: 0;
   margin-top: -5px;
 }
 
@@ -326,7 +324,6 @@ div.calc1-type-selector-one-selected:after {
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  
 }
 
 .calc1-type2-selector>div>input:checked+label {

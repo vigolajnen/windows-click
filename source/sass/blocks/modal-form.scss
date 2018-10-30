@@ -99,13 +99,13 @@
   }
 
   &--mail {
-    background: url("../../img/icon/icon-mail2.svg") no-repeat;
+    background: url("../../img/icon/icon-mail2.svg") no-repeat 10px center;
     background-size: 21px;
-    background-position: 10px center;
   }
 
   &--file {
-    background: url("../../img/icon/icon-paper-clip.svg") no-repeat;
+    background: url("../../img/icon/icon-inclined-clip.svg") no-repeat 10px center;
+    background-size: 21px;
   }
 }
 

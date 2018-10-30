@@ -1,7 +1,7 @@
+/*stylelint-disable*/
 .tabs {
   width: 100%;
 }
-
 
 a:focus {
   outline: expression(hideFocus='true');
@@ -11,17 +11,6 @@ a:focus {
   width: 100%;
   margin: 0 auto;
 }
-
-// #tabs,
-// #about,
-// #jobs,
-// #dealers,
-// #message {
-//   width: 100%;
-//   margin: 0 auto;
-//   margin-bottom: 40px;
-// }
-
 
 .tabs__list {
   position: absolute;

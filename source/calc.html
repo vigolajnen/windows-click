@@ -89,8 +89,8 @@
     </div>
     <div id="tabs_container" class="page-calc__wrapper">
       <div id="calc-bl-glazing" class="calc-bl-glazing">
-        <div class="calc-bl-glazing__wrapper calc1">
-          <div class="calc-bl-glazing__item">
+        <div class="calc-bl-glazing__wrapper calc1 block">
+          <div class="calc-bl-glazing__item block__item block__item--big">
             <div class="calc1-type-selector">
                 <div class="calc1-type-selector__title">Конструкция балкона</div>
                 <div class="calc1-type-selector-one calc1-type-selector-one-selected" data-btype="loggia"><img src="https://kupibalkon.online/calc1/images/loggia-icon-active.png" alt="Лоджия" data-value="Лоджия"><br>Лоджия</div>
@@ -133,10 +133,17 @@
             <div class="calc1-price">
                 Стоимость:
                 <br><span class="calc1-price-value">18 000</span> <span class="rub">руб</span>
-                <div class="calc1-button">Заказать</div>
+                <!-- <div class="calc1-button">Заказать</div> -->
+                
+            </div>
+            <div class="calc-install__inner">
+              <label for="calc-win-phone" class="visually-hidden">Ваш телефон</label>
+              <input id="calc-win-phone" class="calc-install__phone" type="tel" placeholder="Ваш телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required>
+              <button class="calc-install__button button" type="button">Получить расчёт</button>
             </div>
           </div>
-          <div class="calc-bl-glazing__item">
+            <div class="calc-bl-glazing__item block__item block__item--small">
             <div class="calc1-main-window">
                 <div class="calc1-vertical-slider">
                     <div class="calc1-vertical-slider-counter" style="top: 50%;">1400</div>

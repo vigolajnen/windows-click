@@ -92,21 +92,19 @@
 .calc-install__phone {
   margin-bottom: 10px;
   padding: 10px 20px 10px 40px;
-  background: url(../../img/icon/icon-phone.svg) no-repeat;
+  background: url("../../img/icon/icon-phone.svg") no-repeat;
   background-position: 0 50%;
   border-radius: 20px;
-  border: 1px solid rgba(109,180,104,.53);
+  border: 1px solid rgba(146, 177, 143, 0.53);
   cursor: pointer;
   outline: 0;
 }
 
 .calc-install__button {
   padding: 10px 30px;
-  color: #fff;
-  background: -webkit-gradient(linear,left top,right top,from(#f4bf5c),to(#fb494f));
-  background: linear-gradient(to right,#f4bf5c,#fb494f);
+  color: #ffffff;
+  background: linear-gradient(to right, #f4bf5c, #fb494f);
   border-radius: 50px;
-  -webkit-box-shadow: 3px 0 9px #f87a55;
   box-shadow: 3px 0 9px #f87a55;
   outline: 0;
 }

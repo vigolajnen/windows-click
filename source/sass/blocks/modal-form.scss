@@ -32,12 +32,16 @@
 
 .modal-form__title {
   max-width: 450px;
-  margin: 0;
+  margin: 0 0 20px 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: 900;
   color: $color-green;
   text-transform: uppercase;
+}
+
+.modal-form__item {
+  margin: 0 0 25px 0;
 }
 
 .modal-form__close {
@@ -59,9 +63,16 @@
   transition: 1s;
 }
 
+.modal-form__label {
+  &--file {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
 .modal-form__input {
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 20px 10px 40px;
   border-radius: 20px;
   border: none;
   box-shadow: 1px 0 13px $color-green;
@@ -77,6 +88,24 @@
   &:hover,
   &:focus {
     box-shadow: 1px 0 13px rgb(49, 86, 47);
+  }
+
+  &--name {
+    background: url("../../img/icon/icon-name.svg") no-repeat;
+  }
+
+  &--phone {
+    background: url("../../img/icon/icon-phone.svg") no-repeat;
+  }
+
+  &--mail {
+    background: url("../../img/icon/icon-mail2.svg") no-repeat;
+    background-size: 21px;
+    background-position: 10px center;
+  }
+
+  &--file {
+    background: url("../../img/icon/icon-paper-clip.svg") no-repeat;
   }
 }
 

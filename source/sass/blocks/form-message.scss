@@ -107,7 +107,7 @@
   }
 }
 
-.form-message__radio:checked+.form-message__label::before {
+.form-message__radio:checked + .form-message__label::before {
   content: "";
   position: absolute;
   top: 0;

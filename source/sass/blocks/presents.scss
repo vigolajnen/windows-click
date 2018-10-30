@@ -26,11 +26,6 @@
     list-style: none;
   }
 
-  &__item {
-    padding: 170px 15px 0;
-    box-sizing: border-box;
-  }
-
   &__text {
     font-size: 14px;
     line-height: 14px;
@@ -41,6 +36,9 @@
 }
 
 .presents__item {
+  padding: 170px 15px 0;
+  box-sizing: border-box;
+
   &--bg-one,
   &--bg-two,
   &--bg-three,

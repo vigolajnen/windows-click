@@ -1,3 +1,4 @@
+/*stylelint-disable*/
 .calc-tabs {
   width: 100%;
 }
@@ -7,13 +8,13 @@
   flex-direction: column;
   justify-content: center;
   max-width: $desktop-width;
-  padding: 40px 0;
+  padding: 40 0;
   margin: 0 auto;
   list-style: none;
 }
 
 .calc-tabs__item {
-  margin-bottom: 10px;
+  margin-bottom: 10;
   padding: 5px 15px;
   box-sizing: border-box;
 }
@@ -21,9 +22,9 @@
 .calc-tabs__button {
   display: block;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10 20;
   background-color: $color-light-grey-4;
-  border-radius: 20px;
+  border-radius: 20;
   box-sizing: border-box;
   outline: none;
   color: $text-color;
@@ -34,7 +35,7 @@
   &:active {
     color: #ffffff;
     background-color: $color-green;
-    box-shadow: 0 0 60px 0 rgba(34,34,34,.3);
+    box-shadow: 0 0 60 0 rgba(34, 34, 34, 0.3);
   }
 }
 
@@ -55,8 +56,6 @@
   }
 }
 
-// 
-
 .calc-bl-glazing,
 .calc-bl-finishes,
 .calc-install-win,
@@ -74,78 +73,44 @@ a:focus {
   margin: 0 auto;
 }
 
-
 #calc-tabs_container {
-  min-height: 600px;
-  padding: 20px 40px;
+  min-height: 600;
+  padding: 20 40;
   overflow: hidden;
   position: relative;
 }
 
 #calc-tabs_container div {
-  margin-right: 40px;
+  margin-right: 40;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .transition {
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-
-  -webkit-transition-delay: .3s;
-  -moz-transition-delay: .3s;
-  -o-transition-delay: .3s;
-  -ms-transition-delay: .3s;
-  transition-delay: .3s;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.3s;
 }
 
 .make_transist {
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hidescale {
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  -ms-transform: scale(0.9);
   transform: scale(0.9);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
-  filter: alpha(opacity=0);
-  // opacity: 0;
-  // z-index: 1000;
   display: none;
 }
 
 .showscale {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
-  // opacity: 1;
   display: block;
-  -webkit-transition-delay: .3s;
-  -moz-transition-delay: .3s;
-  -o-transition-delay: .3s;
-  -ms-transition-delay: .3s;
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 
 .hideleft {
-  -webkit-transform: translateX(-100%);
-  -moz-transform: translateX(-100%);
-  -o-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -153,27 +118,14 @@ a:focus {
 }
 
 .showleft {
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -o-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  transform: translateX(0px);
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  transform: translateX(0);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
-
-  -webkit-transition-delay: .3s;
-  -moz-transition-delay: .3s;
-  -o-transition-delay: .3s;
-  -ms-transition-delay: .3s;
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 
 .hidescaleup {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
   transform: scale(1.1);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -181,37 +133,18 @@ a:focus {
 }
 
 .showscaleup {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
-
-  -webkit-transition-delay: .3s;
-  -moz-transition-delay: .3s;
-  -o-transition-delay: .3s;
-  -ms-transition-delay: .3s;
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 
 .hideflip {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-
-  -webkit-transform: rotatey(-90deg) scale(1.1);
-  -moz-transform: rotatey(-90deg) scale(1.1);
-  -o-transform: rotatey(-90deg) scale(1.1);
-  -ms-transform: rotatey(-90deg) scale(1.1);
   transform: rotatey(-90deg) scale(1.1);
-
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 
@@ -220,22 +153,10 @@ a:focus {
   filter: alpha(opacity=100);
   opacity: 1;
 
-  -webkit-transition-delay: .3s;
-  -moz-transition-delay: .3s;
-  -o-transition-delay: .3s;
-  -ms-transition-delay: .3s;
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 
-  -webkit-transform: rotatey(0deg) scale(1);
-  -moz-transform: rotatey(0deg) scale(1);
-  -o-transform: rotatey(0deg) scale(1);
-  -ms-transform: rotatey(0deg) scale(1);
   transform: rotatey(0deg) scale(1);
 
-  -webkit-transform-origin: 50% 50%;
-  -moz-transform-origin: 50% 50%;
-  -o-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
 }
 

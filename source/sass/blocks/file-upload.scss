@@ -1,0 +1,27 @@
+.file-upload {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  font-size: 1em;
+  height: 2em;
+  line-height: 2em;
+}
+
+.file-upload__button,
+.file-upload > mark {
+  display: block;
+  cursor: pointer;
+}
+
+.file-upload__button {
+  float: right;
+  box-sizing: border-box;
+  width: 8em;
+  height: 100%;
+  text-align: center;
+}
+
+.file-upload > mark {
+  background: transparent;
+  padding-left: 1em;
+}

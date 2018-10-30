@@ -1,3 +1,4 @@
+/*stylelint-disable*/
 .calc1 {
   /*margin-bottom:600px;*/
   width: 100%;
@@ -160,15 +161,15 @@ div.calc1-type-selector-one-selected:after {
 }
 
 .calc1-horisontal-slider {
-  position: relative;
-  margin-bottom: 60px;
-  margin-left: 90px;
-  width: 450px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-left: 0;
+    width: 55px;
 }
 
 
 .calc1-horisontal-slider-ui {
-  width: 450px;
+  width: 350px;
   height: 0px;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -258,7 +259,13 @@ div.calc1-type-selector-one-selected:after {
 
 .calc1-constuction {
   position: relative;
-  height: 300px;
+  height: 165px;
+}
+
+.calc1-constuction img {
+  position: absolute;
+  left: 0;
+  max-width: 85%;
 }
 
 .calc1-options>input,
@@ -329,6 +336,9 @@ div.calc1-type-selector-one-selected:after {
 .calc1-type2-selector>div>div {
   margin-top: 13px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .calc1-bar-wrapper {
@@ -346,16 +356,20 @@ div.calc1-type-selector-one-selected:after {
 }
 
 .calc1-price {
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: baseline;
   font-size: 16px;
   font-weight: bold;
 }
 
 .calc1-price-value {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
-  color: $color-green !important;
+  color: $text-color !important;
   display: inline-block;
-  margin-top: 5px;
+  margin: 0 5px;
 }
 
 .calc1-button {
@@ -426,7 +440,7 @@ div.calc1-type-selector-one-selected:after {
   border-radius: 40px;
 }
 
-/*@media all and (max-width:420px) {
+@media all and (max-width:420px) {
 	
 	.calc1 {
 		padding:10px;
@@ -577,7 +591,7 @@ div.calc1-type-selector-one-selected:after {
 		width:50%;
 		margin-right:10px;
 	}
-}*/
+}
 
 .ui-slider-horizontal {
   height: 0.2em !important;
@@ -589,4 +603,20 @@ div.calc1-type-selector-one-selected:after {
 
 .ui-slider-vertical .ui-slider-handle {
   left: -.4em !important;
+}
+
+@media (max-width: 767px) {
+  .calc1-main-window {
+    display: none;
+  }
+
+  .calc1-options label {
+    width: 50%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .calc1-options label {
+    width: 50%;
+  }
 }

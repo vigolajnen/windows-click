@@ -32,6 +32,10 @@
 
 .map__script {
   width: 100%;
+
+  & iframe {
+    width: 100%;
+  }
 }
 
 @media (min-width: $tablet-width) {

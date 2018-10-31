@@ -62,20 +62,26 @@
     <h1 class="block__title">Онлайн оплата</h1>
     <div class="block__wrapper">
       <div class="block__item">
-          <div class="form-pay" action="">
+          <form class="form-pay" action="https://money.yandex.ru/eshop.xml" method="post" onsubmit="formatReceipt(this);return false;">
             <div class="form-pay__wrapper">
+                <input required="" name="shopId" value="199376" type="hidden">
+                <input required="" name="scid" value="723356" type="hidden">
               <p class="form-pay__caption">Введите Ваши данные</p>
               <p class="form-pay__item">
                 <label for="form-pay-name" class="visually-hidden">Ваше ФИО</label>
-                <input id="form-pay-name" class="form-pay__input form-pay__input--name" type="text" placeholder="Ваше ФИО">
+                <input id="form-pay-name" class="form-pay__input form-pay__input--name" type="text"  name="custName" placeholder="Ваше ФИО">
               </p>
               <p class="form-pay__item">
                 <label for="form-pay-phone" class="visually-hidden">Ваш телефон</label>
-                <input id="form-pay-phone" class="form-pay__input form-pay__input--phone" type="tel" placeholder="Ваш телефон">
+                <input id="form-pay-phone" class="form-pay__input form-pay__input--phone" name="custEmail" type="tel" placeholder="Ваш телефон">
               </p>
               <p class="form-pay__item">
                 <label for="form-pay-mail" class="visually-hidden">Ваш e-mail (для получения эл. чека)</label>
-                <input id="form-pay-mail" class="form-pay__input form-pay__input--mail" type="mail" placeholder="Ваш e-mail (для получения эл. чека)">
+                <input id="form-pay-mail" class="form-pay__input form-pay__input--mail" type="mail" required="" name="customerContact" value="" placeholder="Ваш e-mail (для получения эл. чека)">
+                <input name="ym_merchant_receipt" value="{&quot;customerContact&quot;: &quot;&quot;,
+                  &quot;items&quot;:[
+                  {&quot;quantity&quot;: 1, &quot;price&quot;: {&quot;amount&quot;: &quot;&quot;},  &quot;tax&quot;: 4, &quot;text&quot;: &quot;Заказ с сайта https://oknaclick.ru&quot;}
+                  ]}" type="hidden">
               </p>
               <p class="form-pay__item">
                 <label for="form-pay-number" class="visually-hidden">Номер заказа</label>
@@ -83,23 +89,28 @@
               </p>
               <p class="form-pay__item">
                 <label for="form-pay-price" class="visually-hidden">Укажите сумму платежа</label>
-                <input id="form-pay-price" class="form-pay__input form-pay__input--price" type="text" placeholder="Укажите сумму платежа">
+                <input id="form-pay-price" class="form-pay__input form-pay__input--price" required="" name="sum" value="" type="number" min="1" placeholder="Укажите сумму платежа">
               </p>
               <p class="form-pay__item">
                 <label for="form-pay-address" class="visually-hidden">Укажите адрес доставки</label>
-                <input id="form-pay-address" class="form-pay__input form-pay__input--marker" type="text" placeholder="Укажите адрес доставки">
+                <input id="form-pay-address" class="form-pay__input form-pay__input--marker" name="custAddr" type="text" placeholder="Укажите адрес доставки">
               </p>
               <p class="form-pay__item">
                 <label for="form-pay-message" class="visually-hidden">Комментарий к заказу</label>
-                <textarea class="form-pay__message" id="form-pay-message">Комментарий к заказу</textarea>
+                <textarea class="form-pay__message" id="form-pay-message" name="orderDetails" placeholder="Комментарий к заказу" wrap="soft"></textarea>
               </p>
-              <button class="form-pay__button button" type="button">Оплатить</button>
+              <input class="form-pay__button button" type="submit" value="Оплатить">
             </div>
-          </div>
+          </form>
       </div>
       <div class="block__item">
-        <p>Оплата производится по защищенному протоколу через платежный шлюз сервиса Яндекс.Касса. Пожалуйста укажите корректный адрес e-mail для успешного платежа и получения электронного чека. В случае проблем с оплатой свяжитесь с нами по телефону <a href="tel:+74955180209">+7 (495) 518-02-09</a></p>
-        <img class="page-info__pic page-info__pic--cover page-info__pic--visible" src="img/page-pay/pay.jpg" alt="оплата онлайн">
+        <div class="block__text block__text--width">
+          <p>Оплата производится по защищенному протоколу через платежный шлюз сервиса Яндекс.Касса.</p>
+          <p>Пожалуйста укажите корректный адрес e-mail для успешного платежа и получения электронного чека. В случае проблем с оплатой свяжитесь с нами по телефону <a class="block__link" href="tel:+74955180209">+7 (495) 518-02-09</a></p>
+        </div>
+        <div class="block__picture block__picture--before-line">
+          <img src="img/page-pay/pay.jpg" alt="оплата онлайн">
+        </div>
       </div>
     </div>
   </main>
@@ -115,7 +126,7 @@
           <a class="page-footer__link" href="tel:+74955180209">Телефон: +7 (495) 518-02-09</a>
         </li>
         <li class="page-footer__item">
-          <a class="page-footer__link" href="mailto:info@okna-sity.ru">E-mail: info@okna-sity.ru</a>
+          <a class="page-footer__link" href="mailto:info@oknaclick.ru">E-mail: info@oknaclick.ru</a>
         </li>
       </ul>
       <ul class="page-footer__list">
@@ -254,6 +265,31 @@
   <script src="js/vendor.min.js"></script>
   <script>
     new WOW().init();
+  </script>
+  <script>
+    var  validateContact = function(value) {
+      var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
+      phoneReg = /^\+7[0-9]{10,11}/;
+      isEmail = value.match(emailReg);
+      isPhone = value.match(phoneReg);
+      return (isEmail || isPhone);
+    }
+
+    var formatReceipt = function (form) {
+      var customerContactValue = form.customerContact.value,
+      receipt = form.ym_merchant_receipt.value,
+      receiptObject = JSON.parse(receipt);
+
+      if(validateContact(customerContactValue)) {
+      receiptObject.customerContact = customerContactValue;
+      receiptObject.items[0].price.amount = form.sum.value;
+      form.ym_merchant_receipt.value = JSON.stringify(receiptObject);
+      form.submit();
+      } else {
+      alert('Неверно введен контакт покупателя. Ограничения: только цифры (+79210000000) или адрес электронной почты.')
+      return false;
+      }
+    };
   </script>
   <script src="js/inner.min.js"></script>
 </body>

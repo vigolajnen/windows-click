@@ -16,6 +16,7 @@
 .page-promo__wrapper {
   display: flex;
   flex-direction: column;
+  max-height: 500px;
 }
 
 .page-promo__title {
@@ -46,6 +47,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right 100%;
+
+  &--picture img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #6db468;
+    object-fit: cover;
+  }
 
   &--pl-bg {
     width: 30%;
@@ -174,11 +183,27 @@
     font-size: 40px;
     line-height: 40px;
   }
+
+  .page-promo__item {
+    &--picture img {
+      display: block;
+      max-width: 450px;
+      margin-left: auto;
+    }
+  }
 }
 
 @media (min-width: 800px) {
   .page-promo__caption {
     display: block;
+  }
+}
+
+@media (min-width: 990px) {
+  .page-promo__item {
+    &--picture img {
+      max-width: 850px;
+    }
   }
 }
 

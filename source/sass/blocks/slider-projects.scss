@@ -147,6 +147,10 @@
   }
 }
 
+.slider-projects__item .slick-slide.slick-current.slick-active {
+  width: 100% !important;
+}
+
 @media (min-width: 769px) {
   .slider-projects {
     margin-top: 0;

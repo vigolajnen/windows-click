@@ -92,15 +92,18 @@ $(document).ready(function() {
 });
 
 // табы выполненые работы
-
 (function () {
-  $(".tabs__list>li>a").click(function () {
+  $("#ready-projects>li>a").click(function () {
+    $("#ready-projects>li").removeClass("tabs__item--active"); //Удалить "active" класс
+    $("#ready-projects>li").removeClass("tabs__item--right");
+    $(this).parent().addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
+    $(this).parent().addClass("tabs__item--right");
     $("#tabs_container>div").hide();
     var t_content = $(this).attr("href");
     $(t_content).show();
     return false;
   });
-  $(".tabs__list>li>a:first").trigger("click");
+  $("#ready-projects>li>a:first").trigger("click");
 })();
 
 // Sticky block

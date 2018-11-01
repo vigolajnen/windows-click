@@ -23,14 +23,14 @@
 
 .options .tabs__item a {
   display: flex;
-  padding: 10px 15px 10px 30px;
+  padding: 10px 15px 10px 40px;
   font-size: 15px;
   line-height: 15px;
 }
 
 @media (max-width: 767px) {
   .options .tabs__list {
-    top: 0;
+    top: -15px;
     width: 75%;
   }
 }

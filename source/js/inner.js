@@ -2,9 +2,7 @@
 
 var navMain = document.querySelector(".navigation");
 var navToggle = document.querySelector(".navigation__toggle");
-
 navMain.classList.remove("navigation--nojs");
-
 navToggle.addEventListener("click", function() {
   if (navMain.classList.contains("navigation--closed")) {
       navMain.classList.remove("navigation--closed");
@@ -19,12 +17,10 @@ navToggle.addEventListener("click", function() {
 var modalOpen = document.querySelector(".page-header__button");
 var modal = document.querySelector(".modal-form");
 var modalBtn = document.querySelector(".modal-form__close");
-
 modalOpen.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-form-show");
 });
-
 modalBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-form-show");
@@ -69,28 +65,9 @@ $(document).ready(function(){
   });
 });
 
-
-
 // fancybox
 $(document).ready(function() {
   $(".gallery a").fancybox(); // выбор всех ссылок с классом gallery
-});
-
-
-$(document).ready(function() {
-    //Действия по умолчанию
-    $(".tabs__item:first").addClass("tabs__item--active").show(); //Активировать первую вкладку
-
-    //Событие по клику
-    $(".tabs__item").click(function() {
-        $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
-        $(".tabs__item").removeClass("tabs__item--right");
-        $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
-        $(this).addClass("tabs__item--right");
-        var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
-        $(activeTab).fadeIn(); //Исчезновение активного контента
-        return false;
-    });
 });
 
 // Sticky block
@@ -118,9 +95,7 @@ $(document).ready(function() {
   });
 });
 
-
 // фильтр для блока "выполненные работы" на главной
-
 var filtered = false;
 $('.filterer').on('click', function(){
   var whichID = $(this).attr('id');
@@ -154,38 +129,38 @@ $('.filterer').on('click', function(){
   }
 });
 
+$(document).ready(function() {
+  //Действия по умолчанию
+  $(".tabs__item:first").addClass("tabs__item--active").show(); //Активировать первую вкладку
 
-/*----------  Filter  ----------*/
-$('.calc-tabs__button--active').click();
-
-$('#slick-buttons button').bind('click', function(e){
-  var filter = $(this).val();
-  var key = "."+filter;
-  
-  $('#slick-calc').slick('slickUnfilter');
-  $('#slick-calc').slick('slickFilter',key).slick('refresh');
-  $('#slick-calc').slick('slickGoTo', 0);
-
-
+  //Событие по клику
+  $(".tabs__item").click(function() {
+      $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
+      $(".tabs__item").removeClass("tabs__item--right");
+      $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
+      $(this).addClass("tabs__item--right");
+      var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
+      $(activeTab).fadeIn(); //Исчезновение активного контента
+      return false;
   });
+});
 
-  /*----------  Carousel Slick ----------*/
-  $('#slick-calc').slick({
-    infinite: false,
-    dots: false,
-    arrows: false,
-    fade: true,
-    autoplay: false,
-    swipe: false,
-    touchMove: false,
-    centerMode: true,
-    variableWidth: false,
-    slidesToShow: 1,
-    slidesToScroll: 1
+// табы - виды остекления теплое/холодное
+(function () {
+  $("#options-tabs>li>a").click( function () {
+    $("#options-tabs>li").removeClass("tabs__item--active"); //Удалить "active" класс
+    $("#options-tabs>li").removeClass("tabs__item--right");
+    $(this).parent().addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
+    $(this).parent().addClass("tabs__item--right");
+    $("#tabs_container>div").hide();
+    var t_content=$(this).attr("href");
+    $(t_content).show();
+    return false;
   });
+  $("#options-tabs>li>a:first").trigger("click");
+})();
 
 // табы - страница калькулятор
-
 (function () {
   $("#calc-tabs>li>a").click( function () {
     $("#tabs_container>div").hide();
@@ -197,7 +172,6 @@ $('#slick-buttons button').bind('click', function(e){
 })();
 
 // табы о компании
-
 (function () {
   $("#tabs-menu>li>a").click( function () {
     $("#tabs_container>div").hide();
@@ -207,3 +181,16 @@ $('#slick-buttons button').bind('click', function(e){
   });
   $("#tabs-menu>li>a:first").trigger("click");
 })();
+
+
+// плавный скролл по якорным ссылкам на странице
+$(document).ready(function(){
+  $("a[href*=#]").on("click", function(e){
+      var anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top-110
+      }, 877);
+      e.preventDefault();
+      return false;
+  });
+});

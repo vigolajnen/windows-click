@@ -45,6 +45,34 @@
     height: 31px;
     background-position: -5px -1008px;
   }
+
+  &--icon-pen::before,
+  &--icon-calendar::before,
+  &--icon-paint::before,
+  &--icon-like::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  &--icon-pen::before {
+    background: url("../../img/icon/icon-feather.svg") no-repeat;
+  }
+
+  &--icon-calendar::before {
+    background: url("../../img/icon/icon-calendar.svg") no-repeat;
+  }
+
+  &--icon-paint::before {
+    background: url("../../img/icon/icon-paint.svg") no-repeat;
+  }
+
+  &--icon-like::before {
+    background: url("../../img/icon/icon-like.svg") no-repeat;
+  }
 }
 
 .glazing-type__name {

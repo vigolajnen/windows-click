@@ -44,10 +44,12 @@
 }
 
 .slider-projects__text {
+  max-height: 150px;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 300;
+  overflow-y: scroll;
 }
 
 .slider-projects__paginator {

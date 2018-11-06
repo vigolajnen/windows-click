@@ -182,6 +182,17 @@ $(document).ready(function() {
   $("#tabs-menu>li>a:first").trigger("click");
 })();
 
+// табы - страница контакты
+(function () {
+  $("#js-maps>.map__item").click( function () {
+    $("#map_container>div").hide();
+    var t_content=$(this).attr("href");
+    $(t_content).show();
+    return false;
+  });
+  $("#js-maps>.map__item:first").trigger("click");
+})();
+
 
 // плавный скролл по якорным ссылкам на странице
 $(document).ready(function(){

@@ -110,7 +110,7 @@
   font-weight: 300;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 600px) {
   .scheme-work {
     &::before {
       background-position: 0 55px;

@@ -232,17 +232,6 @@
   // background-image: url(images/checkbox-active.png);
   background-image: url("../../img/icon/radio-on.png") !important;
 }
-.calc2 input[type="text"] {
-	width: calc(100% - 36px);
-	border-color: #cccccc;
-	background-color: #ffffff;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	color: rgba(3, 3, 3, 1);
-	height: 45px;
-	font-size: 16px;
-	margin-left: 36px;
-}
 
 .calc2_popup_window {
 	width: 100%;

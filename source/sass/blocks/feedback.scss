@@ -28,8 +28,14 @@
   text-transform: uppercase;
 }
 
-.feedback__item {
-  margin: 10px 0 0 0;
+.feedback__form {
+  & p {
+    margin: 0;
+  }
+
+  & .feedback__item {
+    margin: 0 0 10px;
+  }
 }
 
 .feedback__item input {

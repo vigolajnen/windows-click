@@ -205,3 +205,18 @@ $(document).ready(function(){
       return false;
   });
 });
+
+
+// табы и слайдер - типы пластиковых окон
+$(document).ready(function () {
+  $(".slider-tabs__tab-content").slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+  });
+  $("#slider-tabs").tabs();
+  $(".ui-tabs-tab").click(function () {
+    $(".slider-tabs__tab-content").slick("slickSetOption", "adaptiveHeight", true, true);
+  });
+});

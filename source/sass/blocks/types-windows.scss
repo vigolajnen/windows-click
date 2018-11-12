@@ -1,0 +1,10 @@
+.types-windows {
+  &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      max-width: $desktop-width-big;
+      margin: 0 auto;
+  }
+}

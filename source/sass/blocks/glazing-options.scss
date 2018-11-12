@@ -10,12 +10,12 @@
 }
 
 .glazing-options__pic {
-  display: none;
   flex-grow: 1;
   width: 100%;
+  margin-top: 40px;
 
   &--order {
-    order: 1;
+    order: 0;
   }
 }
 
@@ -29,8 +29,6 @@
   min-height: 200px;
   padding: 20px;
   box-shadow: 0 0 30px 0 rgba(34, 34, 34, 0.3);
-
-  
 
   &--left::before {
     right: auto;
@@ -65,6 +63,13 @@
 
 .glazing-options__pic--options {
   margin-bottom: 20px;
+}
+
+@media (min-width: 425px) {
+  .glazing-options__pic {
+    width: 50%;
+    margin-top: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -153,6 +158,12 @@
 
   .glazing-options__pic--options {
     margin-bottom: 0;
+  }
+
+  .glazing-options__pic  {
+    &--order {
+      order: 1;
+    }
   }
 }
 

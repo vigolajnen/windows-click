@@ -207,16 +207,45 @@ $(document).ready(function(){
 });
 
 
-// табы и слайдер - типы пластиковых окон
-$(document).ready(function () {
-  $(".slider-tabs__tab-content").slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-  });
-  $("#slider-tabs").tabs();
-  $(".ui-tabs-tab").click(function () {
-    $(".slider-tabs__tab-content").slick("slickSetOption", "adaptiveHeight", true, true);
-  });
+
+$(function() { 
+  //Вешаем обработчики
+  var addListeners = function(slider) {
+      var $buttons = $('.toggle-slick');
+      $buttons.on('click', function() {
+        var slide = $(this).attr('data-slide');
+        slider.slick('slickGoTo', slide);
+      })
+  };
+  var addGoHash = function(slider) {
+      var slide = window.location.hash.replace("#","");
+      if (slide) {
+        setTimeout(function() {
+          slider.slick('slickGoTo', slide, true);
+        });
+      }
+  };
+
+  //Инициализируем слайдер
+  var init = function() {
+    var $slickContainer = $('.slider-for');
+    //Обработчик события init
+    $slickContainer.on('init', function(event, slick, currentSlide, nextSlide) {
+      var $slider = $(this);
+      addListeners($slider);
+      addGoHash($slider);
+    });
+
+    //Инициализация слайдера
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      adaptiveHeight: true,
+      infinite: true
+    });
+  };
+
+  init();
 });

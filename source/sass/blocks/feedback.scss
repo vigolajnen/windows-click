@@ -38,6 +38,15 @@
   }
 }
 
+.feedback__item {
+  &--info {
+    max-width: 260px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
 .feedback__item input {
   width: 270px;
   max-width: 100%;

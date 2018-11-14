@@ -28,7 +28,7 @@
   font-weight: 900;
   line-height: 26px;
   color: $color-green;
-  background-color: #fff;
+  background-color: #ffffff;
   text-transform: uppercase;
 
 
@@ -39,6 +39,12 @@
   &--company {
     margin: 0 0 20px 0;
     color: #ffffff;
+    background-color: transparent;
+  }
+
+  &.entry-title {
+    font-size: 24px;
+    line-height: 30px;
   }
 }
 
@@ -149,6 +155,11 @@
   .page-promo__title {
     font-size: 30px;
     line-height: 30px;
+
+    &.entry-title {
+      font-size: 27px;
+      line-height: 30px;
+    }
   }
 }
 
@@ -206,6 +217,11 @@
     &--picture img {
       max-width: 850px;
     }
+  }
+
+  .page-promo__title.entry-title {
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 

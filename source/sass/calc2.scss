@@ -11,7 +11,7 @@
 }
 .calc2 .row:before {
 	display: table;
-	content: ' ';
+	content: "";
 }
 .calc2 .row:after {
 	clear: both;
@@ -34,7 +34,6 @@
 	width: 100%;
 }
 .calc2 .col-xs-4 {
-	// float: left;
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
@@ -42,7 +41,6 @@
 	width: 33.33333333%;
 }
 .calc2 .col-xs-3 {
-	// float: left;
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
@@ -164,14 +162,10 @@
 }
 .calc2 .calc2__img {
 	position: relative;
-	// width: 500px;
 	height: 1000px;
 	float: left
 }
 .calc2 .calc2__parametrs {
-	// float: left;
-	// width: 450px;
-  // height: 875px;
   height: auto;
 	padding: 20px;
   margin-left: -20px;
@@ -198,12 +192,10 @@
 }
 .calc2 input[type="radio"]+label {
 	display: block;
-	// float: left;
   font-size: 14px !important;
   line-height: 24px !important;
   font-weight: 300 !important;
 	padding-left: 35px;
-  // background: url(images/radio-bg.png) no-repeat 0px 3px;
   background: url("../../img/icon/radio-off.png") no-repeat 0px 3px !important;
 	cursor: pointer;
 	font-weight: bold;
@@ -213,23 +205,19 @@
 .calc2 input[type="radio"]:checked+label {
   color: $text-color !important;
   font-weight: 700 !important;
-  // background-image: url(images/radio-active.png);
   background-image: url("../../img/icon/radio-on.png") !important;
 }
 
 .calc2 input[type="radio"]+label,
 .calc2 input[type="checkbox"]+label {
 	display: block;
-	// float: left;
 	font-size: 16px;
 	padding: 6px;
 	padding-left: 35px;
-  // background: url(images/checkbox-bg.png) no-repeat 0px 3px;
   background: url("../../img/icon/radio-off.png") no-repeat 0px 3px !important;
 	cursor: pointer;
 }
 .calc2 input[type="checkbox"]:checked+label {
-  // background-image: url(images/checkbox-active.png);
   background-image: url("../../img/icon/radio-on.png") !important;
 }
 
@@ -249,7 +237,7 @@
     width: 730px;
     max-width: 100%;
 	}
-	
+
 	.calc2 .calc2__img {
 		display: block;
 	}
@@ -268,5 +256,3 @@
     max-width: 100%;
   }
 }
-
-

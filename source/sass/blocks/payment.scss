@@ -47,12 +47,12 @@
     color: $color-pink;
     text-align: center;
     transition: 0.5s;
-  
+
     &:hover,
     &:focus {
       color: $color-green;
     }
-  
+
     &:hover .payment__svg,
     &:focus .payment__svg {
       fill: $color-green;

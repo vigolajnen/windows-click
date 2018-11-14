@@ -1,6 +1,5 @@
 /*stylelint-disable*/
 .calc1 {
-  /*margin-bottom:600px;*/
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -438,54 +437,53 @@ div.calc1-type-selector-one-selected:after {
 }
 
 @media all and (max-width:420px) {
-	
 	.calc1 {
 		padding:10px;
 	}
 	.calc1-type-selector {
 		width:100%;
 	}
-	
+
 	.calc1-type-selector > div {
 		width:100%;
 	}
-	
+
 	.calc1-type-selector > div:first-child > br {
 		content: " ";
 	}
-	
+
 	.calc1-type-selector > div > br:after {
 		content: " ";
 	}
-	
+
 	.calc1-type2-selector {
 		float:left;
 		width:100%;
 	}
-	
+
 	.calc1-type-selector-one > img {
 		max-height: 30px;
 		float: none;
 	}
-	
+
 	.calc1-type-selector-one:nth-child(2) > img {
 		margin-bottom:10px;
 	}
-	
+
 	div.calc1-type-selector-one {
 		margin-bottom:20px;
 		width: 25%;
 		margin-right:0%;
 	}
-	
+
 	div.calc1-type-selector-one:nth-child(3n+1){
 		margin-right:0;
 	}
-	
+
 	.calc1-type-selector > div {
 		padding:7px 2px;
 	}
-	
+
 	.calc1-constuction {
 		height: auto;
 		padding:0 20px;
@@ -494,72 +492,72 @@ div.calc1-type-selector-one-selected:after {
 		margin-bottom:20px;
 		float:left;
 	}
-	
+
 	.calc1-main-window {
 		width: 100%;
 		margin-top:0;
 	}
-	
+
 	.calc1-vertical-slider-ui {
 		height: 150px;
 	}
-	
+
 	.calc1-horisontal-slider {
 		margin-top: 170px;
 		width: 70%;
 	}
-	
+
 	.calc1-horisontal-slider-ui {
 		width: 100%;
 	}
-	
+
 	.calc1-constuction > img {
 		max-width: 100%;
 		max-height: 200px;
 	}
-	
+
 	.calc1-size-selector, .calc1-options, .calc1-price {
 		width:100%;
 		padding-right:0;
 	}
-	
+
 	.calc1-type2-selector, .calc1-options, .calc1-size-selector {
 		margin-right:0;
 		padding-right:0;
 	}
-	
+
 	.block-2-items > .block-items-wrapper > div, .block-3-items > .block-items-wrapper > div {
 		width:50%;
 	}
-	
+
 	.calc_text {
 		top:1050px;
 	}
-	
+
 	.calc1-size-selector input {
 		border:1px solid #ddd;
 	}
-	
+
 	.calc1-type2-selector > div > label, .calc1-options > div > label {
 		margin-bottom:5px;
 	}
-	
+
 	.calc1-type2-selector > div, .calc1-options > div {
 		padding-top:5px;
 	}
-	
+
 	.calc1-type2-selector > div {
 		width:50%;
 		float:right;
 		padding:5px;
 		margin-top:15px;
 	}
-	
+
 	.calc1-type2-selector > div:first-child {
     margin: 0;
     font-size: 16px;
 	}
-	
+
 	.calc1-button {
 		margin-right:0px;
 	}
@@ -567,20 +565,20 @@ div.calc1-type-selector-one-selected:after {
 	.calc1-options > label {
 		width:50%;
 	}
-	
+
 	.calc1-price {
 		margin-top:70px;
 	}
-	
+
 	.calc1-button {
 		float:right;
 		margin-top:-10px;
 	}
-	
+
 	.calc1-price-value {
 		font-size: 35px;
 	}
-	
+
 	.calc1-bar-wrapper {
 		width:50%;
 		margin-right:10px;

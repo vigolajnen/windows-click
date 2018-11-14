@@ -1,5 +1,12 @@
 .form-call__item {
   margin: 10px 0;
+
+  &--info {
+    max-width: 260px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 .form-call__input {

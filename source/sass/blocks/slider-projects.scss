@@ -44,7 +44,7 @@
 }
 
 .slider-projects__text {
-  max-height: 150px;
+  max-height: 170px;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -147,10 +147,6 @@
   .slider-projects__pic--options {
     margin-bottom: 0;
   }
-}
-
-.slider-projects__item .slick-slide.slick-current.slick-active {
-  width: 100% !important;
 }
 
 @media (min-width: 769px) {

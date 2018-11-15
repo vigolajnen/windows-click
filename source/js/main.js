@@ -91,20 +91,6 @@ $(document).ready(function() {
     });
 });
 
-// табы выполненые работы
-(function () {
-  $("#ready-projects>li>a").click(function () {
-    $("#ready-projects>li").removeClass("tabs__item--active"); //Удалить "active" класс
-    $("#ready-projects>li").removeClass("tabs__item--right");
-    $(this).parent().addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
-    $(this).parent().addClass("tabs__item--right");
-    $("#tabs_container>div").hide();
-    var t_content = $(this).attr("href");
-    $(t_content).show();
-    return false;
-  });
-  $("#ready-projects>li>a:first").trigger("click");
-})();
 
 // Sticky block
 $(document).ready(function() {
@@ -154,37 +140,64 @@ jQuery(document).ready(function(){
   });
 });
 
-// фильтр для блока "выполненные работы" на главной
+//
+$(function() {
+  var tabsNav = document.querySelector('.tabs__nav');
+  tabsNav.addEventListener('click', function(evt) {
+    var tabNavLast = tabsNav.querySelector('.tabs__nav-item:last-child');
+    var tabNavFirst = tabsNav.querySelector('.tabs__nav-item:first-child');
+    var target = evt.target;
+    if (target != tabNavFirst) {
+      tabNavFirst.classList.remove('tabs__nav-item--active');
+      tabNavLast.classList.add('tabs__nav-item--active');
+    } else {
+      tabNavFirst.classList.add('tabs__nav-item--active');
+      tabNavLast.classList.remove('tabs__nav-item--active');
+    }
+  });
 
-// var filtered = false;
-// $('.filterer').on('click', function(){
-//   var whichID = $(this).attr('id');
-//   console.log(whichID);
-//   if (whichID != 'js-filter-finish') {
-//     if ( $('.fade').hasClass('filtered') ) {
-//       $('.fade').slick('slickFilter','.filter-finish');
-//       $('.fade').slick('slickGoTo',0);
-//       filtered = false;
-//     } else {
-//       $('.fade').addClass('filtered');
-//     }
-//   } else {
-//     $('.fade').removeClass('filtered');
-//     $('.fade').slick('slickUnfilter');
-//     $('.fade').slick('slickGoTo',0);
-//   }
+  //Вешаем обработчики
+  var addListeners = function(slider) {
+      var $buttons = $('.toggle-slick');
 
-//   if (whichID != 'js-filter-glazing') {
-//     if ( $('.fade').hasClass('filtered') ) {
-//       $('.fade').slick('slickFilter','.filter-glazing');
-//       $('.fade').slick('slickGoTo',0);
-//       filtered = false;
-//     } else {
-//       $('.fade').addClass('filtered');
-//     }
-//   } else {
-//     $('.fade').removeClass('filtered');
-//     $('.fade').slick('slickUnfilter');
-//     $('.fade').slick('slickGoTo',0);
-//   }
-// });
+      $buttons.on('click', function() {
+        var slide = $(this).attr('data-slide');
+
+        slider.slick('slickGoTo', slide);
+      })
+  };
+  var addGoHash = function(slider) {
+      var slide = window.location.hash.replace("#","");
+
+      if (slide) {
+        setTimeout(function() {
+          slider.slick('slickGoTo', slide, true);
+        });
+      }
+  };
+  //Инициализируем слайдер
+  var init = function() {
+    var $slickContainer = $('.slider-projects');
+
+    //Обработчик события init
+    $slickContainer.on('init', function(event, slick, currentSlide, nextSlide) {
+      var $slider = $(this);
+
+      addListeners($slider);
+      addGoHash($slider);
+    });
+
+    //Инициализация слайдера
+    $('.slider-projects').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      adaptiveHeight: true,
+      prevArrow: $(".slider-projects__prev"),
+      nextArrow: $(".slider-projects__next"),
+      infinite: true
+    });
+  };
+  init();
+});

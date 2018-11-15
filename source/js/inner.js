@@ -95,56 +95,6 @@ $(document).ready(function() {
   });
 });
 
-// фильтр для блока "выполненные работы" на главной
-var filtered = false;
-$('.filterer').on('click', function(){
-  var whichID = $(this).attr('id');
-  console.log(whichID);
-  if (whichID != 'js-filter-finish') {
-    if ( $('.fade').hasClass('filtered') ) {
-      $('.fade').slick('slickFilter','.filter-finish');
-      $('.fade').slick('slickGoTo',0);
-      filtered = false;
-    } else {
-      $('.fade').addClass('filtered');
-    }
-  } else {
-    $('.fade').removeClass('filtered');
-    $('.fade').slick('slickUnfilter');
-    $('.fade').slick('slickGoTo',0);
-  }
-
-  if (whichID != 'js-filter-glazing') {
-    if ( $('.fade').hasClass('filtered') ) {
-      $('.fade').slick('slickFilter','.filter-glazing');
-      $('.fade').slick('slickGoTo',0);
-      filtered = false;
-    } else {
-      $('.fade').addClass('filtered');
-    }
-  } else {
-    $('.fade').removeClass('filtered');
-    $('.fade').slick('slickUnfilter');
-    $('.fade').slick('slickGoTo',0);
-  }
-});
-
-$(document).ready(function() {
-  //Действия по умолчанию
-  $(".tabs__item:first").addClass("tabs__item--active").show(); //Активировать первую вкладку
-
-  //Событие по клику
-  $(".tabs__item").click(function() {
-      $(".tabs__item").removeClass("tabs__item--active"); //Удалить "active" класс
-      $(".tabs__item").removeClass("tabs__item--right");
-      $(this).addClass("tabs__item--active"); //Добавить "active" для выбранной вкладки
-      $(this).addClass("tabs__item--right");
-      var activeTab = $(this).find("a").attr("href"); //Найти значение атрибута, чтобы определить активный таб + контент
-      $(activeTab).fadeIn(); //Исчезновение активного контента
-      return false;
-  });
-});
-
 // табы - виды остекления теплое/холодное
 (function () {
   $("#options-tabs>li>a").click( function () {
@@ -208,7 +158,7 @@ $(document).ready(function(){
 
 
 
-$(function() { 
+$(function() {
   //Вешаем обработчики
   var addListeners = function(slider) {
       var $buttons = $('.toggle-slick');
@@ -249,3 +199,6 @@ $(function() {
 
   init();
 });
+
+
+

@@ -21,9 +21,8 @@
   margin-bottom: 40px;
 
   &--bg {
-    background-image: url("../../img/results-work/results-work--bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: $color-green url("../../img/icon/bg-green.png") repeat;
+    background-position: 1% 5%;
   }
 }
 

@@ -1,9 +1,5 @@
 .certificates {
   padding: 50px 0;
-  background-image: url("../img/progress/progress--bg.jpg");
-  background-repeat: repeat;
-  background-position: 0 0;
-  background-size: contain;
 }
 
 .certificates__list {
@@ -31,12 +27,18 @@
   object-fit: contain;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: 425px) {
   .certificates__list {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
+  .certificates__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 650px) {
   .certificates__item {
     width: 33%;
   }

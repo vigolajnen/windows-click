@@ -35,26 +35,26 @@
       left: 10px;
       transform: translateY(-50%);
       display: block;
-      background-image: url("../../img/sprite-2.png");
-      background-repeat: no-repeat;
+      // background-image: url("../../img/sprite-2.png");
+      // background-repeat: no-repeat;
     }
 
     &:first-child::before {
-      width: 32px;
-      height: 36px;
-      background-position: -5px -1178px;
+      // width: 32px;
+      // height: 36px;
+      // background-position: -5px -1178px;
+      @include sprite ($protection-ice-crystal);
     }
 
     &:nth-child(2)::before {
-      width: 36px;
-      height: 36px;
-      background-position: -5px -1132px;
+      @include sprite ($protection-ear);
     }
 
     &:last-child::before {
-      width: 27px;
-      height: 36px;
-      background-position: -5px -1224px;
+      // width: 27px;
+      // height: 36px;
+      // background-position: -5px -1224px;
+      @include sprite ($protection-raindrop);
     }
   }
 }

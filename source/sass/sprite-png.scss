@@ -1,0 +1,497 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$advantages-calendar-name: 'advantages-calendar';
+$advantages-calendar-x: 742px;
+$advantages-calendar-y: 824px;
+$advantages-calendar-offset-x: -742px;
+$advantages-calendar-offset-y: -824px;
+$advantages-calendar-width: 36px;
+$advantages-calendar-height: 36px;
+$advantages-calendar-total-width: 2166px;
+$advantages-calendar-total-height: 2208px;
+$advantages-calendar-image: '../img/sprite-png.png';
+$advantages-calendar: (742px, 824px, -742px, -824px, 36px, 36px, 2166px, 2208px, '../img/sprite-png.png', 'advantages-calendar', );
+$advantages-contract-name: 'advantages-contract';
+$advantages-contract-x: 933px;
+$advantages-contract-y: 1008px;
+$advantages-contract-offset-x: -933px;
+$advantages-contract-offset-y: -1008px;
+$advantages-contract-width: 38px;
+$advantages-contract-height: 38px;
+$advantages-contract-total-width: 2166px;
+$advantages-contract-total-height: 2208px;
+$advantages-contract-image: '../img/sprite-png.png';
+$advantages-contract: (933px, 1008px, -933px, -1008px, 38px, 38px, 2166px, 2208px, '../img/sprite-png.png', 'advantages-contract', );
+$advantages-handshake-name: 'advantages-handshake';
+$advantages-handshake-x: 1131px;
+$advantages-handshake-y: 1208px;
+$advantages-handshake-offset-x: -1131px;
+$advantages-handshake-offset-y: -1208px;
+$advantages-handshake-width: 45px;
+$advantages-handshake-height: 45px;
+$advantages-handshake-total-width: 2166px;
+$advantages-handshake-total-height: 2208px;
+$advantages-handshake-image: '../img/sprite-png.png';
+$advantages-handshake: (1131px, 1208px, -1131px, -1208px, 45px, 45px, 2166px, 2208px, '../img/sprite-png.png', 'advantages-handshake', );
+$advantages-hourglass-name: 'advantages-hourglass';
+$advantages-hourglass-x: 888px;
+$advantages-hourglass-y: 958px;
+$advantages-hourglass-offset-x: -888px;
+$advantages-hourglass-offset-y: -958px;
+$advantages-hourglass-width: 35px;
+$advantages-hourglass-height: 40px;
+$advantages-hourglass-total-width: 2166px;
+$advantages-hourglass-total-height: 2208px;
+$advantages-hourglass-image: '../img/sprite-png.png';
+$advantages-hourglass: (888px, 958px, -888px, -958px, 35px, 40px, 2166px, 2208px, '../img/sprite-png.png', 'advantages-hourglass', );
+$advantages-operator-name: 'advantages-operator';
+$advantages-operator-x: 658px;
+$advantages-operator-y: 726px;
+$advantages-operator-offset-x: -658px;
+$advantages-operator-offset-y: -726px;
+$advantages-operator-width: 28px;
+$advantages-operator-height: 42px;
+$advantages-operator-total-width: 2166px;
+$advantages-operator-total-height: 2208px;
+$advantages-operator-image: '../img/sprite-png.png';
+$advantages-operator: (658px, 726px, -658px, -726px, 28px, 42px, 2166px, 2208px, '../img/sprite-png.png', 'advantages-operator', );
+$advantages-rating-name: 'advantages-rating';
+$advantages-rating-x: 1077px;
+$advantages-rating-y: 1156px;
+$advantages-rating-offset-x: -1077px;
+$advantages-rating-offset-y: -1156px;
+$advantages-rating-width: 44px;
+$advantages-rating-height: 42px;
+$advantages-rating-total-width: 2166px;
+$advantages-rating-total-height: 2208px;
+$advantages-rating-image: '../img/sprite-png.png';
+$advantages-rating: (1077px, 1156px, -1077px, -1156px, 44px, 42px, 2166px, 2208px, '../img/sprite-png.png', 'advantages-rating', );
+$bg-green-name: 'bg-green';
+$bg-green-x: 1847px;
+$bg-green-y: 1893px;
+$bg-green-offset-x: -1847px;
+$bg-green-offset-y: -1893px;
+$bg-green-width: 319px;
+$bg-green-height: 315px;
+$bg-green-total-width: 2166px;
+$bg-green-total-height: 2208px;
+$bg-green-image: '../img/sprite-png.png';
+$bg-green: (1847px, 1893px, -1847px, -1893px, 319px, 315px, 2166px, 2208px, '../img/sprite-png.png', 'bg-green', );
+$form-name-name: 'form-name';
+$form-name-x: 124px;
+$form-name-y: 140px;
+$form-name-offset-x: -124px;
+$form-name-offset-y: -140px;
+$form-name-width: 17px;
+$form-name-height: 19px;
+$form-name-total-width: 2166px;
+$form-name-total-height: 2208px;
+$form-name-image: '../img/sprite-png.png';
+$form-name: (124px, 140px, -124px, -140px, 17px, 19px, 2166px, 2208px, '../img/sprite-png.png', 'form-name', );
+$form-phone-name: 'form-phone';
+$form-phone-x: 0px;
+$form-phone-y: 0px;
+$form-phone-offset-x: 0px;
+$form-phone-offset-y: 0px;
+$form-phone-width: 12px;
+$form-phone-height: 18px;
+$form-phone-total-width: 2166px;
+$form-phone-total-height: 2208px;
+$form-phone-image: '../img/sprite-png.png';
+$form-phone: (0px, 0px, 0px, 0px, 12px, 18px, 2166px, 2208px, '../img/sprite-png.png', 'form-phone', );
+$header-phone-name: 'header-phone';
+$header-phone-x: 45px;
+$header-phone-y: 56px;
+$header-phone-offset-x: -45px;
+$header-phone-offset-y: -56px;
+$header-phone-width: 13px;
+$header-phone-height: 18px;
+$header-phone-total-width: 2166px;
+$header-phone-total-height: 2208px;
+$header-phone-image: '../img/sprite-png.png';
+$header-phone: (45px, 56px, -45px, -56px, 13px, 18px, 2166px, 2208px, '../img/sprite-png.png', 'header-phone', );
+$hover-name: 'hover';
+$hover-x: 1186px;
+$hover-y: 1263px;
+$hover-offset-x: -1186px;
+$hover-offset-y: -1263px;
+$hover-width: 59px;
+$hover-height: 59px;
+$hover-total-width: 2166px;
+$hover-total-height: 2208px;
+$hover-image: '../img/sprite-png.png';
+$hover: (1186px, 1263px, -1186px, -1263px, 59px, 59px, 2166px, 2208px, '../img/sprite-png.png', 'hover', );
+$icon-arrow-pl-name: 'icon-arrow-pl';
+$icon-arrow-pl-x: 1324px;
+$icon-arrow-pl-y: 1401px;
+$icon-arrow-pl-offset-x: -1324px;
+$icon-arrow-pl-offset-y: -1401px;
+$icon-arrow-pl-width: 49px;
+$icon-arrow-pl-height: 90px;
+$icon-arrow-pl-total-width: 2166px;
+$icon-arrow-pl-total-height: 2208px;
+$icon-arrow-pl-image: '../img/sprite-png.png';
+$icon-arrow-pl: (1324px, 1401px, -1324px, -1401px, 49px, 90px, 2166px, 2208px, '../img/sprite-png.png', 'icon-arrow-pl', );
+$normal4-name: 'normal4';
+$normal4-x: 1255px;
+$normal4-y: 1332px;
+$normal4-offset-x: -1255px;
+$normal4-offset-y: -1332px;
+$normal4-width: 59px;
+$normal4-height: 59px;
+$normal4-total-width: 2166px;
+$normal4-total-height: 2208px;
+$normal4-image: '../img/sprite-png.png';
+$normal4: (1255px, 1332px, -1255px, -1332px, 59px, 59px, 2166px, 2208px, '../img/sprite-png.png', 'normal4', );
+$offers-balcony-2-name: 'offers-balcony-2';
+$offers-balcony-2-x: 835px;
+$offers-balcony-2-y: 917px;
+$offers-balcony-2-offset-x: -835px;
+$offers-balcony-2-offset-y: -917px;
+$offers-balcony-2-width: 43px;
+$offers-balcony-2-height: 31px;
+$offers-balcony-2-total-width: 2166px;
+$offers-balcony-2-total-height: 2208px;
+$offers-balcony-2-image: '../img/sprite-png.png';
+$offers-balcony-2: (835px, 917px, -835px, -917px, 43px, 31px, 2166px, 2208px, '../img/sprite-png.png', 'offers-balcony-2', );
+$offers-balcony-name: 'offers-balcony';
+$offers-balcony-x: 788px;
+$offers-balcony-y: 870px;
+$offers-balcony-offset-x: -788px;
+$offers-balcony-offset-y: -870px;
+$offers-balcony-width: 37px;
+$offers-balcony-height: 37px;
+$offers-balcony-total-width: 2166px;
+$offers-balcony-total-height: 2208px;
+$offers-balcony-image: '../img/sprite-png.png';
+$offers-balcony: (788px, 870px, -788px, -870px, 37px, 37px, 2166px, 2208px, '../img/sprite-png.png', 'offers-balcony', );
+$offers-door-name: 'offers-door';
+$offers-door-x: 542px;
+$offers-door-y: 580px;
+$offers-door-offset-x: -542px;
+$offers-door-offset-y: -580px;
+$offers-door-width: 25px;
+$offers-door-height: 41px;
+$offers-door-total-width: 2166px;
+$offers-door-total-height: 2208px;
+$offers-door-image: '../img/sprite-png.png';
+$offers-door: (542px, 580px, -542px, -580px, 25px, 41px, 2166px, 2208px, '../img/sprite-png.png', 'offers-door', );
+$offers-services-name: 'offers-services';
+$offers-services-x: 1028px;
+$offers-services-y: 1105px;
+$offers-services-offset-x: -1028px;
+$offers-services-offset-y: -1105px;
+$offers-services-width: 39px;
+$offers-services-height: 41px;
+$offers-services-total-width: 2166px;
+$offers-services-total-height: 2208px;
+$offers-services-image: '../img/sprite-png.png';
+$offers-services: (1028px, 1105px, -1028px, -1105px, 39px, 41px, 2166px, 2208px, '../img/sprite-png.png', 'offers-services', );
+$offers-window-pl-name: 'offers-window-pl';
+$offers-window-pl-x: 981px;
+$offers-window-pl-y: 1056px;
+$offers-window-pl-offset-x: -981px;
+$offers-window-pl-offset-y: -1056px;
+$offers-window-pl-width: 37px;
+$offers-window-pl-height: 39px;
+$offers-window-pl-total-width: 2166px;
+$offers-window-pl-total-height: 2208px;
+$offers-window-pl-image: '../img/sprite-png.png';
+$offers-window-pl: (981px, 1056px, -981px, -1056px, 37px, 39px, 2166px, 2208px, '../img/sprite-png.png', 'offers-window-pl', );
+$offers-window-name: 'offers-window';
+$offers-window-x: 619px;
+$offers-window-y: 677px;
+$offers-window-offset-x: -619px;
+$offers-window-offset-y: -677px;
+$offers-window-width: 29px;
+$offers-window-height: 39px;
+$offers-window-total-width: 2166px;
+$offers-window-total-height: 2208px;
+$offers-window-image: '../img/sprite-png.png';
+$offers-window: (619px, 677px, -619px, -677px, 29px, 39px, 2166px, 2208px, '../img/sprite-png.png', 'offers-window', );
+$page-glazing-calendar-name: 'page-glazing-calendar';
+$page-glazing-calendar-x: 219px;
+$page-glazing-calendar-y: 221px;
+$page-glazing-calendar-offset-x: -219px;
+$page-glazing-calendar-offset-y: -221px;
+$page-glazing-calendar-width: 25px;
+$page-glazing-calendar-height: 25px;
+$page-glazing-calendar-total-width: 2166px;
+$page-glazing-calendar-total-height: 2208px;
+$page-glazing-calendar-image: '../img/sprite-png.png';
+$page-glazing-calendar: (219px, 221px, -219px, -221px, 25px, 25px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-calendar', );
+$page-glazing-ear-protection-name: 'page-glazing-ear-protection';
+$page-glazing-ear-protection-x: 290px;
+$page-glazing-ear-protection-y: 292px;
+$page-glazing-ear-protection-offset-x: -290px;
+$page-glazing-ear-protection-offset-y: -292px;
+$page-glazing-ear-protection-width: 26px;
+$page-glazing-ear-protection-height: 26px;
+$page-glazing-ear-protection-total-width: 2166px;
+$page-glazing-ear-protection-total-height: 2208px;
+$page-glazing-ear-protection-image: '../img/sprite-png.png';
+$page-glazing-ear-protection: (290px, 292px, -290px, -292px, 26px, 26px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-ear-protection', );
+$page-glazing-icon-easily-name: 'page-glazing-icon-easily';
+$page-glazing-icon-easily-x: 393px;
+$page-glazing-icon-easily-y: 409px;
+$page-glazing-icon-easily-offset-x: -393px;
+$page-glazing-icon-easily-offset-y: -409px;
+$page-glazing-icon-easily-width: 26px;
+$page-glazing-icon-easily-height: 29px;
+$page-glazing-icon-easily-total-width: 2166px;
+$page-glazing-icon-easily-total-height: 2208px;
+$page-glazing-icon-easily-image: '../img/sprite-png.png';
+$page-glazing-icon-easily: (393px, 409px, -393px, -409px, 26px, 29px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-icon-easily', );
+$page-glazing-paint-brushes-name: 'page-glazing-paint-brushes';
+$page-glazing-paint-brushes-x: 499px;
+$page-glazing-paint-brushes-y: 537px;
+$page-glazing-paint-brushes-offset-x: -499px;
+$page-glazing-paint-brushes-offset-y: -537px;
+$page-glazing-paint-brushes-width: 33px;
+$page-glazing-paint-brushes-height: 33px;
+$page-glazing-paint-brushes-total-width: 2166px;
+$page-glazing-paint-brushes-total-height: 2208px;
+$page-glazing-paint-brushes-image: '../img/sprite-png.png';
+$page-glazing-paint-brushes: (499px, 537px, -499px, -537px, 33px, 33px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-paint-brushes', );
+$page-glazing-quill-name: 'page-glazing-quill';
+$page-glazing-quill-x: 254px;
+$page-glazing-quill-y: 256px;
+$page-glazing-quill-offset-x: -254px;
+$page-glazing-quill-offset-y: -256px;
+$page-glazing-quill-width: 26px;
+$page-glazing-quill-height: 26px;
+$page-glazing-quill-total-width: 2166px;
+$page-glazing-quill-total-height: 2208px;
+$page-glazing-quill-image: '../img/sprite-png.png';
+$page-glazing-quill: (254px, 256px, -254px, -256px, 26px, 26px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-quill', );
+$page-glazing-raindrop-name: 'page-glazing-raindrop';
+$page-glazing-raindrop-x: 360px;
+$page-glazing-raindrop-y: 368px;
+$page-glazing-raindrop-offset-x: -360px;
+$page-glazing-raindrop-offset-y: -368px;
+$page-glazing-raindrop-width: 23px;
+$page-glazing-raindrop-height: 31px;
+$page-glazing-raindrop-total-width: 2166px;
+$page-glazing-raindrop-total-height: 2208px;
+$page-glazing-raindrop-image: '../img/sprite-png.png';
+$page-glazing-raindrop: (360px, 368px, -360px, -368px, 23px, 31px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-raindrop', );
+$page-glazing-reliability-name: 'page-glazing-reliability';
+$page-glazing-reliability-x: 326px;
+$page-glazing-reliability-y: 328px;
+$page-glazing-reliability-offset-x: -326px;
+$page-glazing-reliability-offset-y: -328px;
+$page-glazing-reliability-width: 24px;
+$page-glazing-reliability-height: 30px;
+$page-glazing-reliability-total-width: 2166px;
+$page-glazing-reliability-total-height: 2208px;
+$page-glazing-reliability-image: '../img/sprite-png.png';
+$page-glazing-reliability: (326px, 328px, -326px, -328px, 24px, 30px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-reliability', );
+$page-glazing-thermometer-name: 'page-glazing-thermometer';
+$page-glazing-thermometer-x: 429px;
+$page-glazing-thermometer-y: 448px;
+$page-glazing-thermometer-offset-x: -429px;
+$page-glazing-thermometer-offset-y: -448px;
+$page-glazing-thermometer-width: 23px;
+$page-glazing-thermometer-height: 33px;
+$page-glazing-thermometer-total-width: 2166px;
+$page-glazing-thermometer-total-height: 2208px;
+$page-glazing-thermometer-image: '../img/sprite-png.png';
+$page-glazing-thermometer: (429px, 448px, -429px, -448px, 23px, 33px, 2166px, 2208px, '../img/sprite-png.png', 'page-glazing-thermometer', );
+$protection-ear-name: 'protection-ear';
+$protection-ear-x: 696px;
+$protection-ear-y: 778px;
+$protection-ear-offset-x: -696px;
+$protection-ear-offset-y: -778px;
+$protection-ear-width: 36px;
+$protection-ear-height: 36px;
+$protection-ear-total-width: 2166px;
+$protection-ear-total-height: 2208px;
+$protection-ear-image: '../img/sprite-png.png';
+$protection-ear: (696px, 778px, -696px, -778px, 36px, 36px, 2166px, 2208px, '../img/sprite-png.png', 'protection-ear', );
+$protection-ice-crystal-name: 'protection-ice-crystal';
+$protection-ice-crystal-x: 577px;
+$protection-ice-crystal-y: 631px;
+$protection-ice-crystal-offset-x: -577px;
+$protection-ice-crystal-offset-y: -631px;
+$protection-ice-crystal-width: 32px;
+$protection-ice-crystal-height: 36px;
+$protection-ice-crystal-total-width: 2166px;
+$protection-ice-crystal-total-height: 2208px;
+$protection-ice-crystal-image: '../img/sprite-png.png';
+$protection-ice-crystal: (577px, 631px, -577px, -631px, 32px, 36px, 2166px, 2208px, '../img/sprite-png.png', 'protection-ice-crystal', );
+$protection-raindrop-name: 'protection-raindrop';
+$protection-raindrop-x: 462px;
+$protection-raindrop-y: 491px;
+$protection-raindrop-offset-x: -462px;
+$protection-raindrop-offset-y: -491px;
+$protection-raindrop-width: 27px;
+$protection-raindrop-height: 36px;
+$protection-raindrop-total-width: 2166px;
+$protection-raindrop-total-height: 2208px;
+$protection-raindrop-image: '../img/sprite-png.png';
+$protection-raindrop: (462px, 491px, -462px, -491px, 27px, 36px, 2166px, 2208px, '../img/sprite-png.png', 'protection-raindrop', );
+$radio-off-name: 'radio-off';
+$radio-off-x: 68px;
+$radio-off-y: 84px;
+$radio-off-offset-x: -68px;
+$radio-off-offset-y: -84px;
+$radio-off-width: 18px;
+$radio-off-height: 18px;
+$radio-off-total-width: 2166px;
+$radio-off-total-height: 2208px;
+$radio-off-image: '../img/sprite-png.png';
+$radio-off: (68px, 84px, -68px, -84px, 18px, 18px, 2166px, 2208px, '../img/sprite-png.png', 'radio-off', );
+$radio-on-name: 'radio-on';
+$radio-on-x: 96px;
+$radio-on-y: 112px;
+$radio-on-offset-x: -96px;
+$radio-on-offset-y: -112px;
+$radio-on-width: 18px;
+$radio-on-height: 18px;
+$radio-on-total-width: 2166px;
+$radio-on-total-height: 2208px;
+$radio-on-image: '../img/sprite-png.png';
+$radio-on: (96px, 112px, -96px, -112px, 18px, 18px, 2166px, 2208px, '../img/sprite-png.png', 'radio-on', );
+$ready-projects-arrow-left-name: 'ready-projects-arrow-left';
+$ready-projects-arrow-left-x: 151px;
+$ready-projects-arrow-left-y: 169px;
+$ready-projects-arrow-left-offset-x: -151px;
+$ready-projects-arrow-left-offset-y: -169px;
+$ready-projects-arrow-left-width: 24px;
+$ready-projects-arrow-left-height: 16px;
+$ready-projects-arrow-left-total-width: 2166px;
+$ready-projects-arrow-left-total-height: 2208px;
+$ready-projects-arrow-left-image: '../img/sprite-png.png';
+$ready-projects-arrow-left: (151px, 169px, -151px, -169px, 24px, 16px, 2166px, 2208px, '../img/sprite-png.png', 'ready-projects-arrow-left', );
+$ready-projects-arrow-right-name: 'ready-projects-arrow-right';
+$ready-projects-arrow-right-x: 185px;
+$ready-projects-arrow-right-y: 195px;
+$ready-projects-arrow-right-offset-x: -185px;
+$ready-projects-arrow-right-offset-y: -195px;
+$ready-projects-arrow-right-width: 24px;
+$ready-projects-arrow-right-height: 16px;
+$ready-projects-arrow-right-total-width: 2166px;
+$ready-projects-arrow-right-total-height: 2208px;
+$ready-projects-arrow-right-image: '../img/sprite-png.png';
+$ready-projects-arrow-right: (185px, 195px, -185px, -195px, 24px, 16px, 2166px, 2208px, '../img/sprite-png.png', 'ready-projects-arrow-right', );
+$scheme-work-phone-name: 'scheme-work-phone';
+$scheme-work-phone-x: 22px;
+$scheme-work-phone-y: 28px;
+$scheme-work-phone-offset-x: -22px;
+$scheme-work-phone-offset-y: -28px;
+$scheme-work-phone-width: 13px;
+$scheme-work-phone-height: 18px;
+$scheme-work-phone-total-width: 2166px;
+$scheme-work-phone-total-height: 2208px;
+$scheme-work-phone-image: '../img/sprite-png.png';
+$scheme-work-phone: (22px, 28px, -22px, -28px, 13px, 18px, 2166px, 2208px, '../img/sprite-png.png', 'scheme-work-phone', );
+$trophy-one-name: 'trophy-one';
+$trophy-one-x: 1682px;
+$trophy-one-y: 1760px;
+$trophy-one-offset-x: -1682px;
+$trophy-one-offset-y: -1760px;
+$trophy-one-width: 155px;
+$trophy-one-height: 123px;
+$trophy-one-total-width: 2166px;
+$trophy-one-total-height: 2208px;
+$trophy-one-image: '../img/sprite-png.png';
+$trophy-one: (1682px, 1760px, -1682px, -1760px, 155px, 123px, 2166px, 2208px, '../img/sprite-png.png', 'trophy-one', );
+$trophy-three-name: 'trophy-three';
+$trophy-three-x: 1532px;
+$trophy-three-y: 1630px;
+$trophy-three-offset-x: -1532px;
+$trophy-three-offset-y: -1630px;
+$trophy-three-width: 140px;
+$trophy-three-height: 120px;
+$trophy-three-total-width: 2166px;
+$trophy-three-total-height: 2208px;
+$trophy-three-image: '../img/sprite-png.png';
+$trophy-three: (1532px, 1630px, -1532px, -1630px, 140px, 120px, 2166px, 2208px, '../img/sprite-png.png', 'trophy-three', );
+$trophy-two-name: 'trophy-two';
+$trophy-two-x: 1383px;
+$trophy-two-y: 1501px;
+$trophy-two-offset-x: -1383px;
+$trophy-two-offset-y: -1501px;
+$trophy-two-width: 139px;
+$trophy-two-height: 119px;
+$trophy-two-total-width: 2166px;
+$trophy-two-total-height: 2208px;
+$trophy-two-image: '../img/sprite-png.png';
+$trophy-two: (1383px, 1501px, -1383px, -1501px, 139px, 119px, 2166px, 2208px, '../img/sprite-png.png', 'trophy-two', );
+$spritesheet-width: 2166px;
+$spritesheet-height: 2208px;
+$spritesheet-image: '../img/sprite-png.png';
+$spritesheet-sprites: ($advantages-calendar, $advantages-contract, $advantages-handshake, $advantages-hourglass, $advantages-operator, $advantages-rating, $bg-green, $form-name, $form-phone, $header-phone, $hover, $icon-arrow-pl, $normal4, $offers-balcony-2, $offers-balcony, $offers-door, $offers-services, $offers-window-pl, $offers-window, $page-glazing-calendar, $page-glazing-ear-protection, $page-glazing-icon-easily, $page-glazing-paint-brushes, $page-glazing-quill, $page-glazing-raindrop, $page-glazing-reliability, $page-glazing-thermometer, $protection-ear, $protection-ice-crystal, $protection-raindrop, $radio-off, $radio-on, $ready-projects-arrow-left, $ready-projects-arrow-right, $scheme-work-phone, $trophy-one, $trophy-three, $trophy-two, );
+$spritesheet: (2166px, 2208px, '../img/sprite-png.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

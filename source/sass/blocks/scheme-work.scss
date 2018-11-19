@@ -7,9 +7,10 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 300px;
+    width: 400px;
+    max-width: 100%;
     z-index: 0;
-    background-image: url("../../img/scheme-work/scheme-work--left-bg.png");
+    background-image: url("../../img/scheme-work/scheme-work--left-bg_.png");
     background-repeat: no-repeat;
     background-position: 0 55px;
   }
@@ -22,7 +23,7 @@
     height: 100%;
     width: 300px;
     z-index: 0;
-    background-image: url("../../img/scheme-work/scheme-work--bg.png");
+    background-image: url("../../img/scheme-work/scheme-work--bg_.png");
     background-repeat: no-repeat;
     background-position: 0 250px;
   }
@@ -37,9 +38,10 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 300px;
+    width: 400px;
+    max-width: 100%;
     z-index: 0;
-    background-image: url("../../img/scheme-work/scheme-work--left-bg.png");
+    background-image: url("../../img/scheme-work/scheme-work--left-bg_.png");
     background-repeat: no-repeat;
     background-position: 0 135px;
   }
@@ -142,6 +144,8 @@
 @media (min-width: $desktop-width) {
   .scheme-work {
     &::before {
+      left: -200px;
+      width: 400px;
       background-position: 0 60px;
     }
 
@@ -166,5 +170,33 @@
 
   .scheme-work__list {
     padding: 0;
+  }
+
+  .scheme-work {
+    &::before {
+      top: 50px;
+      left: -150px;
+      width: 400px;
+    }
+
+    &::after {
+      background-position: 0 -50px;
+    }
+  }
+}
+
+@media (min-width: 1650px) {
+  .scheme-work {
+    &::before {
+      left: 100px;
+      width: 400px;
+    }
+
+    &::after {
+      background-position: 0;
+      right: 10px;
+      width: 700px;
+      height: 115%;
+    }
   }
 }

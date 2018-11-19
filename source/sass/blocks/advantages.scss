@@ -43,45 +43,31 @@
       top: 0;
       left: 0;
       display: block;
-      background-image: url("../../img/sprite-2.png");
-      background-repeat: no-repeat;
     }
   }
 
   &--icon-one::before {
-    width: 45px;
-    height: 45px;
-    background-position: -5px -99px;
+    @include sprite ($advantages-handshake);
   }
 
   &--icon-two::before {
-    width: 35px;
-    height: 40px;
-    background-position: -5px -154px;
+    @include sprite ($advantages-hourglass);
   }
 
   &--icon-three::before {
-    width: 28px;
-    height: 42px;
-    background-position: -5px -204px;
+    @include sprite ($advantages-operator);
   }
 
   &--icon-four::before {
-    width: 38px;
-    height: 38px;
-    background-position: -5px -51px;
+    @include sprite ($advantages-contract);
   }
 
   &--icon-five::before {
-    width: 36px;
-    height: 36px;
-    background-position: -5px -5px;
+    @include sprite ($advantages-calendar);
   }
 
   &--icon-six::before {
-    width: 44px;
-    height: 42px;
-    background-position: -5px -256px;
+    @include sprite ($advantages-rating);
   }
 }
 

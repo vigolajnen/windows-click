@@ -23,28 +23,19 @@
       left: 50%;
       top: 0;
       transform: translateX(-50%);
-      display: block;
-      background-image: url("../../img/sprite-2.png");
-      background-repeat: no-repeat;
     }
   }
 
   &--icon-one::before {
-    width: 155px;
-    height: 123px;
-    background-position: -5px -1350px;
+    @include sprite ($trophy-one);
   }
 
   &--icon-two::before {
-    width: 139px;
-    height: 119px;
-    background-position: -5px -1613px;
+    @include sprite ($trophy-two);
   }
 
   &--icon-three::before {
-    width: 140px;
-    height: 120px;
-    background-position: -5px -1483px;
+    @include sprite ($trophy-three);
   }
 }
 

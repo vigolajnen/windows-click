@@ -17,33 +17,24 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../../img/sprite-2.png");
     background-repeat: no-repeat;
     display: block;
   }
 
   &--icon-thermometer::before {
-    width: 23px;
-    height: 33px;
-    background-position: -5px -1089px;
+    @include sprite ($page-glazing-thermometer);
   }
 
   &--icon-2::before {
-    width: 26px;
-    height: 26px;
-    background-position: -5px -854px;
+    @include sprite ($page-glazing-ear-protection);
   }
 
   &--icon-3::before {
-    width: 24px;
-    height: 30px;
-    background-position: -5px -1049px;
+    @include sprite ($page-glazing-reliability);
   }
 
   &--icon-4::before {
-    width: 23px;
-    height: 31px;
-    background-position: -5px -1008px;
+    @include sprite ($page-glazing-raindrop);
   }
 
   &--icon-pen::before,
@@ -56,22 +47,23 @@
     left: 0;
     width: 30px;
     height: 30px;
+    background-repeat: no-repeat;
   }
 
   &--icon-pen::before {
-    background: url("../../img/icon/icon-feather.svg") no-repeat;
+    @include sprite ($page-glazing-quill);
   }
 
   &--icon-calendar::before {
-    background: url("../../img/icon/icon-calendar.svg") no-repeat;
+    @include sprite ($page-glazing-calendar);
   }
 
   &--icon-paint::before {
-    background: url("../../img/icon/icon-paint.svg") no-repeat;
+    @include sprite ($page-glazing-paint-brushes);
   }
 
   &--icon-like::before {
-    background: url("../../img/icon/icon-like.svg") no-repeat;
+    @include sprite ($page-glazing-icon-easily);
   }
 }
 

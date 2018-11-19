@@ -86,45 +86,32 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url("../../img/sprite-2.png");
     background-repeat: no-repeat;
     display: block;
   }
 
   &--icon-one::before {
-    width: 43px;
-    height: 31px;
-    background-position: -5px -578px;
+    @include sprite ($offers-balcony-2);
   }
 
   &--icon-two::before {
-    width: 37px;
-    height: 37px;
-    background-position: -5px -531px;
+    @include sprite ($offers-balcony);
   }
 
   &--icon-three::before {
-    width: 37px;
-    height: 39px;
-    background-position: -5px -770px;
+    @include sprite ($offers-window-pl);
   }
 
   &--icon-four::before {
-    width: 29px;
-    height: 39px;
-    background-position: -5px -721px;
+    @include sprite ($offers-window);
   }
 
   &--icon-five::before {
-    width: 25px;
-    height: 41px;
-    background-position: -5px -619px;
+    @include sprite ($offers-door);
   }
 
   &--icon-six::before {
-    width: 39px;
-    height: 41px;
-    background-position: -5px -670px;
+    @include sprite ($offers-services);
   }
 }
 

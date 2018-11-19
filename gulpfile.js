@@ -18,7 +18,7 @@ var webp = require("gulp-webp");
 var del = require("del");
 var run = require("run-sequence");
 var concat = require("gulp-concat");
-
+var spritesmith = require("gulp.spritesmith");
 
 gulp.task("clean", function () {
   return del("build");
@@ -48,7 +48,7 @@ gulp.task("style", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg,webp}")
+  return gulp.src("source/img/**/*.{png,jpg,jpeg,svg,webp}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -63,6 +63,28 @@ gulp.task("sprite", function () {
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("sprite-png", function() {
+  var fileName = "sprite-png.png";
+  var spriteData =
+    gulp.src("source/img/icon/*.png")
+      .pipe(imagemin([
+        imagemin.optipng({optimizationLevel: 3})
+      ]))
+      .pipe(spritesmith({
+        imgName: fileName,
+        cssName: "sprite-png.scss",
+        algorithm: "diagonal",
+        cssFormat: "scss",
+        padding: 10,
+        imgPath: "../img/" + fileName
+      }));
+
+    spriteData.img.pipe(gulp.dest("build/img/"));
+    spriteData.css.pipe(gulp.dest("source/sass/"));
+
+  return spriteData;
 });
 
 gulp.task("html", function () {
@@ -131,6 +153,7 @@ gulp.task("build", function (done) {
     "images",
     "style",
     "sprite",
+    "sprite-png",
     "html",
     "vendor",
     "jsmin",

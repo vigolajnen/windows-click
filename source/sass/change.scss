@@ -1,4 +1,60 @@
 /*stylelint-disable*/
+.reviews-form input,
+.reviews-form textarea {
+  width: 100%;
+  padding: 8px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 0 5px #28b663;
+  box-shadow: 1px 0 5px #28b663;
+  cursor: pointer;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.reviews-form textarea {
+  max-height: 100px;
+  resize: none;
+}
+
+.reviews-form input[type="submit"] {
+  color: #fff;
+  border: 0;
+  background: linear-gradient(to right, #f4bf5c, #fb494f);
+  border-radius: 50px;
+  box-shadow: 3px 0 9px #f87a55;
+  outline: 0;
+}
+
+.reviews-form .form-field {
+  margin: 0;
+  width: 100%;
+}
+
+.reviews-form #wpmtst-submission-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 600px) {
+  .reviews-form .form-field {
+    margin: 5px;
+    width: 47%;
+  }
+}
+
+@media (min-width: 800px) {
+  .reviews-form .form-field {
+    margin: 10px;
+    width: 47%;
+  }
+}
+
 .slider-tabs ul.slick-dots {
   display: none !important;
 }

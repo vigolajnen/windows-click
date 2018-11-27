@@ -20,14 +20,21 @@ var modalOpen = document.querySelector(".page-header__button");
 var modal = document.querySelector(".modal-form");
 var modalBtn = document.querySelector(".modal-form__close");
 
+debugger;
 modalOpen.addEventListener("click", function (evt) {
+  
   evt.preventDefault();
   modal.classList.add("modal-form-show");
+  var div = document.createElement('div');
+  div.className = "modal-form__burqa";
+  div.innerHTML = '<div class="modal-form__paranja"></div>';
 });
 
 modalBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-form-show");
+  document.body.appendChild(div);
+  div.parentNode.removeChild(div);
 });
 
 // слайдер slick

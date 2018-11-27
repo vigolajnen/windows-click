@@ -17,6 +17,12 @@
 .offers__link {
   position: relative;
   display: block;
+
+  &:hover .offers__inner,
+  &:focus .offers__inner {
+    background: rgba(0, 0, 0, 0.7);
+    transition: 1s;
+  }
 }
 
 .offers__inner {
